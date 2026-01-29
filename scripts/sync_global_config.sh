@@ -30,6 +30,23 @@ if [[ ! -d "$SKILLS_TARGET" ]]; then
     mkdir -p "$SKILLS_TARGET"
 fi
 
+# Sync GEMINI.md (global rules)
+GEMINI_SOURCE="$REPO_ROOT/global_rules/GEMINI.md"
+GEMINI_TARGET="$HOME/.gemini/GEMINI.md"
+
+if [[ -f "$GEMINI_SOURCE" ]]; then
+    if [[ -f "$GEMINI_TARGET" && "$FORCE" == false ]]; then
+        echo "Skipping existing GEMINI.md (use -f to overwrite)"
+    else
+        echo "Syncing GEMINI.md..."
+        cp "$GEMINI_SOURCE" "$GEMINI_TARGET"
+    fi
+else
+    echo "Warning: GEMINI.md not found at $GEMINI_SOURCE"
+fi
+
+echo ""
+
 # Sync skills (only global skills)
 SOURCE_SKILLS="$REPO_ROOT/skills/global"
 if [[ -d "$SOURCE_SKILLS" ]]; then
