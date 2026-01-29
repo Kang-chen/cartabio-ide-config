@@ -30,8 +30,8 @@ if [[ ! -d "$SKILLS_TARGET" ]]; then
     mkdir -p "$SKILLS_TARGET"
 fi
 
-# Sync skills
-SOURCE_SKILLS="$REPO_ROOT/skills"
+# Sync skills (only global skills)
+SOURCE_SKILLS="$REPO_ROOT/skills/global"
 if [[ -d "$SOURCE_SKILLS" ]]; then
     for skill in "$SOURCE_SKILLS"/*/; do
         skill_name=$(basename "$skill")
