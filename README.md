@@ -7,11 +7,15 @@ Personal AI IDE configuration repository for managing global rules, workflows, a
 ```
 kang-ide-config/
 ├── README.md                    # This file
-├── scripts/                     # Sync scripts
+├── scripts/
 │   └── sync_global_config.sh    # Bash sync script
 ├── global_rules/                # Global Rules (always loaded)
 ├── workflows/                   # Workflows/Commands (on-demand)
-├── skills/                      # Agent Skills (on-demand)
+├── skills/                      # Agent Skills (categorized)
+│   ├── global/                  # General-purpose skills
+│   ├── languages/               # Language-specific skills
+│   ├── infra/                   # Infrastructure skills
+│   └── omics/                   # Bioinformatics skills
 └── templates/                   # Templates for new projects
 ```
 
