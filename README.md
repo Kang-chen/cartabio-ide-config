@@ -8,7 +8,7 @@ Personal AI IDE configuration repository for managing global rules, workflows, a
 kang-ide-config/
 ├── README.md                    # This file
 ├── scripts/                     # Sync scripts
-│   └── sync_global_config.ps1   # Windows sync script
+│   └── sync_global_config.sh    # Bash sync script
 ├── global_rules/                # Global Rules (always loaded)
 ├── workflows/                   # Workflows/Commands (on-demand)
 ├── skills/                      # Agent Skills (on-demand)
@@ -25,9 +25,9 @@ git clone https://github.com/Kang-chen/kang-ide-config.git
 
 ### 2. Sync Global Configs
 
-**For Antigravity (Windows):**
-```powershell
-.\scripts\sync_global_config.ps1
+```bash
+chmod +x scripts/sync_global_config.sh
+./scripts/sync_global_config.sh
 ```
 
 This will sync global rules and skills to `~/.gemini/antigravity/`.
