@@ -5,7 +5,7 @@ activation: Always On
 
 # Language Preferences
 
-1. 根据用户的语言自动切换回复语言（中文输入则中文回复）
-2. 代码注释使用英文
-3. 技术术语保持英文原文
-4. 文档和说明可使用英文
+1. Automatically switch the reply language based on the user's language (reply in Chinese if input).
+2. Code comments should be in English
+3. Technical terms should remain in their original English
+4. Documents and instructions can be in English

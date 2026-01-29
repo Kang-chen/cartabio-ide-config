@@ -1,11 +1,11 @@
-# Kang IDE Config
+# Cartabio IDE Config
 
-Personal AI IDE configuration repository for managing global rules, workflows, and skills across different AI IDEs (Antigravity, Cursor, etc.).
+Team AI IDE configuration repository for managing global rules, workflows, and skills across different AI IDEs (Antigravity, Cursor, etc.).
 
 ## Repository Structure
 
 ```
-kang-ide-config/
+cartabio-ide-config/
 ├── README.md                    # This file
 ├── scripts/
 │   └── sync_global_config.sh    # Bash sync script
@@ -24,7 +24,7 @@ kang-ide-config/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Kang-chen/kang-ide-config.git
+git clone https://github.com/Kang-chen/cartabio-ide-config.git
 ```
 
 ### 2. Sync Global Configs
@@ -38,9 +38,9 @@ This will sync global rules and skills to `~/.gemini/antigravity/`.
 
 ### 3. Project-Level Configs
 
-Copy the `.agent/` folder template to your project:
-```powershell
-Copy-Item -Recurse "templates\.agent" "<project-root>\"
+Copy the templates to your project:
+```bash
+cp -r templates/.agent <project-root>/
 ```
 
 ## Configuration Tiers
