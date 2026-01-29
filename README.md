@@ -6,17 +6,23 @@ Team AI IDE configuration repository for managing global rules, workflows, and s
 
 ```
 cartabio-ide-config/
-├── README.md                    # This file
+├── README.md
 ├── scripts/
-│   └── sync_global_config.sh    # Bash sync script
-├── global_rules/                # Global Rules (always loaded)
+│   ├── sync_global_config.sh    # Sync global rules and skills
+│   └── sync_project_config.sh   # Sync project-specific configs
+├── global_rules/
+│   └── GEMINI.md                # Global rules (Antigravity format)
 ├── workflows/                   # Workflows/Commands (on-demand)
 ├── skills/                      # Agent Skills (categorized)
 │   ├── global/                  # General-purpose skills
 │   ├── languages/               # Language-specific skills
 │   ├── infra/                   # Infrastructure skills
 │   └── omics/                   # Bioinformatics skills
-└── templates/                   # Templates for new projects
+└── project/                     # Project templates
+    └── <project-name>/
+        └── .agent/
+            ├── rules/
+            └── skills/
 ```
 
 ## Quick Start
@@ -34,23 +40,28 @@ chmod +x scripts/sync_global_config.sh
 ./scripts/sync_global_config.sh
 ```
 
-This will sync global rules and skills to `~/.gemini/antigravity/`.
+This will sync:
+- `global_rules/GEMINI.md` → `~/.gemini/GEMINI.md`
+- `skills/global/*` → `~/.gemini/antigravity/skills/`
 
-### 3. Project-Level Configs
+### 3. Sync Project Configs
 
-Copy the templates to your project:
 ```bash
-cp -r templates/.agent <project-root>/
+# Show available project templates
+bash scripts/sync_project_config.sh --help
+
+# Sync to your project
+bash scripts/sync_project_config.sh <template-name> --project-dir /path/to/project
 ```
 
 ## Configuration Tiers
 
-| Tier | Type | Storage | Description |
-|------|------|---------|-------------|
-| Global | Rules | `~/.gemini/GEMINI.md` | Personal preferences |
-| Global | Skills | `~/.gemini/antigravity/skills/` | Reusable skills |
-| Project | Rules | `<project>/.agent/rules/` | Project-specific |
-| Project | Skills | `<project>/.agent/skills/` | Project-specific skills |
+| Tier    | Type   | Storage                         | Description             |
+| ------- | ------ | ------------------------------- | ----------------------- |
+| Global  | Rules  | `~/.gemini/GEMINI.md`           | Personal preferences    |
+| Global  | Skills | `~/.gemini/antigravity/skills/` | Reusable global skills  |
+| Project | Rules  | `<project>/.agent/rules/`       | Project-specific rules  |
+| Project | Skills | `<project>/.agent/skills/`      | Project-specific skills |
 
 ## Contributing
 
