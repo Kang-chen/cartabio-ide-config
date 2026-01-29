@@ -8,7 +8,7 @@ set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(dirname "$SCRIPT_DIR")"
 ANTIGRAVITY_DIR="$HOME/.gemini/antigravity"
-SKILLS_TARGET="$ANTIGRAVITY_DIR/skills"
+SKILLS_TARGET="$ANTIGRAVITY_DIR/global_skills"
 
 FORCE=false
 if [[ "$1" == "-f" || "$1" == "--force" ]]; then
