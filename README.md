@@ -42,7 +42,7 @@ chmod +x scripts/sync_global_config.sh
 
 This will sync:
 - `global_rules/GEMINI.md` → `~/.gemini/GEMINI.md`
-- `skills/global/*` → `~/.gemini/antigravity/skills/`
+- `skills/global/*` → `~/.gemini/antigravity/global_skills/`
 
 ### 3. Sync Project Configs
 
@@ -59,7 +59,7 @@ bash scripts/sync_project_config.sh <template-name> --project-dir /path/to/proje
 | Tier    | Type   | Storage                         | Description             |
 | ------- | ------ | ------------------------------- | ----------------------- |
 | Global  | Rules  | `~/.gemini/GEMINI.md`           | Personal preferences    |
-| Global  | Skills | `~/.gemini/antigravity/skills/` | Reusable global skills  |
+| Global  | Skills | `~/.gemini/antigravity/global_skills/` | Reusable global skills  |
 | Project | Rules  | `<project>/.agent/rules/`       | Project-specific rules  |
 | Project | Skills | `<project>/.agent/skills/`      | Project-specific skills |
 
