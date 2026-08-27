@@ -1,0 +1,74 @@
+{
+  "_comment": "Example: two-arm trial with a CONTINUOUS primary endpoint (e.g. change in a biomarker or functional score), group-sequential with one interim and blinded-style conditional-power SAMPLE-SIZE RE-ESTIMATION (SSR) at the interim, no enrichment. Single hypothesis on the full population. Effect sizes are standardized (sd=1) so delta is a Cohen's d. Illustrative assumptions only.",
+
+  "design": {
+    "endpoint": "continuous",
+    "mean_ctrl": 0.0,
+    "sd": 1.0,
+    "prevalence": 1.0,
+    "N_max": 400,
+    "N_target": 260,
+    "info_frac": 0.5,
+    "spending": "asOF",
+    "alpha": 0.025,
+    "accrual_months": 18,
+    "dropout_rate": 0.0,
+    "dist": "normal",
+
+    "allow_enrich": false,
+    "allow_futility": true,
+    "allow_efficacy": true,
+    "allow_ssr": true,
+    "ssr_cp_target": 0.90,
+    "ssr_cp_min": 0.30,
+    "ssr_cp_max": 0.90,
+    "ssr_nmax_cap": 2.0,
+
+    "futility_cp": 0.10,
+
+    "mean_trt_pos": 0.35,
+    "mean_trt_neg": 0.35,
+    "effect_label": "delta = 0.35 SD"
+  },
+
+  "validation": {
+    "enforce": true,
+    "power_tol": 0.02,
+    "seed_fwer": 300,
+    "seed_power": 700,
+    "fwer_null_variants": [],
+    "power_grid": { "delta_grid": [0.35, 0.45, 0.55] }
+  },
+
+  "grid": {
+    "seed": 30,
+    "scenarios": {
+      "Null (delta=0)":  { "mean_trt_pos": 0.00, "mean_trt_neg": 0.00 },
+      "delta=0.25":      { "mean_trt_pos": 0.25, "mean_trt_neg": 0.25 },
+      "delta=0.35":      { "mean_trt_pos": 0.35, "mean_trt_neg": 0.35 },
+      "delta=0.45":      { "mean_trt_pos": 0.45, "mean_trt_neg": 0.45 }
+    }
+  },
+
+  "sensitivity": {
+    "param": "ssr_cp_target",
+    "values": [0.80, 0.85, 0.90, 0.95],
+    "scenario": { "mean_trt_pos": 0.30, "mean_trt_neg": 0.30 },
+    "seed": 70
+  },
+
+  "runtime": { "preset": "quick", "ncores": 4 },
+
+  "report": {
+    "title": "Continuous-Endpoint Trial with Sample-Size Re-estimation",
+    "subtitle": "Continuous endpoint | interim SSR | group-sequential",
+    "headline_scenario": "delta=0.35",
+    "effect_label": "delta = 0.35 SD",
+    "recommendation": "Appropriate when the target effect size is uncertain; the conditional-power SSR adds patients only when the interim trend is promising but underpowered, and is capped to bound the maximum sample size.",
+    "references": [
+      "Mehta CR, Pocock SJ. Adaptive increase in sample size when interim results are promising. Statistics in Medicine 2011;30(28):3267-3284.",
+      "Cui L, Hung HMJ, Wang SJ. Modification of sample size in group sequential clinical trials. Biometrics 1999;55(3):853-857.",
+      "Wassmer G, Pahlke F. rpact: Confirmatory Adaptive Clinical Trial Design and Analysis. R package."
+    ]
+  }
+}

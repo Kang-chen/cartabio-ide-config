@@ -1,0 +1,12 @@
+{
+  "name": "cell-cell-communication",
+  "description": "Use to infer and visualize ligand-receptor signaling and cell-cell communication networks from scRNA-seq data with CellChat v2.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Analyze cell-cell communication from my scRNA-seq data using CellChat to identify ligand-receptor interactions and signaling networks between cell types.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-27T03:35:35.754000",
+  "visibility": "public",
+  "id": "skill_4fd6fa5f7294443f987c36586080b69f"
+}

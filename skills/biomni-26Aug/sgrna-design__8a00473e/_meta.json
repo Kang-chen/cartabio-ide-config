@@ -1,0 +1,12 @@
+{
+  "name": "sgrna-design",
+  "description": "Use to find or design CRISPR guide RNAs for knockout, CRISPRi, or CRISPRa with SpCas9, SaCas9, or Cas12a. Prioritizes experimentally validated Addgene/literature guides, then CRISPick and rule-based designs, for arrayed or pooled screens across human, mouse, rat, and other organisms.",
+  "category": "molecular_design",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Find or design sgRNAs to knock out my gene of interest in human cells: ...",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:02.991000",
+  "visibility": "public",
+  "id": "skill_57ac6963ab7d26bdd50823638a00473e"
+}

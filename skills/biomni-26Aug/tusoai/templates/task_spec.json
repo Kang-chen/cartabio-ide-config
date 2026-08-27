@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "task_id": "replace-me",
+  "objective": "Describe the scientific or engineering objective precisely.",
+  "metric": {
+    "name": "replace-me",
+    "direction": "maximize",
+    "formula_or_source": "Official metric implementation or exact formula",
+    "noise_estimate": null,
+    "min_improvement": null
+  },
+  "evaluator": {
+    "path": "/mnt/shared-workspace/tusoai/replace-me/runner.py",
+    "direction": "maximize",
+    "baseline_score": null,
+    "baseline_runtime_s": null,
+    "candidate_reachability_verified": false,
+    "hidden_label_access": "none"
+  },
+  "editable_targets": [
+    {
+      "function_name": "replace_me",
+      "task_type": "method",
+      "source_path": "/mnt/shared-workspace/tusoai/replace-me/method_repo/method.py",
+      "repo_root": "/mnt/shared-workspace/tusoai/replace-me/method_repo",
+      "data_available": "Inputs available at runtime",
+      "hints": [
+        "Preserve the function signature, output type, shape, ordering, and deterministic seed behavior."
+      ]
+    }
+  ],
+  "immutable_constraints": [
+    "No validation/test-label leakage.",
+    "The evaluator, metric, split, and held-out labels are protected.",
+    "All candidate code must run without network access or persistent writes."
+  ],
+  "constraint_coverage": [
+    {
+      "constraint": "No validation/test-label leakage.",
+      "enforced_by": [
+        "evaluator assertion",
+        "global_hints",
+        "target hints"
+      ]
+    },
+    {
+      "constraint": "The evaluator, metric, split, and held-out labels are protected.",
+      "enforced_by": [
+        "filesystem permissions",
+        "evaluator review"
+      ]
+    },
+    {
+      "constraint": "All candidate code must run without network access or persistent writes.",
+      "enforced_by": [
+        "global_hints",
+        "sandbox policy",
+        "evaluator assertion"
+      ]
+    }
+  ],
+  "global_hints": [
+    "Optimize the real method, not the evaluator or data split.",
+    "Prefer principled, generalizable improvements over validation-specific heuristics."
+  ],
+  "data_sources": [],
+  "budgets": {
+    "global_cost_usd": 10.0,
+    "global_deadline_epoch": null,
+    "epoch_minutes": 240,
+    "shutdown_reserve_minutes": 45
+  },
+  "resource_policy": {
+    "multi_machine": true,
+    "hardware_class": "cpu",
+    "minimum_nodes": 2,
+    "maximum_nodes": 4,
+    "mixed_cpu_gpu_cluster_allowed": false
+  }
+}

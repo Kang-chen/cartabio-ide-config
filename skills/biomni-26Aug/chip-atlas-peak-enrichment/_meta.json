@@ -1,0 +1,12 @@
+{
+  "name": "chip-atlas-peak-enrichment",
+  "description": "Use to test enrichment of genomic regions against public ChIP-seq peak sets from ChIP-Atlas.",
+  "category": "epigenomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Find ChIP-seq peak enrichment near my genes using ChIP-Atlas database.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:42.699000",
+  "visibility": "public",
+  "id": "skill_dd3e525ed3e84cb9a73aa45781117110"
+}

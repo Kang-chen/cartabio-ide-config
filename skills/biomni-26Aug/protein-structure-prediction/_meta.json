@@ -1,0 +1,12 @@
+{
+  "name": "protein-structure-prediction",
+  "description": "Use to predict a protein or complex 3D structure from sequence, FASTA, gene name, or UniProt accession with AlphaFold2, Boltz-2, Chai-1, or ESMCFold2. Returns PDB/CIF, per-residue pLDDT, pTM, confidence-band and UniProt-domain summaries, and supports explicitly requested cross-method comparisons.",
+  "category": "molecular_design",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Predict the 3D structure of human PCSK9 (UniProt Q8NBP7) from its canonical sequence, selecting the predictor by size and running it under the bounded-poll and fallback guard so the run never hangs. Report per-residue pLDDT on a 0-100 scale with pTM where available, the confidence-band breakdown, and a domain-resolved pLDDT breakdown whose ranges come from the fetched UniProt feature table (flagging overlapping and unannotated regions rather than inventing boundaries). State which predictor actually produced the numbers and whether any fallback occurred, then assemble the final PDF report.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:56:07.844000",
+  "visibility": "public",
+  "id": "skill_6e83f49077c908119c713fef84e79b6f"
+}

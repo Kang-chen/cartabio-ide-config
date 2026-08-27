@@ -1,0 +1,12 @@
+{
+  "name": "bulk-rnaseq-differential-expression-multi-method",
+  "description": "General-purpose bulk RNA-seq differential expression (DEG) analysis with automatic, data-driven method selection across DESeq2, edgeR (quasi-likelihood F-test), and limma-voom. Use this whenever someone has a bulk RNA-seq count matrix (genes x samples) and wants differentially expressed genes between conditions — treated vs control, KO vs WT, tumor vs normal, dose-response, time course — even if they don't name a method, and especially when they're unsure which of DESeq2/edgeR/limma-voom to use. The skill inspects the data (raw integer counts vs normalized, replicates per group, library-size spread, batch/paired structure, design rank), recommends the most appropriate method with plain-language reasoning, asks the user to confirm, then runs a unified workflow producing a standardized results table, QC plots (PCA, MA, volcano, mean-variance), significant-gene lists (BH-FDR padj), and an optional cross-method concordance check. Handles two-group and multi-group/contrast designs, batch and paired covariates, and tximport/featureCounts/SummarizedExperiment inputs.",
+  "category": "general",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "",
+  "created_by_name": "Tommer Schwarz",
+  "updated_at": "2026-07-10T01:55:40.942000",
+  "visibility": "public",
+  "id": "skill_a99d7b18e7694005b651a299b906fd3e"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "cell-therapy-car-design",
+  "description": "Use for end-to-end scFv-based CAR design coupled to reanalysis of pooled loss-of-function CRISPR-KO proliferation or fitness screens in T cells. Covers MAGeCK hit nomination, DepMap checks, second-generation CAR architecture, codon-optimized ORFs, and lentiviral GenBank cassettes from a validated scFv.",
+  "category": "functional_genomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Reanalyze my pooled CRISPR-KO T-cell screen to nominate CAR-T targets, then design a second-generation CAR construct from my scFv.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:16.262000",
+  "visibility": "public",
+  "id": "skill_1a2d4c938cf0cd29657bf065517bca3a"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "scrna-trajectory-inference",
+  "description": "Use to infer differentiation or disease trajectories from scRNA-seq, including pseudotime, branch structure, RNA velocity, terminal states, and cell-fate probabilities.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Infer differentiation trajectories from my single-cell RNA-seq data using PAGA, pseudotime, and RNA velocity",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:08.240000",
+  "visibility": "public",
+  "id": "skill_9971a7d3e3134ee9acc25ba3d0e1fdae"
+}

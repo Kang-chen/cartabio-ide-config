@@ -1,0 +1,12 @@
+{
+  "name": "signature-reversal-lincs",
+  "description": "Use when an up/down gene signature, DE result, or GEO/CREEDS signature should be queried against LINCS L1000/Connectivity Map (CMap) to find small molecules that reverse or mimic it. Covers connectivity scoring, reproducibility, positive controls, and MOA/target/clinical-phase annotation; accepts user-defined signatures and includes non-approved compounds.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Given my up/down disease signature, find LINCS L1000 compounds that reverse it as drug-repurposing candidates.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:15.191000",
+  "visibility": "public",
+  "id": "skill_3a9f742f9ccb071b1720a6c41dfdbb38"
+}

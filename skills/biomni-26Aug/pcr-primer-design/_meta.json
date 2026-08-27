@@ -1,0 +1,12 @@
+{
+  "name": "pcr-primer-design",
+  "description": "Use to design and validate primers or probes for PCR, qPCR, TaqMan assays, genotyping, cloning, or sequencing applications.",
+  "category": "molecular_design",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Design qPCR primers for human GAPDH with MIQE compliance checking. Generate a PDF report with an intro, methods, results, conclusions and figures from all of the analyses you perform.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:27.176000",
+  "visibility": "public",
+  "id": "skill_62f7fe9a2d3e475983cadecafd0547e3"
+}

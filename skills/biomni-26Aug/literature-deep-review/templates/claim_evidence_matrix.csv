@@ -1,0 +1,2 @@
+claim_id,claim_text,claim_scope,cluster,support_state,supporting_evidence_ids,supporting_evidence_kinds,mentioning_evidence_ids,contradicting_evidence_ids,supporting_study_ids,source_locators,evidence_source,strongest_alternative_explanation,prohibited_stronger_wording,intended_section,citation_keys,audit_status
+C-001,"REPLACE with one atomic proposition.","population/model and condition",mechanism,C_INSUFFICIENT,,,,,,,none,,"categorical or causal wording",Evidence gaps,,gap

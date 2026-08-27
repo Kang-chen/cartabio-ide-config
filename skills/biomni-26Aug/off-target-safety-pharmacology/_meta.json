@@ -1,0 +1,12 @@
+{
+  "name": "off-target-safety-pharmacology",
+  "description": "Use to predict and benchmark off-target or secondary-pharmacology liabilities for a small molecule supplied by name, SMILES, InChIKey, or ChEMBL ID. Builds a Bowes-style safety panel, combines orthogonal predictors with ADMET, separates the intended target from off-targets, and gates validation claims against measured ChEMBL data sufficiency.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Profile the off-target and secondary-pharmacology liability of atorvastatin (ChEMBL CHEMBL1487): resolve the compound, build the Bowes-style core safety panel with adaptive kNN expansion, and run two orthogonal off-target predictors (ECFP4 ligand similarity and a DeepPurpose DTI model) plus ADMET. Benchmark the predictions against atorvastatin's own measured ChEMBL bioactivity using the data-sufficiency tier gate, separating the intended primary target (HMG-CoA reductase) from genuine off-targets, and assemble the final PDF liability report.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:30.968000",
+  "visibility": "public",
+  "id": "skill_8c4bbb8b8155ca559167852f77ba44d1"
+}

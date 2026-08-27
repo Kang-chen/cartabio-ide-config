@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "axes": [
+    {"axis": "dependency_causality", "status": "pending", "queries": [], "reason": ""},
+    {"axis": "direction_of_effect", "status": "pending", "queries": [], "reason": ""},
+    {"axis": "mechanism_competing_models", "status": "pending", "queries": [], "reason": ""},
+    {"axis": "pharmacology_target_engagement", "status": "pending", "queries": [], "reason": ""},
+    {"axis": "biomarker_patient_context", "status": "pending", "queries": [], "reason": ""},
+    {"axis": "safety_essentiality", "status": "pending", "queries": [], "reason": ""},
+    {"axis": "translational_clinical", "status": "pending", "queries": [], "reason": ""},
+    {"axis": "contradictions_nulls", "status": "pending", "queries": [], "reason": ""},
+    {"axis": "combinations", "status": "pending", "queries": [], "reason": ""}
+  ]
+}

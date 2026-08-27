@@ -1,0 +1,8 @@
+[
+  {"n": 1, "text": "Nazarov VI, Tsvetkov VO, Popov AA, Balashov I, et al. immunarch: An R Package for Multi-Modal Immune Repertoire Analysis (TCR/BCR). CRAN Contributed Packages, 2020. doi:10.32614/cran.package.immunarch. https://immunarch.com/", "topic": "immunarch package (primary tool)"},
+  {"n": 2, "text": "Chiffelle J, Genolet R, Perez MAS, et al. T-cell repertoire analysis and metrics of diversity and clonality. Current Opinion in Biotechnology, 2020. doi:10.1016/j.copbio.2020.07.010", "topic": "diversity & clonality metrics review"},
+  {"n": 3, "text": "Seo K, Choi JK. Comprehensive Analysis of TCR and BCR Repertoires: Insights into Methodologies, Challenges, and Applications. Genomics & Informatics, 2025. doi:10.1186/s44342-024-00034-z", "topic": "TCR/BCR methodology overview"},
+  {"n": 4, "text": "Mika J, Polanska A, Blenman K, et al. A comprehensive evaluation of diversity measures for TCR repertoire profiling. BMC Biology, 2025. doi:10.1186/s12915-025-02236-5", "topic": "evenness indices (Gini-Simpson/Pielou) most robust"},
+  {"n": 5, "text": "Pelissier A, Luo S, Stratigopoulou M, et al. Exploring the impact of clonal definition on B-cell diversity: implications for the analysis of immune repertoires. Frontiers in Immunology, 2023. doi:10.3389/fimmu.2023.1123968", "topic": "BCR clonal definition / SHM caveat"},
+  {"n": 6, "text": "Kidman J, Principe N, Watson M, et al. Characteristics of TCR Repertoire Associated With Successful Immune Checkpoint Therapy Responses. Frontiers in Immunology, 2020. doi:10.3389/fimmu.2020.587014", "topic": "repertoire biomarkers in immunotherapy (application)"}
+]

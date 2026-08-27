@@ -1,0 +1,48 @@
+{
+  "representation": [
+    "raw feature baseline",
+    "normalized or batch-corrected features",
+    "biological module aggregation",
+    "ontology or graph-derived features",
+    "pretrained embeddings",
+    "multi-resolution representation",
+    "missingness-aware representation"
+  ],
+  "model_form": [
+    "regularized statistical model",
+    "tree or boosting model",
+    "probabilistic latent-variable model",
+    "graph-aware model",
+    "neural model with compact architecture",
+    "retrieval or nearest-neighbor method",
+    "calibrated ensemble"
+  ],
+  "objective": [
+    "task likelihood or supervised loss",
+    "ranking or contrastive objective",
+    "class imbalance or censoring-aware objective",
+    "calibration-aware objective",
+    "robustness or invariance penalty",
+    "multi-task objective",
+    "short-budget validation proxy"
+  ],
+  "biological_prior": [
+    "pathway or gene set prior",
+    "protein/domain/sequence prior",
+    "cell-type or tissue prior",
+    "perturbation or dose-time prior",
+    "network locality prior",
+    "known marker or phenotype prior",
+    "mechanistic constraint"
+  ],
+  "efficiency": [
+    "vectorization",
+    "sparse computation",
+    "feature caching",
+    "reduced dimensionality",
+    "smaller model",
+    "early stopping",
+    "batched inference",
+    "file-count reduction"
+  ]
+}

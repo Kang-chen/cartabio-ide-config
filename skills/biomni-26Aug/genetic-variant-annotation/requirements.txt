@@ -1,0 +1,7 @@
+pandas>=1.5
+numpy>=1.23
+pysam>=0.21
+cyvcf2>=0.30
+matplotlib>=3.7
+xlsxwriter>=3.0
+openpyxl>=3.1

@@ -1,0 +1,66 @@
+gene_symbol,surfaceome_class,topology,ectodomain_accessibility,localization,notes
+MSLN,MS-validated,GPI-anchored,high,plasma_membrane,GPI-anchored ectodomain; shed (sMSLN sink)
+CLDN18,MS-validated,multipass_4TM,partial,plasma_membrane,Claudin tetraspan; small extracellular loops
+TACSTD2,MS-validated,single-pass_typeI,high,plasma_membrane,Large N-terminal ectodomain
+PSCA,MS-validated,GPI-anchored,high,plasma_membrane,Small GPI-anchored ectodomain
+CEACAM5,MS-validated,GPI-anchored,high,plasma_membrane,Ig-like ectodomain; GPI-anchored
+CEACAM6,MS-validated,GPI-anchored,high,plasma_membrane,GPI-anchored Ig-like ectodomain
+MUC1,MS-validated,single-pass_typeI,high,plasma_membrane,Large glycosylated ectodomain; shed
+MUC16,MS-validated,single-pass_typeI,high,plasma_membrane,Very large mucin ectodomain; shed (CA125 sink)
+MUC4,MS-validated,single-pass_typeI,high,plasma_membrane,Membrane mucin; large ectodomain
+GPC1,MS-validated,GPI-anchored,high,plasma_membrane,GPI-anchored heparan-sulfate proteoglycan
+GPC3,MS-validated,GPI-anchored,high,plasma_membrane,GPI-anchored onco-fetal
+ERBB2,MS-validated,single-pass_typeI,high,plasma_membrane,RTK ectodomain
+ERBB3,MS-validated,single-pass_typeI,high,plasma_membrane,HER3 RTK ectodomain
+PTK7,MS-validated,single-pass_typeI,high,plasma_membrane,Pseudokinase RTK ectodomain
+AXL,MS-validated,single-pass_typeI,high,plasma_membrane,TAM-family RTK ectodomain
+EGFR,MS-validated,single-pass_typeI,high,plasma_membrane,RTK ectodomain
+FOLR1,MS-validated,GPI-anchored,high,plasma_membrane,GPI-anchored folate receptor
+CD276,MS-validated,single-pass_typeI,high,plasma_membrane,B7-family Ig ectodomain
+PROM1,MS-validated,multipass_5TM,partial,plasma_membrane,Pentaspan; two large extracellular loops
+CDH17,MS-validated,single-pass_typeI,high,plasma_membrane,Cadherin ectodomain
+TM4SF1,MS-validated,multipass_4TM,partial,plasma_membrane,Tetraspanin; small loops
+SLC34A2,MS-validated,multipass,low,plasma_membrane,Multipass transporter; limited ectodomain
+MET,MS-validated,single-pass_typeI,high,plasma_membrane,RTK ectodomain
+ROR1,MS-validated,single-pass_typeI,high,plasma_membrane,Onco-fetal RTK ectodomain
+NECTIN4,MS-validated,single-pass_typeI,high,plasma_membrane,Nectin Ig ectodomain
+DLL3,MS-validated,single-pass_typeI,high,plasma_membrane,Tumor-restricted Notch ligand
+L1CAM,MS-validated,single-pass_typeI,high,plasma_membrane,Ig-superfamily adhesion ectodomain
+ANTXR1,MS-validated,single-pass_typeI,high,plasma_membrane,vWA-domain ectodomain
+CD24,MS-validated,GPI-anchored,high,plasma_membrane,Small GPI-anchored
+SLC44A4,MS-validated,multipass,low,plasma_membrane,Choline-transporter-like multipass
+LYPD3,MS-validated,GPI-anchored,high,plasma_membrane,uPAR-family GPI-anchored
+EPCAM,MS-validated,single-pass_typeI,high,plasma_membrane,Pan-epithelial; large ectodomain (TI caution)
+ITGA3,MS-validated,single-pass_typeI,high,plasma_membrane,Integrin alpha; large ectodomain (broadly expressed)
+ITGA6,MS-validated,single-pass_typeI,high,plasma_membrane,Integrin alpha ectodomain
+ITGA2,MS-validated,single-pass_typeI,high,plasma_membrane,Integrin alpha ectodomain
+ITGB4,MS-validated,single-pass_typeI,high,plasma_membrane,Integrin beta-4 ectodomain
+ITGB6,MS-validated,single-pass_typeI,high,plasma_membrane,Integrin beta-6 ectodomain
+LDLR,MS-validated,single-pass_typeI,high,plasma_membrane,Ectodomain accessible (ubiquitous; TI caution)
+PTPRF,MS-validated,single-pass_typeI,high,plasma_membrane,Receptor phosphatase ectodomain
+PTPRN2,in-silico,single-pass_typeI,partial,plasma_membrane,Receptor phosphatase; secretory-granule biased
+SEMA4B,MS-validated,single-pass_typeI,high,plasma_membrane,Semaphorin ectodomain
+EFNA5,MS-validated,GPI-anchored,high,plasma_membrane,Ephrin-A GPI-anchored
+PKHD1,in-silico,single-pass_typeI,high,plasma_membrane,Fibrocystin large ectodomain
+PMEPA1,in-silico,single-pass_typeII,partial,plasma_membrane,Small ectodomain
+EPHA2,MS-validated,single-pass_typeI,high,plasma_membrane,RTK ectodomain (validated target)
+ADAM9,MS-validated,single-pass_typeI,high,plasma_membrane,Metalloprotease ectodomain
+PLXNB1,MS-validated,single-pass_typeI,high,plasma_membrane,Plexin large ectodomain
+SCNN1A,MS-validated,multipass_2TM,partial,plasma_membrane,ENaC; large extracellular loop
+GPRC5A,MS-validated,multipass_7TM,low,plasma_membrane,GPCR; minimal ectodomain
+GPR39,in-silico,multipass_7TM,low,plasma_membrane,GPCR; minimal ectodomain
+NPSR1,in-silico,multipass_7TM,low,plasma_membrane,GPCR; minimal ectodomain
+ATP1B1,MS-validated,single-pass_typeII,partial,plasma_membrane,Na/K-ATPase beta; glycosylated ectodomain
+ATP1A1,MS-validated,multipass_10TM,low,plasma_membrane,Ion-pump alpha; minimal accessible ectodomain (pan-essential)
+ABCC3,MS-validated,multipass,low,plasma_membrane,ABC transporter; minimal ectodomain
+SLC22A3,in-silico,multipass_12TM,low,plasma_membrane,Organic-cation transporter; minimal ectodomain
+SLC4A4,in-silico,multipass,low,plasma_membrane,Bicarbonate transporter; minimal ectodomain
+SLC1A1,in-silico,multipass,low,plasma_membrane,Glutamate transporter; minimal ectodomain
+CDH1,MS-validated,single-pass_typeI,high,plasma_membrane,E-cadherin ectodomain (pan-epithelial; TI caution)
+ITPR3,excluded,ER_membrane,none,intracellular_ER,InsP3 receptor; ER/organelle - NOT plasma membrane
+CGN,excluded,peripheral,none,cytoplasmic,Cingulin tight-junction plaque - cytoplasmic; NOT a surface antigen
+LAMC2,excluded,secreted,none,secreted_ECM,Laminin gamma-2 chain; basement-membrane ECM (not cell-surface antigen)
+LAMA3,excluded,secreted,none,secreted_ECM,Laminin alpha-3 chain; ECM
+LAMB3,excluded,secreted,none,secreted_ECM,Laminin beta-3 chain; ECM
+FRAS1,excluded,secreted,none,secreted_ECM,Basement-membrane ECM protein
+LYPD6B,in-silico,GPI-anchored,partial,plasma_membrane,GPI-anchored Ly6/uPAR family; low expression

@@ -1,0 +1,12 @@
+{
+  "name": "gwas-to-function-twas",
+  "description": "Use to connect GWAS loci to candidate causal genes and therapeutic targets through transcriptome-wide association studies (TWAS).",
+  "category": "genomics_genetics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Find causal genes and therapeutic targets from my GWAS results.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:58.377000",
+  "visibility": "public",
+  "id": "skill_6313334ee7324c7099fa65c5f5ee9590"
+}

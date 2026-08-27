@@ -1,0 +1,12 @@
+{
+  "name": "survival-analysis-clinical",
+  "description": "Use for clinical time-to-event analysis with Kaplan-Meier curves, log-rank tests, Cox proportional-hazards regression, covariates, and risk stratification.",
+  "category": "multi_omics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Run a survival analysis on breast cancer clinical data to identify prognostic factors and stratify patients by risk. Generate a PDF report with an intro, methods, results, conclusions and figures from all of the analyses you perform.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:12.350000",
+  "visibility": "public",
+  "id": "skill_827c499e76084524a2e098d80383a3a4"
+}

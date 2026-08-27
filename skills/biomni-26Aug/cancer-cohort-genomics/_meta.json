@@ -1,0 +1,12 @@
+{
+  "name": "cancer-cohort-genomics",
+  "description": "Use to quantify mutation, amplification, deletion, or combined somatic alteration frequencies for genes across cancer types or cohorts. Covers cBioPortal, TCGA, MSK-IMPACT, pan-cancer comparisons, mutation hotspots, allele distributions, and matched cross-cohort analyses.",
+  "category": "genomics_genetics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "How often is my gene somatically altered (mutation/CNA) across cancer cohorts? Break it down by cancer type with a PDF report.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:19.946000",
+  "visibility": "public",
+  "id": "skill_861901b9194211e7a334b4f005209808"
+}

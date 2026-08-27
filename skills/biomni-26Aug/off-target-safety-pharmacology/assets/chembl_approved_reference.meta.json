@@ -1,0 +1,14 @@
+{
+  "source": "ChEMBL",
+  "source_url": "https://www.ebi.ac.uk/chembl/",
+  "query": "molecule endpoint, max_phase=4 (approved), molecule_type='Small molecule'",
+  "license": "CC BY-SA 3.0 (ChEMBL data)",
+  "attribution": "ChEMBL database, European Bioinformatics Institute (EMBL-EBI).",
+  "reference_values": "ADMET-AI model predictions on the ChEMBL approved-drug SMILES set (the reference distribution used for percentile scoring).",
+  "admet_ai_version": "2.0.1",
+  "n_molecules": 2167,
+  "n_property_columns": 52,
+  "date_built": "2026-07-12",
+  "replaces": "admet_ai/resources/data/drugbank_approved.csv (CC BY-NC)",
+  "percentile_column_suffix": "chembl_approved_percentile"
+}

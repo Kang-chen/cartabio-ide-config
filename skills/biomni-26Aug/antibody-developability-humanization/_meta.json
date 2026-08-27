@@ -1,0 +1,12 @@
+{
+  "name": "antibody-developability-humanization",
+  "description": "Use to assess or humanize existing mAb, IgG, Fv, scFv, VHH, or nanobody sequences. Covers sequence liabilities and developability, MHC-II/HLA-DR immunogenicity, CDR grafting onto human germlines, framework back-mutations, and humanness scoring.",
+  "category": "molecular_design",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Assess developability and humanize my monoclonal antibody from its VH/VL sequences.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T19:49:40.244000",
+  "visibility": "public",
+  "id": "skill_1428c3775e3d807bc46446cc90c2a6a0"
+}

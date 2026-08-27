@@ -1,0 +1,19 @@
+{
+  "tier_counts": {
+    "Tier1": 10,
+    "Tier2": 28,
+    "Tier3": 42,
+    "excluded_low_abundance": 1,
+    "excluded_nonbinder": 177
+  },
+  "n_candidates": 258,
+  "engine": "MHCflurry (Apache-2.0)",
+  "hla": [
+    "HLA-A*02:01",
+    "HLA-A*11:01",
+    "HLA-B*07:02",
+    "HLA-B*44:02",
+    "HLA-C*05:01",
+    "HLA-C*07:02"
+  ]
+}

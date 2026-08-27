@@ -1,0 +1,12 @@
+{
+  "name": "virtual-cell-perturbation",
+  "description": "Use to predict or benchmark single-cell transcriptional responses to CRISPR, CRISPRi, or CRISPRa perturbations. Evaluates virtual-cell models such as scGPT, GEARS, scFoundation, or CellFlow on Perturb-seq/GEARS-format data, including unseen-perturbation generalization and held-out differential-expression metrics.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Benchmark a single-cell perturbation-response model (e.g. scGPT/GEARS) on my Perturb-seq data and report predicted-vs-held-out DE with a PDF.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:44.541000",
+  "visibility": "public",
+  "id": "skill_ee05eb5df2ca51cf172af24e65f59022"
+}

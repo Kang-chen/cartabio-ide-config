@@ -1,0 +1,12 @@
+{
+  "name": "phylogenetics-toolkit",
+  "description": "End-to-end phylogenetic analysis workflow: sequence retrieval → domain extraction → multiple sequence alignment → phylogenetic tree inference → ancestral sequence reconstruction → molecular clock analysis → motif matching → annotated figure + Newick tree + markdown report. Developed and validated on EC 2.7.7.* nucleotidyltransferases and RT palm domain phylogeny (DRT3 placement).",
+  "category": "general",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "",
+  "created_by_name": "Pedro Torres",
+  "updated_at": "2026-06-02T00:55:11.515000",
+  "visibility": "public",
+  "id": "skill_1254f1f67f344fa78a75c274f1a21d5d"
+}

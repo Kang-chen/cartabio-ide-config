@@ -1,0 +1,27 @@
+{
+ "rcsb_entry_info": {
+  "resolution_combined": [
+   0.99
+  ],
+  "experimental_method": "X-ray",
+  "polymer_composition": "heteromeric protein",
+  "deposited_polymer_entity_instance_count": 2
+ },
+ "rcsb_accession_info": {
+  "deposit_date": "2017-05-26T00:00:00.000+00:00",
+  "initial_release_date": "2017-09-20T00:00:00.000+00:00"
+ },
+ "struct": {
+  "title": "Structure of human PD-L1 in complex with inhibitor"
+ },
+ "exptl": [
+  {
+   "method": "X-RAY DIFFRACTION"
+  }
+ ],
+ "refine": [
+  {
+   "ls_d_res_high": 0.99
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+gene,sgRNA_sequence,source,application,enzyme,rank_or_score,exon_or_position,pam,citation_or_dataset,notes
+PCSK9,CTGCTGCTGCTGCTGCTGCT,de_novo,knockout,SpCas9,RS3 29.5,,TGG,"Rule Set 3 (rs3, DeWeirdt 2022); CFD (Doench 2016)","Rule Set 3 on-target (percentile 0-100, higher=better); no genome-wide off-target search (out of scope)"
+PCSK9,GCAGCAGCAGCAGCAGCAGC,de_novo,knockout,SpCas9,RS3 42.8,,AGG,"Rule Set 3 (rs3, DeWeirdt 2022); CFD (Doench 2016)","Rule Set 3 on-target (percentile 0-100, higher=better); no genome-wide off-target search (out of scope)"
+PCSK9,GACGAAAGCGACAACGCGTT,de_novo,knockout,SpCas9,RS3 36.1,,CGG,"Rule Set 3 (rs3, DeWeirdt 2022); CFD (Doench 2016)","Rule Set 3 on-target (percentile 0-100, higher=better); no genome-wide off-target search (out of scope)"

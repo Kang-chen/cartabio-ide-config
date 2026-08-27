@@ -1,0 +1,12 @@
+{
+  "name": "pooled-crispr-screens",
+  "description": "Use to analyze pooled CRISPR screens with single-cell RNA-seq readouts such as Perturb-seq or CROP-seq, linking guides to transcriptional phenotypes.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Analyze my pooled CRISPR screen data with single-cell RNA-seq readout.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:19.544000",
+  "visibility": "public",
+  "id": "skill_d3fa7c2c0f2b43ffb679e44ad7a3eafe"
+}

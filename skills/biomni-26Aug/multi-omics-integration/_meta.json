@@ -1,0 +1,12 @@
+{
+  "name": "multi-omics-integration",
+  "description": "Use to integrate two or more omics layers with MOFA+, identify shared and view-specific latent factors, decompose variance, and interpret cross-omics drivers.",
+  "category": "multi_omics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Integrate my multi-omics data using MOFA+ to identify latent factors driving cross-omics variation.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:01.136000",
+  "visibility": "public",
+  "id": "skill_b022f7a4010244ac8956c13d9dd60967"
+}

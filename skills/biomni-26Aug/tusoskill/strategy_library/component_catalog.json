@@ -1,0 +1,68 @@
+{
+  "components": [
+    {
+      "name": "data_loading",
+      "questions": [
+        "Are files read once?",
+        "Are splits enforced before fitting transforms?",
+        "Are joins leakage-safe?"
+      ]
+    },
+    {
+      "name": "quality_control",
+      "questions": [
+        "Are missingness and outliers handled?",
+        "Are batch effects or duplicates plausible?"
+      ]
+    },
+    {
+      "name": "feature_generation",
+      "questions": [
+        "Do features reflect biological structure?",
+        "Can auxiliary priors improve coverage?"
+      ]
+    },
+    {
+      "name": "model",
+      "questions": [
+        "Is capacity matched to sample size?",
+        "Does the model encode useful assumptions?"
+      ]
+    },
+    {
+      "name": "objective",
+      "questions": [
+        "Does the loss match the scientific metric?",
+        "Are imbalance, censoring, ranking, or calibration important?"
+      ]
+    },
+    {
+      "name": "training",
+      "questions": [
+        "Is model selection validation-only?",
+        "Is optimization stable and efficient?"
+      ]
+    },
+    {
+      "name": "inference",
+      "questions": [
+        "Are thresholds and post-processing justified?",
+        "Is uncertainty useful?"
+      ]
+    },
+    {
+      "name": "evaluation",
+      "questions": [
+        "Are guardrails measured?",
+        "Are repeated runs needed?"
+      ]
+    },
+    {
+      "name": "packaging",
+      "questions": [
+        "Can the method run from clean instructions?",
+        "Are dependencies minimal?"
+      ]
+    }
+  ]
+}

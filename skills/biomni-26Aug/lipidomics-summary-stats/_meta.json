@@ -1,0 +1,12 @@
+{
+  "name": "lipidomics-summary-stats",
+  "description": "Read complex lipid and free sterol Excel spreadsheets, harmonize column names, compute per-metabolite log2FC and p-values for all pairwise comparisons, and output a styled master Excel workbook with per-class tabs and a significant hits summary.",
+  "category": "general",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "",
+  "created_by_name": "Deniz Nesli Dolcen",
+  "updated_at": "2026-07-10T02:27:34.609000",
+  "visibility": "public",
+  "id": "skill_5495d1cb2a06476db4635429aed57685"
+}

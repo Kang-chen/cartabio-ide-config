@@ -1,0 +1,12 @@
+{
+  "name": "sgrna-design",
+  "description": "Find or design sgRNAs (guide RNAs) for CRISPR experiments using a three-tiered approach: (1) validated sequences from a bundled Addgene database + literature search, (2) precomputed CRISPick designs from the Broad Institute GPP, (3) de-novo design rules. Use whenever someone asks for a guide RNA / sgRNA / CRISPR guide to knock out (KO), activate (CRISPRa), or inhibit (CRISPRi) a gene, mentions SpCas9 / SaCas9 / AsCas12a / enAsCas12a, asks \"what guide should I use for <gene>\", or wants CRISPR targeting sequences for a screen — even if they don't say \"design\". Covers human, mouse, rat, and other model organisms. Does NOT run wet-lab validation or genome-wide off-target alignment.",
+  "category": "general",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "",
+  "created_by_name": "Yuanhao Qu",
+  "updated_at": "2026-06-03T03:41:55.161000",
+  "visibility": "public",
+  "id": "skill_1e197cad364d44be84b0e57f70fb471f"
+}

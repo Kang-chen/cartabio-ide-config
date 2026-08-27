@@ -1,0 +1,12 @@
+{
+  "name": "chip-atlas-diff-analysis",
+  "description": "Use to compare groups of ChIP-seq, ATAC-seq, DNase-seq, or bisulfite-seq experiments and identify differential peak regions or differentially methylated regions through ChIP-Atlas.",
+  "category": "epigenomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Compare two sets of ChIP-seq experiments to find differential peaks using ChIP-Atlas.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T14:45:07.639000",
+  "visibility": "public",
+  "id": "skill_7f4da97222334fba9984eab5b78eb392"
+}

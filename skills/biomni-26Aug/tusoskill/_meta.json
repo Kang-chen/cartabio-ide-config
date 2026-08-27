@@ -1,0 +1,12 @@
+{
+  "name": "tusoskill",
+  "description": "Use Biomni-native benchmark-first iteration for computational biology method development involving broad refactors, GPU-heavy workloads, unclear objectives, or no external API keys. Covers overfitting checks, durable state, repeated evaluation rounds, and reproducible method packaging.",
+  "category": "data_analysis",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Set up this task following their instructions: https://mls-bench.com/tasks/ai4sci-pla-binding-affinity Using tusoskill, make a method for this task. Perform 50 iterations, you have access to an H100. After the method is built, apply it to their full testing set and measure performance, exactly how they do it, comparing performance against the precomputed baselines they provide.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:49.045000",
+  "visibility": "public",
+  "id": "skill_3433ea4640ad46929510cc17c8e4d606"
+}

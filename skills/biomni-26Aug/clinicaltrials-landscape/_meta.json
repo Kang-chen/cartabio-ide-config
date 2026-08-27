@@ -1,0 +1,12 @@
+{
+  "name": "clinicaltrials-landscape",
+  "description": "Use to map the ClinicalTrials.gov trial landscape for a disease, mechanism, intervention, phase, status, or sponsor through API v2.",
+  "category": "literature",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Show me the current clinical trial landscape for IBD",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:07.311000",
+  "visibility": "public",
+  "id": "skill_546a8868863342c093eb2570dcd538f4"
+}

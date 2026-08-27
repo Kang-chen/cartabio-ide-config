@@ -1,0 +1,76 @@
+{
+  "_comment": "Worked example: adaptive biomarker-ENRICHMENT Phase 2 trial with a time-to-event primary endpoint (PFS), modeled on an EGFR-mutant NSCLC setting. Full population H_F + biomarker-positive subgroup H_S, one interim analysis with adaptive enrichment + non-binding futility, closed test for multiplicity. Disease-specific numbers are ILLUSTRATIVE assumptions, not real data.",
+
+  "design": {
+    "endpoint": "tte",
+    "median_ctrl": 18.9,
+    "prevalence": 0.4,
+    "N_max": 300,
+    "target_events": 169,
+    "info_frac": 0.5,
+    "spending": "asOF",
+    "alpha": 0.025,
+    "accrual_months": 24,
+    "dropout_rate": 0.05,
+    "max_followup": 48,
+    "dist": "exponential",
+
+    "allow_enrich": true,
+    "allow_futility": true,
+    "allow_efficacy": true,
+    "allow_ssr": false,
+
+    "enrich_delta": 0.5,
+    "futility_cp": 0.10,
+
+    "hr_pos": 0.60,
+    "hr_neg": 0.85
+  },
+
+  "validation": {
+    "enforce": true,
+    "power_tol": 0.02,
+    "seed_fwer": 100,
+    "seed_power": 500,
+    "fwer_null_variants": [
+      { "label": "prevalence=0.2", "prevalence": 0.2 },
+      { "label": "prevalence=0.6", "prevalence": 0.6 }
+    ],
+    "power_grid": { "hr_grid": [0.60, 0.65, 0.70] }
+  },
+
+  "grid": {
+    "seed": 10,
+    "scenarios": {
+      "Global null":            { "hr_pos": 1.00, "hr_neg": 1.00 },
+      "Uniform HR=0.65":        { "hr_pos": 0.65, "hr_neg": 0.65 },
+      "Uniform HR=0.75":        { "hr_pos": 0.75, "hr_neg": 0.75 },
+      "Subgroup-only HR=0.55":  { "hr_pos": 0.55, "hr_neg": 1.00 },
+      "Subgroup-only HR=0.60":  { "hr_pos": 0.60, "hr_neg": 1.00 },
+      "Partial (0.60/0.85)":    { "hr_pos": 0.60, "hr_neg": 0.85 }
+    }
+  },
+
+  "sensitivity": {
+    "param": "prevalence",
+    "values": [0.2, 0.3, 0.4, 0.5, 0.6],
+    "scenario": { "hr_pos": 0.55, "hr_neg": 1.00 },
+    "seed": 50
+  },
+
+  "runtime": { "preset": "quick", "ncores": 4 },
+
+  "report": {
+    "title": "Adaptive Biomarker-Enrichment Trial (NSCLC / EGFR example)",
+    "subtitle": "Time-to-event endpoint | population enrichment | group-sequential",
+    "headline_scenario": "Subgroup-only HR=0.55",
+    "effect_label": "HR 0.55 (BM+)",
+    "recommendation": "Fit for purpose when the biomarker-positive subgroup is expected to carry most of the treatment effect; confirm the assumed prevalence and the enrichment decision rule with clinical and translational leads before finalizing sample size.",
+    "references": [
+      "Simon N, Simon R. Adaptive enrichment designs for clinical trials. Biostatistics 2013;14(4):613-625.",
+      "Wang SJ, Hung HMJ, O'Neill RT. Adaptive patient enrichment designs in therapeutic trials. Biometrical Journal 2009;51(2):358-374.",
+      "Jenkins M, Stone A, Jennison C. An adaptive seamless phase II/III design. Pharmaceutical Statistics 2011;10(4):347-356.",
+      "Wassmer G, Pahlke F. rpact: Confirmatory Adaptive Clinical Trial Design and Analysis. R package."
+    ]
+  }
+}

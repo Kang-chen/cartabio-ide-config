@@ -1,0 +1,12 @@
+{
+  "name": "target-tractability-druggability",
+  "description": "Use to assess whether a human target is druggable and which modality is most viable. Integrates Open Targets tractability, known drugs, DepMap essentiality, safety, structural pocket detection, and evidence for small molecules, antibodies, or degraders; triggers on druggable pocket or modality-selection questions.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Assess the druggability of EGFR across all modalities and tell me which modality is most viable.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:58.307000",
+  "visibility": "public",
+  "id": "skill_9375050e400a2b52a377933c2f508d68"
+}

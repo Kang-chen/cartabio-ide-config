@@ -1,0 +1,12 @@
+{
+  "name": "literature-review",
+  "description": "Use for any scientific or biomedical question that requires finding and synthesizing evidence across multiple papers, including general scientific literature reviews, key-paper searches, state-of-the-art summaries, and evidence synthesis on any topic. Searches peer-reviewed records, grounds claims in retrieved abstracts or open full text, and returns a cited narrative, structured evidence table, and PDF report.",
+  "category": "general",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:38.801000",
+  "visibility": "public",
+  "id": "skill_9b0361e33e5541bbb2b43f671dc0d5a5"
+}

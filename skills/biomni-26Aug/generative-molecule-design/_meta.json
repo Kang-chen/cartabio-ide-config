@@ -1,0 +1,12 @@
+{
+  "name": "generative-molecule-design",
+  "description": "Use for goal-directed de novo small-molecule generation, lead generation, or scaffold hopping against a target. Runs graph-based generation with configurable activity, drug-likeness, synthesizability, novelty, and makeability objectives, then proposes retrosynthetic routes; activity may use an oracle, QSAR surrogate, or docking.",
+  "category": "molecular_design",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Design de novo small molecules against my target with a multi-objective genetic algorithm and propose retrosynthetic routes.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:05.540000",
+  "visibility": "public",
+  "id": "skill_0008d582238d9a1f65a2322b3bf71728"
+}

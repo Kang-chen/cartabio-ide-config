@@ -1,0 +1,12 @@
+{
+  "name": "microbiome-analysis",
+  "description": "Use for two-group 16S rRNA amplicon analysis from processed ASV/OTU feature tables. Covers alpha/beta diversity, consensus differential abundance with ANCOM-BC2/ALDEx2/MaAsLin2, PICRUSt2 function prediction, and inferred SCFA, bile-acid, or tryptophan-metabolite capacity.",
+  "category": "functional_analysis",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Compare two groups in my 16S feature table: alpha/beta diversity, differential-abundance testing, and predicted function/metabolite capacity.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:04.126000",
+  "visibility": "public",
+  "id": "skill_fd517e4fafbb82ec7030a849e0ea0c23"
+}

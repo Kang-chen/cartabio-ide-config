@@ -1,0 +1,12 @@
+{
+  "name": "single-cell-census-query",
+  "description": "Use to query CZ CELLxGENE Census for a gene panel's expression across cell types or to run donor-level pseudobulk disease-vs-control differential expression from public single-cell atlases. Produces cell-type expression and case-control evidence for genes in a tissue.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Query CZ CELLxGENE Census for the expression of my genes of interest across cell types in a tissue, run a case/control pseudobulk differential expression comparison for a disease vs. healthy, and generate a PDF report with an infographic, intro, methods, results, conclusions, figures, references, and next steps.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:13.854000",
+  "visibility": "public",
+  "id": "skill_99b62aa3fd5ef6688b599c2a76b92313"
+}

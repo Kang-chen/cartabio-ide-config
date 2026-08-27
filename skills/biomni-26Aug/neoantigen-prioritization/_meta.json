@@ -1,0 +1,12 @@
+{
+  "name": "neoantigen-prioritization",
+  "description": "Run a real-data-only, TESLA-guided neoantigen prioritization workflow from somatic VCF, patient HLA-I genotype, and optional RNA expression/RNA BAM to a ranked per-peptide Tier 1/2/3 validation shortlist, complete CSV/JSON exports, figures, benchmark context, and a Biomni PDF. Use for personalized-vaccine or TCR-discovery candidate selection, especially when missense and indel/frameshift neoORF peptides, MHCflurry binding, expression-aware abundance, the seven TESLA presentation/recognition features, durable long-horizon execution, checkpointing, cold-start resume, context recovery, or auditable Biomni handoff are required. Also use to run or validate the bundled real Pt22 melanoma demo. Do not use for a patient-level checkpoint-response score; use neoantigen-io-response for that question.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Run this skill on its bundled Pt22 melanoma demo data (Hugo 2016, GSE78220): tier the peptides, benchmark score-ordering against the public TESLA table, and generate the PDF report + infographics.",
+  "created_by_name": "Kexin Huang",
+  "updated_at": "2026-08-21T20:49:35.202000",
+  "visibility": "public",
+  "id": "skill_e0558e6edd3e4a17a9ec2416753b2535"
+}

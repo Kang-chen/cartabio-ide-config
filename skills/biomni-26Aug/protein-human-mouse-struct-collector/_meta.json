@@ -1,0 +1,12 @@
+{
+  "name": "protein-human-mouse-struct-collector",
+  "description": "Collect all human and mouse UniProt entries, PDB experimental structures, and AlphaFold predicted structures for any protein of interest. Downloads PDB and AlphaFold CIF files (with species-aware naming), fetches full-field JSON metadata from RCSB PDB Data API and AlphaFold EBI API, generates two Excel files (UniProt-only and comprehensive UniProt+PDB+AlphaFold), produces a detailed Markdown report plus a reproducible Jupyter notebook, and generates AlphaFold3 input JSON files for every sequence source (PDB experimental, AlphaFold predicted, and UniProt) paired with any user-specified ligand. Use this skill whenever someone asks to collect, download, or summarize structural data for a protein across human and mouse, or to generate AF3 input JSON files for all available sequences of a protein with a ligand.",
+  "category": "general",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "",
+  "created_by_name": "Uazbrz Yonjlj",
+  "updated_at": "2026-06-08T17:52:24.685000",
+  "visibility": "public",
+  "id": "skill_1af241ccbf5244f1b7125bc7bca91685"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "signature-response-enrichment",
+  "description": "Use to test whether patients who fail a treatment retain higher activity of a specified gene signature. Runs GSVA change-from-baseline across on-treatment time points, compares responders with non-responders at endpoint, and checks directional replication across independent bulk-transcriptomic cohorts.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Test whether residual activity of my gene signature on treatment marks patients who fail the drug, and check whether the pattern reproduces across independent cohorts.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:00.376000",
+  "visibility": "public",
+  "id": "skill_b65a07539d1b4f5e8955b98c7aaca5fe"
+}

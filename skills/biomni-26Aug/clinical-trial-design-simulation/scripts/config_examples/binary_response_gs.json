@@ -1,0 +1,68 @@
+{
+  "_comment": "Example: two-arm trial with a BINARY primary endpoint (e.g. objective response rate), group-sequential with one interim, non-binding futility, no enrichment. Single hypothesis on the full population (prevalence=1 => H_S == H_F). Illustrative assumptions only.",
+
+  "design": {
+    "endpoint": "binary",
+    "p_ctrl": 0.20,
+    "prevalence": 1.0,
+    "N_max": 300,
+    "N_target": 250,
+    "info_frac": 0.5,
+    "spending": "asOF",
+    "alpha": 0.025,
+    "accrual_months": 18,
+    "dropout_rate": 0.0,
+    "dist": "binary",
+
+    "allow_enrich": false,
+    "allow_futility": true,
+    "allow_efficacy": true,
+    "allow_ssr": false,
+
+    "futility_cp": 0.10,
+
+    "p_trt_pos": 0.38,
+    "p_trt_neg": 0.38
+  },
+
+  "validation": {
+    "enforce": true,
+    "power_tol": 0.02,
+    "seed_fwer": 200,
+    "seed_power": 600,
+    "fwer_null_variants": [],
+    "power_grid": { "p_trt_grid": [0.35, 0.40, 0.45] }
+  },
+
+  "grid": {
+    "seed": 20,
+    "scenarios": {
+      "Null (20% vs 20%)":   { "p_trt_pos": 0.20, "p_trt_neg": 0.20 },
+      "32% vs 20%":          { "p_trt_pos": 0.32, "p_trt_neg": 0.32 },
+      "35% vs 20%":          { "p_trt_pos": 0.35, "p_trt_neg": 0.35 },
+      "38% vs 20%":          { "p_trt_pos": 0.38, "p_trt_neg": 0.38 },
+      "42% vs 20%":          { "p_trt_pos": 0.42, "p_trt_neg": 0.42 }
+    }
+  },
+
+  "sensitivity": {
+    "param": "p_ctrl",
+    "values": [0.15, 0.20, 0.25, 0.30],
+    "scenario": { "p_trt_pos": 0.38, "p_trt_neg": 0.38 },
+    "seed": 60
+  },
+
+  "runtime": { "preset": "quick", "ncores": 4 },
+
+  "report": {
+    "title": "Response-Rate Trial with Group-Sequential Monitoring",
+    "subtitle": "Binary endpoint | one interim | non-binding futility",
+    "headline_scenario": "38% vs 20%",
+    "effect_label": "38% vs 20%",
+    "recommendation": "Suitable for a randomized proof-of-concept where response rate is the primary readout; the interim futility look limits exposure if the treatment is inactive.",
+    "references": [
+      "Jennison C, Turnbull BW. Group Sequential Methods with Applications to Clinical Trials. Chapman & Hall/CRC, 2000.",
+      "Wassmer G, Pahlke F. rpact: Confirmatory Adaptive Clinical Trial Design and Analysis. R package."
+    ]
+  }
+}

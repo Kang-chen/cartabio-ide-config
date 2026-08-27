@@ -1,0 +1,44 @@
+{
+  "_schema_note": "These end-to-end runs used the core panel only (no --adaptive), so 'sim_hits' are core-panel counts. When --adaptive is used, similarity hits are reported split into core-panel (independent evidence) vs adaptive-panel (high by construction). 'sim_hits' and 'concordant' here predate the primary-target exclusion and 4-state agreement reporting; current runs additionally exclude the intended primary target from off-target metrics.",
+  "terfenadine (CHEMBL17157) \u2014 antihistamine, hERG blocker": {
+    "tier": "A (Validated)",
+    "sim_hits": 17,
+    "top_sim_hit": "hERG (KCNH2) Tc=0.891 P=0.998",
+    "ground_truth": "1096 records, 70 proteins, 11 active <=1uM",
+    "benchmark": "23 measured / 6 pos, sim ROC-AUC 0.716, consensus 0.637",
+    "concordant": [
+      "Muscarinic M3",
+      "SERT",
+      "Dopamine D2",
+      "Muscarinic M2",
+      "Dopamine D3"
+    ],
+    "admet_engine": "Biomni MPNN (16 endpoints, no hERG)",
+    "pdf": "7 pages, clean, 2D structure embedded",
+    "validates": "hERG cardiotoxicity recovered de novo; Tier A gate passed"
+  },
+  "imatinib (CHEMBL941) \u2014 kinase inhibitor": {
+    "tier": "B (Partial \u2014 NOT validation)",
+    "sim_hits": 6,
+    "top_sim_hit": "P-gp (ABCB1) Tc=0.412 P=0.679",
+    "ground_truth": "4878 records, 79 proteins, 33 active <=1uM (abundant overall)",
+    "benchmark": "5 measured / 0 pos on panel -> Tier-A gate correctly NOT met",
+    "concordant": [
+      "5-HT1D"
+    ],
+    "admet_engine": "Biomni MPNN (16 endpoints)",
+    "pdf": "7 pages, clean, Tier B scatter",
+    "validates": "Data-rich compound but no panel overlap -> refuses false validation"
+  },
+  "sotorasib (CHEMBL4535757) \u2014 covalent KRAS G12C inhibitor": {
+    "tier": "C (De novo \u2014 unvalidated)",
+    "sim_hits": 0,
+    "top_sim_hit": "none",
+    "ground_truth": "no measured overlap with panel",
+    "benchmark": "0 measured -> Tier C discovery-only",
+    "concordant": [],
+    "admet_engine": "Biomni MPNN (16 endpoints)",
+    "pdf": "7 pages, clean, Tier C de novo ranking, TPSA 104.45 A^2",
+    "validates": "No ground truth -> loudly labeled unvalidated, not oversold"
+  }
+}

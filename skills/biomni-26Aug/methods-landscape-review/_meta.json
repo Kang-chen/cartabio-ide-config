@@ -1,0 +1,12 @@
+{
+  "name": "methods-landscape-review",
+  "description": "Use to compare computational methods, tools, algorithms, or analytical approaches and recommend which to use from published benchmarks. Produces a comparison matrix, performance scorecard, benchmark catalog, and regime-specific guidance; also supports citation-verified narrative scientific evidence synthesis with an evidence table.",
+  "category": "literature",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Compare methods for <task> and recommend which to use, with a PDF report",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:36.420000",
+  "visibility": "public",
+  "id": "skill_685b09d4f2d509ab9198bf01121d7c7d"
+}

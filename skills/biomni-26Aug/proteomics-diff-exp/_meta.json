@@ -1,0 +1,12 @@
+{
+  "name": "proteomics-diff-exp",
+  "description": "Use to test differential protein abundance in mass-spectrometry proteomics data with limma and DEqMS, including PSM-aware variance estimation.",
+  "category": "proteomics_metabolomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Perform differential protein expression analysis on my proteomics mass spectrometry data.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:16.693000",
+  "visibility": "public",
+  "id": "skill_08c0e01956d643148a85f5334cfd7abd"
+}

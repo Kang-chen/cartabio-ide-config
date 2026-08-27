@@ -1,0 +1,12 @@
+{
+  "name": "scrnaseq-scanpy-core-analysis",
+  "description": "Use for complete scRNA-seq analysis in Python with Scanpy, from raw counts and QC through normalization, integration, clustering, marker detection, cell-type annotation, and visualization.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Analyze single-cell RNA-seq data with Scanpy from QC through cell type annotation. Generate a PDF report with an intro, methods, results, conclusions and figures from all of the analyses you perform.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:10.763000",
+  "visibility": "public",
+  "id": "skill_e4c50152a70f4d6fa8a4802573755f54"
+}

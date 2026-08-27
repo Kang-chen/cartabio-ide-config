@@ -1,0 +1,75 @@
+# Example configuration: goal-directed de novo design for DRD2.
+# This reproduces the validated DRD2 run's *production* setup (activity x QED x
+# low-SA). Swap `objective: production` -> `objective: drd2_benchmark` to get the
+# bare sqrt(activity x QED) benchmark objective instead.
+
+target: DRD2
+target_desc: >
+  Dopamine receptor D2 (DRD2), a class-A GPCR and the principal target of
+  antipsychotic drugs. A standard benchmark target for generative chemistry.
+
+# ---- Activity backend ----
+# backend: tdc_oracle | qsar | vina
+activity:
+  backend: tdc_oracle
+  tdc_oracle:
+    name: DRD2            # any TDC oracle name (DRD2, GSK3B, JNK3, ...)
+  # qsar:                 # used only when backend: qsar
+  #   actives_csv: /path/actives.csv     # column 'smiles'
+  #   inactives_csv: /path/inactives.csv
+  # vina:                 # used only when backend: vina (documented extension)
+  #   receptor_pdbqt: /path/receptor.pdbqt
+  #   center: [x, y, z]
+  #   box_size: [20, 20, 20]
+
+# ---- Objective ----
+# Either a preset name ('production' | 'drd2_benchmark') or an explicit spec.
+objective: production
+# Explicit form (equivalent to 'production'); each component is transformed to
+# [0,1] then combined by the aggregation (geometric_mean recommended):
+# objective:
+#   aggregation: geometric_mean          # geometric_mean | weighted_sum | product
+#   components:
+#     - {property: activity, transform: identity, weight: 1.0}
+#     - {property: QED,      transform: identity, weight: 1.0}
+#     - {property: SA_Score, transform: reverse_sigmoid, params: {low: 2.5, high: 6.0, k: 10}, weight: 1.0}
+
+# ---- Seeds ----
+# Known actives to seed the GA + define the novelty reference set. Provide SMILES
+# inline or point to a CSV with a 'smiles' column.
+seeds:
+  smiles:
+    - O=C(CCCN1CCC(O)(c2ccc(Cl)cc2)CC1)c1ccc(F)cc1   # haloperidol
+    - CCN1CCN(C2=Nc3ccccc3Oc3ccccc32)CC1              # (quetiapine-like scaffold)
+  # seeds_csv: /path/known_actives.csv
+
+# ---- Genetic algorithm ----
+ga:
+  pop_size: 100
+  n_generations: 20
+  mutation_rate: 0.5
+  elite_frac: 0.1
+  tournament_k: 3
+  seed: 42
+
+# ---- Selection / filtering cascade ----
+select:
+  novelty_max: 0.4          # max ECFP4 Tanimoto to any known active
+  activity_min: 0.5
+  qed_min: 0.6
+  qed_min_fallback: 0.5     # relaxed gate if too few survive
+  sa_max: 4.5               # Tier-1 synthesizability hard filter
+  drop_alerts: true         # drop PAINS matches (Brenk kept as a flag)
+  require_ring_sanity: true
+  top_n: 10
+
+# ---- Retrosynthesis (Tier-2, heavy, skippable) ----
+retro:
+  enabled: true
+  cache_dir: /mnt/shared-workspace/aizynth_models   # PROVISION at setup, not lazily
+  time_limit: 120           # seconds per molecule
+  iteration_limit: 200
+
+# ---- Output ----
+output:
+  dir: /mnt/results/DRD2_generative_design

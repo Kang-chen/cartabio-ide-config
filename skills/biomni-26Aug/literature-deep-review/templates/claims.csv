@@ -1,0 +1,2 @@
+claim_id,claim_text,scope,cluster,query_terms,figure_priority,parent_claim_id,revision_reason
+C-001,"REPLACE with one atomic, scoped proposition.","population/model and condition",mechanism,"target;synonym;outcome",true,,

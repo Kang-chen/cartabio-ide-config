@@ -1,0 +1,265 @@
+{
+  "contract_version": 1,
+  "_comment": [
+    "Structural contract for a delivered literature-deep-review report.",
+    "This file is the TARGET the report is measured against. It is deliberately",
+    "independent of what any individual run happened to produce: a gate that",
+    "reads its expectation out of the run's own output can never detect a",
+    "shortfall. Edit thresholds here, not in the checker."
+  ],
+  "required_sections": [
+    "Summary",
+    "Introduction",
+    "Methods",
+    "Results",
+    "Conclusions",
+    "Limitations & evidence gaps",
+    "Figures",
+    "References",
+    "Next steps"
+  ],
+  "markdown": {
+    "path": "deliverables/review.md",
+    "required_sections_same_as_pdf": true,
+    "_comment": [
+      "The Markdown is a DELIVERABLE, not a draft of the PDF. Only the PDF was",
+      "ever measured against required_sections, so review.md shipped for months",
+      "with no Introduction, Methods, Conclusions or Next steps at all — the two",
+      "deliverables were structurally different documents built from the same",
+      "model, which is precisely what the model exists to prevent.",
+      "build_review.py refuses to write a file that is missing any of them."
+    ]
+  },
+  "narrative": {
+    "required_modes": [
+      "deep",
+      "broad"
+    ],
+    "require_observed_result": true,
+    "central_claims": "grounded",
+    "facets": [
+      "observed_result",
+      "authors_interpretation",
+      "reviewer_inference",
+      "contradiction",
+      "evidence_gap"
+    ],
+    "inference_label": "reviewer inference",
+    "statement_rule": "evidence_ids_or_inference",
+    "require_artifact": true,
+    "_comment": [
+      "A Results section that lists quotes is a quote catalogue. For each central",
+      "claim the report must separate the observed result (anchored by the",
+      "verbatim quote) from the authors' interpretation, from the reviewer's own",
+      "inference, from the contradiction or alternative explanation, from the",
+      "evidence gap. Those five facets are the difference between a scientific",
+      "document and a search result.",
+      "statement_rule: every narrative statement must EITHER cite evidence_ids",
+      "that exist in evidence/evidence.jsonl, OR set \"inference\": true and be",
+      "rendered under inference_label. A statement with neither is unattributable",
+      "and both builders abort. inference_label is read by BOTH renderers, so the",
+      "label cannot be changed here and left stale in one of the two outputs.",
+      "central_claims: 'grounded' (every claim carrying a qualifying supporting or",
+      "contradicting quote, per support_policy) or 'all'.",
+      "require_artifact: claim_narratives.jsonl USED to be optional, and that is",
+      "how two broad runs of this skill produced structurally different reports —",
+      "one separated all 14 claims into the five facets, the other authored none",
+      "and shipped a bare quote catalogue. Silence is not evidence a narrative was",
+      "unwanted; for the required modes it is a missing deliverable. Set false to",
+      "opt out deliberately."
+    ]
+  },
+  "coverage": {
+    "required_modes": [
+      "deep",
+      "broad"
+    ],
+    "require_contradiction_axis": true,
+    "_comment": [
+      "A target-evidence review must have looked for disconfirming evidence. One",
+      "shipped review carried a safety_contradictions axis and a deliberate",
+      "contradiction search; another, same skill and same mode, had six axes that",
+      "were all mechanism or efficacy and NOT ONE covering harm, null results or",
+      "risk — on a target whose central development risk is exactly that, and",
+      "whose own Next steps asked for a safety adjudication. A review that",
+      "searched only for confirmation cannot report that it found none.",
+      "Satisfied by an axis whose name mentions safety / contradiction / risk /",
+      "null / limitation / counter / adverse, OR by any contradicting quote",
+      "anywhere: the requirement is that the review looked, not that it named an",
+      "axis a particular way."
+    ]
+  },
+  "visual_abstract": {
+    "required_modes": [
+      "deep",
+      "broad"
+    ],
+    "caption_marker": "infographic",
+    "spec": "deliverables/infographic_spec.json",
+    "image": "deliverables/infographic.png",
+    "generation_tool": "GenerateImage",
+    "tool_request": "state/infographic_generate_image_request.json",
+    "generation_receipt": "state/infographic_generation.json",
+    "require_media_output_check": true,
+    "require_verified_spec": true,
+    "profiles": [
+      "target",
+      "general"
+    ],
+    "_comment": [
+      "The report opens with a 3-panel Phylo infographic — A, B, C left to right,",
+      "Signifier headings, DieGrotesk body text, the Phylo palette — adapted from",
+      "target-prioritization-dashboard/skills/target-infographic. See",
+      "references/infographic_prompt_template.txt.",
+      "TWO PROFILES. 'target' keeps that skill's biology -> disease mechanism ->",
+      "therapeutic rationale arc. 'general' covers every other review this skill",
+      "runs (mechanism, biomarker, modality comparison, direction-of-effect):",
+      "A = the system, B = what the evidence shows, C = what follows. Same shape,",
+      "same styling, different semantics. scripts/infographic_spec.py picks the",
+      "profile from the question and the author may override it.",
+      "generation_tool: the active Biomni agent must load and call GenerateImage",
+      "with the exact persisted request. A pseudo-call in prose or a placeholder",
+      "PNG does not satisfy the contract. The request and receipt hashes bind the",
+      "current evidence-backed prompt to the installed image.",
+      "require_media_output_check: Biomni Read must visually check the returned",
+      "image for Phylo styling, legibility, clipping, and garbled labels before",
+      "the image is installed and the report is built.",
+      "require_verified_spec: the spec is SEEDED from the report model and then",
+      "VERIFIED — every number, identifier and citation in it must appear in an",
+      "accepted evidence row. An infographic is the first thing a reader sees and",
+      "would otherwise be the one part of the document nobody could audit, sitting",
+      "on page one above everything that is checked.",
+      "caption_marker was 'visual abstract'; both are accepted by the gates so a",
+      "run built before the infographic existed still passes."
+    ],
+    "accept_markers": [
+      "visual abstract"
+    ]
+  },
+  "synthesis_table": {
+    "required_modes": [
+      "deep",
+      "broad"
+    ],
+    "caption_marker": "evidence-axis synthesis",
+    "group_by": "cluster",
+    "_comment": "One row per evidence axis (claim cluster) with bottom line + strongest support tier. This is the reader's map of the whole review."
+  },
+  "synthesis_chart": {
+    "required_modes": [
+      "deep",
+      "broad"
+    ],
+    "caption_marker": "synthesis panel",
+    "_comment": "Grounded claims by axis and support tier. Drawn by the review, never presented as a paper figure. Counts MUST be recomputed from claim_evidence_matrix.csv at build time, never hand-entered."
+  },
+  "paper_figures": {
+    "min_by_mode": {
+      "quick": 0,
+      "deep": 4,
+      "broad": 6
+    },
+    "min_fraction_of_croppable": 0.0,
+    "caption_prefix": "Report Figure",
+    "selection": {
+      "max_per_claim": 4,
+      "max_per_paper_per_claim": 1,
+      "min_relevance": 0.15,
+      "min_shared_terms": 2,
+      "allow_review_figures": false,
+      "allow_context_figures": false,
+      "coverage_min_relevance": 0.15,
+      "coverage_min_shared_terms": 2,
+      "require_pair_verification": true
+    },
+    "_comment": [
+      "min_by_mode is the conservative fallback only. The user's fixed or",
+      "resolved adaptive run minimum overrides it. An unresolved adaptive",
+      "minimum must fail before report assembly rather than fall back silently.",
+      "min_fraction_of_croppable is zero by default so corpus size cannot silently",
+      "raise the user's chosen minimum. A nonzero custom contract still counts",
+      "coverage by distinct paper IDs, not several crops from one paper.",
+      "selection governs WHICH figures are shown, per scripts/figure_selection.",
+      "A figure used to reach the report only by having its caption quoted, so",
+      "figure choice was a side effect of quote-type choice: 45 verbatim anchors",
+      "became 6 figures, one paper contributed 3 figures to a single claim, and a",
+      "review's therapeutic-strategies schematic was embedded under a claim about",
+      "lipid metabolism. Figures are now scored against the claim text and drawn",
+      "from the papers that claim already cites.",
+      "These are caps on crowding. Beyond the user-selected minimum, include a",
+      "figure only when it adds material, nonredundant panel-level information.",
+      "By default one paper contributes at most one figure to one claim; a",
+      "second figure for that claim should come from a different cited paper.",
+      "The minimum is a floor, not a stopping point. Selection additionally",
+      "checks decision-critical axes explicitly marked figure_priority=true and",
+      "adds one materially relevant visual to an otherwise uncovered priority",
+      "axis when eligible supply exists. It does not force decorative visuals",
+      "onto background axes or impose a fixed coverage fraction.",
+      "min_relevance and min_shared_terms are calibrated together on real",
+      "figure/claim pairs from the shipped reports (see",
+      "tests/test_figure_selection.py::SHIPPED_PAIRS). Neither works alone: the",
+      "score cannot reject 'Figure 2 Brain sections.' against a claim mentioning",
+      "the brain, which scores above three genuine matches, and the shared-term",
+      "count cannot rank. Change one and re-check the separation.",
+      "allow_review_figures false excludes figures from review articles, whose",
+      "figures are drawn rather than measured and so cannot be primary evidence.",
+      "allow_context_figures is false by default: source models and review",
+      "diagrams do not satisfy the source-figure floor. A custom contract may",
+      "permit them as explicitly illustrative-only context; they never change",
+      "a claim's evidence-derived support tier.",
+      "These values are mirrored in figure_selection.DEFAULT_POLICY and a test",
+      "asserts they agree. The contract wins at runtime, so a drift is invisible",
+      "in a real run and only changes behaviour under direct use of the defaults.",
+      "PROVENANCE. Each embedded figure carries boxes over the in-figure text",
+      "matching its claim's own terms, and its caption names both signals: the",
+      "caption terms that scored and the boxed regions (scripts/figure_provenance).",
+      "Two reports shipped 27 figures with no indication of why any of them was",
+      "chosen. When easyocr is absent the caption SAYS the figure was not read",
+      "rather than falling silent, because silence reads as 'checked, nothing",
+      "found'."
+    ]
+  },
+  "per_claim": {
+    "require_verbatim_anchor": true,
+    "require_locator": true,
+    "require_support_state": true
+  },
+  "locators": {
+    "forbid_section_values": [
+      "unknown",
+      "",
+      "none",
+      "n/a",
+      "front matter"
+    ],
+    "max_section_chars": 60,
+    "_comment": [
+      "A locator that says 'Unknown' when the block is the Abstract is a defect,",
+      "not a gap. Long section values mean a whole heading leaked into the label.",
+      "'front matter' is forbidden FOR EVIDENCE ROWS. The parser uses it for",
+      "page-1 blocks before the first heading — titles, author lists,",
+      "affiliations — and none of those is ever evidence of anything. Ten",
+      "abstract sentences shipped located at 'page 1 · Front matter' because the",
+      "abstract detector needed a single 200-character block and Nature-family",
+      "PDFs split the abstract into shorter ones. scripts/section_labels.py fixes",
+      "the cause; this entry is the backstop if it ever regresses."
+    ]
+  },
+  "references": {
+    "require_hyperlinks": true,
+    "forbid_uncited": true,
+    "forbid_title_artifacts": [
+      " - PMC",
+      "| Springer Nature Link",
+      "&amp;",
+      "- PubMed",
+      "| Nature"
+    ],
+    "_comment": "Scraped page-chrome in a title is a data-cleanliness bug; an uncited reference means the list and the body disagree."
+  },
+  "quotes": {
+    "forbid_trailing_fragment": true,
+    "forbid_merged_words": true,
+    "forbid_leading_figure_label_bleed": true
+  }
+}

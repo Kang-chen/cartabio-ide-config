@@ -1,0 +1,12 @@
+{
+  "name": "spatial-transcriptomics",
+  "description": "Use to analyze 10x Visium spatial transcriptomics data from QC and normalization through spatial domains, clustering, spatially variable genes, and neighborhood enrichment.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Analyze spatial transcriptomics data from a 10x Visium experiment to identify spatially variable genes and tissue domains.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:56:59.742000",
+  "visibility": "public",
+  "id": "skill_30b65ae0dee54a929017fbc760aefe01"
+}

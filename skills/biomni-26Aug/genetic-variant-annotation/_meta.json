@@ -1,0 +1,12 @@
+{
+  "name": "genetic-variant-annotation",
+  "description": "Use to annotate VCF variants with gene and functional consequences, clinical significance, population evidence, and pathogenicity predictions.",
+  "category": "genomics_genetics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Annotate my VCF file with functional effects and clinical significance.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:02.138000",
+  "visibility": "public",
+  "id": "skill_caf61714cb394d14b2d099387baec0b0"
+}

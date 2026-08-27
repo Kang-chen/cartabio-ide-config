@@ -1,0 +1,12 @@
+{
+  "name": "direction-of-effect-concordance",
+  "description": "Use to decide whether a therapeutic target should be inhibited or activated. Integrates human genetics, CRISPR/functional screens, drug mechanisms, and mouse phenotypes into an activate-vs-inhibit consensus with confidence and discordance flags; triggers on agonist/antagonist, LoF protective/harmful, or target directionality questions.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "For genes <G1, G2, ...>, tell me whether to activate or inhibit each target and why, with a PDF report",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:07.473000",
+  "visibility": "public",
+  "id": "skill_967e65dbbeb85ee774732a6211f1000c"
+}

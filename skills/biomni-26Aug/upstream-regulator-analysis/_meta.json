@@ -1,0 +1,12 @@
+{
+  "name": "upstream-regulator-analysis",
+  "description": "Use to identify transcription factors and upstream regulators driving RNA-seq differential-expression patterns by integrating DE genes with ChIP-Atlas binding evidence.",
+  "category": "multi_omics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Identify upstream regulators driving my differential expression results using ChIP-Atlas binding data.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:24.734000",
+  "visibility": "public",
+  "id": "skill_cf9489278b984eef91e08a40b68943be"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "deconvolution-bulk-rnaseq",
+  "description": "Use to estimate cell-type proportions in bulk RNA-seq from an annotated single-cell reference and test composition differences between groups or time points. Supports BayesPrism, DWLS, and optional MuSiC/Bisque with cross-method concordance.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Deconvolve my bulk RNA-seq into cell-type proportions using a single-cell reference and test which cell types differ between my groups. Generate a PDF report with intro, methods, results, conclusions and figures.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:36.190000",
+  "visibility": "public",
+  "id": "skill_9220a3a4f3fd3052b91800e13683d7cf"
+}

@@ -1,0 +1,4 @@
+"alias","pop","parent","dims","gating_method","gating_args","collapseDataForGating","groupBy","preprocessing_method","preprocessing_args"
+"nonDebris","+","root","FSC-A,SSC-A","flowClust","K=1,quantile=0.95",NA,NA,NA,NA
+"singlets","+","nonDebris","FSC-A,FSC-H","singletGate","",NA,NA,NA,NA
+"live","-","singlets","Live","mindensity","",NA,NA,NA,NA

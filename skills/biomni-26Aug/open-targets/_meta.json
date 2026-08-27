@@ -1,0 +1,12 @@
+{
+  "name": "open-targets",
+  "description": "Use to query Open Targets for target-disease associations, supporting evidence, known drugs, tractability, safety, genetics, and target annotations.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "What targets are most strongly associated with Alzheimer's disease in Open Targets, and what evidence types support the top hits?",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:05.003000",
+  "visibility": "public",
+  "id": "skill_032628bba2f145cfba0f7c5acb46ee45"
+}

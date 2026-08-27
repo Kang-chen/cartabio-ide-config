@@ -1,0 +1,12 @@
+{
+  "name": "drug-repurposing-indication-expansion",
+  "description": "Use to nominate approved or clinical drugs for a new disease indication by reversing a disease expression signature with LINCS L1000/Connectivity Map (CMap). Can start from a disease name, up/down genes, or DE table and emphasizes indication expansion, Repurposing Hub annotations, controls, and ranked clinically annotated candidates.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Find approved drugs that could be repurposed for <disease> by reversing its transcriptomic signature, validate the directionality with known controls, and generate a PDF report with the ranked candidates, mechanisms, and literature evidence.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:08.260000",
+  "visibility": "public",
+  "id": "skill_9406c66f225cadbbb3cf0c85b95a7e5a"
+}

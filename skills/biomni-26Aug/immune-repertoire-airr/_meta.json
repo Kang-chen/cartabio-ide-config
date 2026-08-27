@@ -1,0 +1,12 @@
+{
+  "name": "immune-repertoire-airr",
+  "description": "Use to analyze TCR-seq or BCR-seq immune repertoires from 10x V(D)J, immunoSEQ, MiXCR, or AIRR-C data. Covers clonotypes, clonal expansion, diversity, CDR3 sharing/public clones, V/J usage, rarefaction, and repertoire overlap for single-cell or bulk AIRR data.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Analyze my TCR/BCR repertoire data for clonality, diversity, and overlap",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:02.444000",
+  "visibility": "public",
+  "id": "skill_d1c7d4c4273d38f002903e8199b4085c"
+}

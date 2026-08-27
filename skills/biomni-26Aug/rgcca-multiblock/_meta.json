@@ -1,0 +1,12 @@
+{
+  "name": "rgcca-multiblock",
+  "description": "Run RGCCA (Regularised Generalised Canonical Correlation Analysis) multiblock integration on 2+ omics or clinical data blocks using the RGCCA R package v3.0.3. Use this skill whenever a user wants to integrate multiple data blocks (e.g. transcriptomics + proteomics + clinical), run SGCCA, PLS, CCA, or any RGCCA-family method, tune regularisation parameters by cross-validation or permutation, compare parameter grid runs, or extract block scores, loadings, and AVE metrics from a multiblock latent-variable model. Triggers on: \"RGCCA\", \"SGCCA\", \"multiblock\", \"multi-omics integration\", \"canonical correlation\", \"block scores\", \"AVE inner\", \"regularised CCA\", \"latent variable integration\", \"multiblock PLS\", \"GCCA\".",
+  "category": "general",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "",
+  "created_by_name": "Dmitry Klokov",
+  "updated_at": "2026-07-08T09:08:52.842000",
+  "visibility": "public",
+  "id": "skill_37f9007c8154410e904ab691b3ae543e"
+}
