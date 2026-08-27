@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "skill_version": "biomni-tusoai-skill-v2.0.0",
+  "task_id": "replace-me",
+  "phase": "discover",
+  "epoch": 0,
+  "created_at": null,
+  "updated_at": null,
+  "repo_fingerprint": null,
+  "evaluator_fingerprint": null,
+  "task_spec_sha256": null,
+  "task_bundle_sha256": null,
+  "shared_output_dir": null,
+  "shared_history_path": null,
+  "history_name": null,
+  "global_budget": {
+    "cost_usd": null,
+    "deadline_epoch": null,
+    "shutdown_reserve_seconds": 2700,
+    "estimated_spent_usd": 0.0
+  },
+  "machines": [],
+  "active_jobs": [],
+  "best": {
+    "accuracy": null,
+    "runtime": null,
+    "code_path": null,
+    "history_entry_count": 0
+  },
+  "last_checkpoint_at": null,
+  "last_heartbeat_at": null,
+  "blockers": [],
+  "next_actions": [],
+  "events_file": "events.jsonl"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "celegans-rnai",
+  "description": "C. elegans L4440 feeding RNAi design and evaluation. Two functions: (1) design — given a gene name, auto-retrieve sequence and output primer pairs with restriction-site adapters ready for L4440 cloning; (2) evaluate — given a gene name and an existing RNAi target sequence or primer pair, score it across four quality dimensions.",
+  "category": "general",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "",
+  "created_by_name": "Hengyu Zhu",
+  "updated_at": "2026-06-02T00:55:04.213000",
+  "visibility": "public",
+  "id": "skill_ea2ad97f92a9410ba9bc278b3ca73d1e"
+}

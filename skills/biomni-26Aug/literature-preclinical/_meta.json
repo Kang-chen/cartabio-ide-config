@@ -1,0 +1,12 @@
+{
+  "name": "literature-preclinical",
+  "description": "Use for literature synthesis focused on preclinical evidence for a target-disease pair. Extracts in vitro assays and cell lines, in vivo model types, dose/route, efficacy, PK/PD and toxicity endpoints, assesses cross-model concordance and IND-enabling gaps, and returns cited narrative plus an evidence table.",
+  "category": "general",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:39.638000",
+  "visibility": "public",
+  "id": "skill_9a35bb68f5c948ca828a10aa8ea2d667"
+}

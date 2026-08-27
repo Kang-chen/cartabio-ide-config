@@ -1,0 +1,12 @@
+{
+  "name": "scrnaseq-seurat-core-analysis",
+  "description": "Use for complete scRNA-seq analysis in R with Seurat, from raw counts and QC through normalization, integration, clustering, marker detection, cell-type annotation, and visualization.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Analyze my single-cell RNA-seq data using Seurat from QC through cell type annotation. Generate a PDF report with an intro, methods, results, conclusions and figures from all of the analyses you perform.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:07.692000",
+  "visibility": "public",
+  "id": "skill_97fe00d84ed84cb784c5c4dc3e0478ab"
+}

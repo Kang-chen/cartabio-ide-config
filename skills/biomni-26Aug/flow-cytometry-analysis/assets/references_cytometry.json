@@ -1,0 +1,413 @@
+{
+  "_meta": {
+    "source": "CrossRef REST API (api.crossref.org/works/{doi})",
+    "built_utc": "2026-08-07T19:01:06+00:00",
+    "note": "Verified citation store. Title/venue/year/volume/issue/page/DOI are taken VERBATIM from CrossRef; citation strings are derived from those fields, never from memory. Audited by scripts/verify_citations.py.",
+    "n_refs": 20,
+    "built_utc_v22_append": "2026-08-07T21:08:10.890528+00:00"
+  },
+  "refs": {
+    "nowicka": {
+      "doi": "10.12688/f1000research.11622.3",
+      "title": "CyTOF workflow: differential discovery in high-throughput high-dimensional cytometry datasets",
+      "container": "F1000Research",
+      "short_container": "F1000Res",
+      "year": 2019,
+      "volume": "6",
+      "issue": "",
+      "page": "748",
+      "authors": [
+        "Nowicka M",
+        "Krieg C",
+        "Crowell HL",
+        "Weber LM",
+        "Hartmann FJ",
+        "Guglietta S",
+        "Becher B",
+        "Levesque MP",
+        "Robinson MD"
+      ],
+      "citation": "Nowicka M, Krieg C, Crowell HL, et al. CyTOF workflow: differential discovery in high-throughput high-dimensional cytometry datasets. F1000Res. 2019;6:748. doi:10.12688/f1000research.11622.3."
+    },
+    "catalyst": {
+      "doi": "10.12688/f1000research.26073.2",
+      "title": "An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data",
+      "container": "F1000Research",
+      "short_container": "F1000Res",
+      "year": 2022,
+      "volume": "9",
+      "issue": "",
+      "page": "1263",
+      "authors": [
+        "Crowell HL",
+        "Chevrier S",
+        "Jacobs A",
+        "Sivapatham S",
+        "Bodenmiller B",
+        "Robinson MD"
+      ],
+      "citation": "Crowell HL, Chevrier S, Jacobs A, et al. An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data. F1000Res. 2022;9:1263. doi:10.12688/f1000research.26073.2."
+    },
+    "flowsom": {
+      "doi": "10.1002/cyto.a.22625",
+      "title": "FlowSOM: Using self‐organizing maps for visualization and interpretation of cytometry data",
+      "container": "Cytometry Part A",
+      "short_container": "Cytometry Pt A",
+      "year": 2015,
+      "volume": "87",
+      "issue": "7",
+      "page": "636-645",
+      "authors": [
+        "Van Gassen S",
+        "Callebaut B",
+        "Van Helden MJ",
+        "Lambrecht BN",
+        "Demeester P",
+        "Dhaene T",
+        "Saeys Y"
+      ],
+      "citation": "Van Gassen S, Callebaut B, Van Helden MJ, et al. FlowSOM: Using self-organizing maps for visualization and interpretation of cytometry data. Cytometry Pt A. 2015;87(7):636-645. doi:10.1002/cyto.a.22625."
+    },
+    "weber_compare": {
+      "doi": "10.1002/cyto.a.23030",
+      "title": "Comparison of clustering methods for high‐dimensional single‐cell flow and mass cytometry data",
+      "container": "Cytometry Part A",
+      "short_container": "Cytometry Pt A",
+      "year": 2016,
+      "volume": "89",
+      "issue": "12",
+      "page": "1084-1096",
+      "authors": [
+        "Weber LM",
+        "Robinson MD"
+      ],
+      "citation": "Weber LM, Robinson MD. Comparison of clustering methods for high-dimensional single-cell flow and mass cytometry data. Cytometry Pt A. 2016;89(12):1084-1096. doi:10.1002/cyto.a.23030."
+    },
+    "diffcyt": {
+      "doi": "10.1038/s42003-019-0415-5",
+      "title": "diffcyt: Differential discovery in high-dimensional cytometry via high-resolution clustering",
+      "container": "Communications Biology",
+      "short_container": "Commun Biol",
+      "year": 2019,
+      "volume": "2",
+      "issue": "1",
+      "page": "",
+      "authors": [
+        "Weber LM",
+        "Nowicka M",
+        "Soneson C",
+        "Robinson MD"
+      ],
+      "citation": "Weber LM, Nowicka M, Soneson C, et al. diffcyt: Differential discovery in high-dimensional cytometry via high-resolution clustering. Commun Biol. 2019;2(1). doi:10.1038/s42003-019-0415-5."
+    },
+    "levine": {
+      "doi": "10.1016/j.cell.2015.05.047",
+      "title": "Data-Driven Phenotypic Dissection of AML Reveals Progenitor-like Cells that Correlate with Prognosis",
+      "container": "Cell",
+      "short_container": "Cell",
+      "year": 2015,
+      "volume": "162",
+      "issue": "1",
+      "page": "184-197",
+      "authors": [
+        "Levine JH",
+        "Simonds EF",
+        "Bendall SC",
+        "Davis KL",
+        "Amir EaD",
+        "Tadmor MD",
+        "Litvin O",
+        "Fienberg HG",
+        "Jager A",
+        "Zunder ER",
+        "Finck R",
+        "Gedman AL",
+        "Radtke I",
+        "Downing JR",
+        "Pe’er D",
+        "Nolan GP"
+      ],
+      "citation": "Levine JH, Simonds EF, Bendall SC, et al. Data-Driven Phenotypic Dissection of AML Reveals Progenitor-like Cells that Correlate with Prognosis. Cell. 2015;162(1):184-197. doi:10.1016/j.cell.2015.05.047."
+    },
+    "cellmarker2": {
+      "doi": "10.1093/nar/gkac947",
+      "title": "CellMarker 2.0: an updated database of manually curated cell markers in human/mouse and web tools based on scRNA-seq data",
+      "container": "Nucleic Acids Research",
+      "short_container": "",
+      "year": 2023,
+      "volume": "51",
+      "issue": "D1",
+      "page": "D870-D876",
+      "authors": [
+        "Hu C",
+        "Li T",
+        "Xu Y",
+        "Zhang X",
+        "Li F",
+        "Bai J",
+        "Chen J",
+        "Jiang W",
+        "Yang K",
+        "Ou Q",
+        "Li X",
+        "Wang P",
+        "Zhang Y"
+      ],
+      "citation": "Hu C, Li T, Xu Y, et al. CellMarker 2.0: an updated database of manually curated cell markers in human/mouse and web tools based on scRNA-seq data. Nucleic Acids Research. 2023;51(D1):D870-D876. doi:10.1093/nar/gkac947."
+    },
+    "malek": {
+      "doi": "10.1093/bioinformatics/btu677",
+      "title": "flowDensity: reproducing manual gating of flow cytometry data by automated density-based cell population identification",
+      "container": "Bioinformatics",
+      "short_container": "",
+      "year": 2015,
+      "volume": "31",
+      "issue": "4",
+      "page": "606-607",
+      "authors": [
+        "Malek M",
+        "Taghiyar MJ",
+        "Chong L",
+        "Finak G",
+        "Gottardo R",
+        "Brinkman RR"
+      ],
+      "citation": "Malek M, Taghiyar MJ, Chong L, et al. flowDensity: reproducing manual gating of flow cytometry data by automated density-based cell population identification. Bioinformatics. 2015;31(4):606-607. doi:10.1093/bioinformatics/btu677."
+    },
+    "mair": {
+      "doi": "10.1002/eji.201545774",
+      "title": "The end of gating? An introduction to automated analysis of high dimensional cytometry data",
+      "container": "European Journal of Immunology",
+      "short_container": "Eur J Immunol",
+      "year": 2016,
+      "volume": "46",
+      "issue": "1",
+      "page": "34-43",
+      "authors": [
+        "Mair F",
+        "Hartmann FJ",
+        "Mrdjen D",
+        "Tosevski V",
+        "Krieg C",
+        "Becher B"
+      ],
+      "citation": "Mair F, Hartmann FJ, Mrdjen D, et al. The end of gating? An introduction to automated analysis of high dimensional cytometry data. Eur J Immunol. 2016;46(1):34-43. doi:10.1002/eji.201545774."
+    },
+    "liu": {
+      "doi": "10.1093/bib/bbae633",
+      "title": "Comprehensive evaluation and practical guideline of gating methods for high-dimensional cytometry data: manual gating, unsupervised clustering, and auto-gating",
+      "container": "Briefings in Bioinformatics",
+      "short_container": "",
+      "year": 2024,
+      "volume": "26",
+      "issue": "1",
+      "page": "",
+      "authors": [
+        "Liu P",
+        "Pan Y",
+        "Chang HC",
+        "Wang W",
+        "Fang Y",
+        "Xue X",
+        "Zou J",
+        "Toothaker JM",
+        "Olaloye O",
+        "Santiago EG",
+        "McCourt B",
+        "Mitsialis V",
+        "Presicce P",
+        "Kallapur SG",
+        "Snapper SB",
+        "Liu JJ",
+        "Tseng GC",
+        "Konnikova L",
+        "Liu S"
+      ],
+      "citation": "Liu P, Pan Y, Chang HC, et al. Comprehensive evaluation and practical guideline of gating methods for high-dimensional cytometry data: manual gating, unsupervised clustering, and auto-gating. Briefings in Bioinformatics. 2024;26(1). doi:10.1093/bib/bbae633."
+    },
+    "lee": {
+      "doi": "10.1177/1177932219838851",
+      "title": "High-Throughput Analysis of Clinical Flow Cytometry Data by Automated Gating",
+      "container": "Bioinformatics and Biology Insights",
+      "short_container": "Bioinform Biol Insights",
+      "year": 2019,
+      "volume": "13",
+      "issue": "",
+      "page": "",
+      "authors": [
+        "Lee H",
+        "Sun Y",
+        "Patti-Diaz L",
+        "Hedrick M",
+        "Ehrhardt AG"
+      ],
+      "citation": "Lee H, Sun Y, Patti-Diaz L, et al. High-Throughput Analysis of Clinical Flow Cytometry Data by Automated Gating. Bioinform Biol Insights. 2019;13. doi:10.1177/1177932219838851."
+    },
+    "petrunkina": {
+      "doi": "10.1016/j.jim.2011.02.009",
+      "title": "Mathematical analysis of mis-estimation of cell subsets in flow cytometry: Viability staining revisited",
+      "container": "Journal of Immunological Methods",
+      "short_container": "Journal of Immunological Methods",
+      "year": 2011,
+      "volume": "368",
+      "issue": "1-2",
+      "page": "71-79",
+      "authors": [
+        "Petrunkina A",
+        "Harrison R"
+      ],
+      "citation": "Petrunkina A, Harrison R. Mathematical analysis of mis-estimation of cell subsets in flow cytometry: Viability staining revisited. Journal of Immunological Methods. 2011;368(1-2):71-79. doi:10.1016/j.jim.2011.02.009."
+    },
+    "lo_flowclust": {
+      "doi": "10.1186/1471-2105-10-145",
+      "title": "flowClust: a Bioconductor package for automated gating of flow cytometry data",
+      "container": "BMC Bioinformatics",
+      "short_container": "BMC Bioinformatics",
+      "year": 2009,
+      "volume": "10",
+      "issue": "1",
+      "page": "",
+      "authors": [
+        "Lo K",
+        "Hahne F",
+        "Brinkman RR",
+        "Gottardo R"
+      ],
+      "citation": "Lo K, Hahne F, Brinkman RR, et al. flowClust: a Bioconductor package for automated gating of flow cytometry data. BMC Bioinformatics. 2009;10(1). doi:10.1186/1471-2105-10-145."
+    },
+    "lo_2008": {
+      "doi": "10.1002/cyto.a.20531",
+      "title": "Automated gating of flow cytometry data via robust model‐based clustering",
+      "container": "Cytometry Part A",
+      "short_container": "Cytometry Pt A",
+      "year": 2008,
+      "volume": "73A",
+      "issue": "4",
+      "page": "321-332",
+      "authors": [
+        "Lo K",
+        "Brinkman RR",
+        "Gottardo R"
+      ],
+      "citation": "Lo K, Brinkman RR, Gottardo R. Automated gating of flow cytometry data via robust model-based clustering. Cytometry Pt A. 2008;73A(4):321-332. doi:10.1002/cyto.a.20531."
+    },
+    "finak_opencyto": {
+      "doi": "10.1371/journal.pcbi.1003806",
+      "title": "OpenCyto: An Open Source Infrastructure for Scalable, Robust, Reproducible, and Automated, End-to-End Flow Cytometry Data Analysis",
+      "container": "PLoS Computational Biology",
+      "short_container": "PLoS Comput Biol",
+      "year": 2014,
+      "volume": "10",
+      "issue": "8",
+      "page": "e1003806",
+      "authors": [
+        "Finak G",
+        "Frelinger J",
+        "Jiang W",
+        "Newell EW",
+        "Ramey J",
+        "Davis MM",
+        "Kalams SA",
+        "De Rosa SC",
+        "Gottardo R"
+      ],
+      "citation": "Finak G, Frelinger J, Jiang W, et al. OpenCyto: An Open Source Infrastructure for Scalable, Robust, Reproducible, and Automated, End-to-End Flow Cytometry Data Analysis. PLoS Comput Biol. 2014;10(8):e1003806. doi:10.1371/journal.pcbi.1003806."
+    },
+    "maecker_trotter": {
+      "doi": "10.1002/cyto.a.20333",
+      "title": "Flow cytometry controls, instrument setup, and the determination of positivity",
+      "container": "Cytometry Part A",
+      "short_container": "Cytometry Pt A",
+      "year": 2006,
+      "volume": "69A",
+      "issue": "9",
+      "page": "1037-1042",
+      "authors": [
+        "Maecker HT",
+        "Trotter J"
+      ],
+      "citation": "Maecker HT, Trotter J. Flow cytometry controls, instrument setup, and the determination of positivity. Cytometry Pt A. 2006;69A(9):1037-1042. doi:10.1002/cyto.a.20333."
+    },
+    "peacoqc": {
+      "doi": "10.1002/cyto.a.24501",
+      "title": "PeacoQC: Peak‐based selection of high quality cytometry data",
+      "container": "Cytometry Part A",
+      "short_container": "Cytometry Pt A",
+      "year": 2022,
+      "volume": "101",
+      "issue": "4",
+      "page": "325-338",
+      "authors": [
+        "Emmaneel A",
+        "Quintelier K",
+        "Sichien D",
+        "Rybakowska P",
+        "Marañón C",
+        "Alarcón‐Riquelme ME",
+        "Van Isterdael G",
+        "Van Gassen S",
+        "Saeys Y"
+      ],
+      "citation": "Emmaneel A, Quintelier K, Sichien D, et al. PeacoQC: Peak-based selection of high quality cytometry data. Cytometry Pt A. 2022;101(4):325-338. doi:10.1002/cyto.a.24501."
+    },
+    "flowai": {
+      "doi": "10.1093/bioinformatics/btw191",
+      "title": "flowAI: automatic and interactive anomaly discerning tools for flow cytometry data",
+      "container": "Bioinformatics",
+      "short_container": "",
+      "year": 2016,
+      "volume": "32",
+      "issue": "16",
+      "page": "2473-2480",
+      "authors": [
+        "Monaco G",
+        "Chen H",
+        "Poidinger M",
+        "Chen J",
+        "de Magalhães JP",
+        "Larbi A"
+      ],
+      "citation": "Monaco G, Chen H, Poidinger M, et al. flowAI: automatic and interactive anomaly discerning tools for flow cytometry data. Bioinformatics. 2016;32(16):2473-2480. doi:10.1093/bioinformatics/btw191."
+    },
+    "cytonorm": {
+      "doi": "10.1002/cyto.a.23904",
+      "title": "CytoNorm: A Normalization Algorithm for Cytometry Data",
+      "container": "Cytometry Part A",
+      "short_container": "Cytometry Pt A",
+      "year": 2020,
+      "volume": "97",
+      "issue": "3",
+      "page": "268-278",
+      "authors": [
+        "Van Gassen S",
+        "Gaudilliere B",
+        "Angst MS",
+        "Saeys Y",
+        "Aghaeepour N"
+      ],
+      "citation": "Van Gassen S, Gaudilliere B, Angst MS, et al. CytoNorm: A Normalization Algorithm for Cytometry Data. Cytometry Pt A. 2020;97(3):268-278. doi:10.1002/cyto.a.23904."
+    },
+    "finck_beadnorm": {
+      "doi": "10.1002/cyto.a.22271",
+      "title": "Normalization of mass cytometry data with bead standards",
+      "container": "Cytometry Part A",
+      "short_container": "Cytometry Pt A",
+      "year": 2013,
+      "volume": "83A",
+      "issue": "5",
+      "page": "483-494",
+      "authors": [
+        "Finck R",
+        "Simonds EF",
+        "Jager A",
+        "Krishnaswamy S",
+        "Sachs K",
+        "Fantl W",
+        "Pe'er D",
+        "Nolan GP",
+        "Bendall SC"
+      ],
+      "citation": "Finck R, Simonds EF, Jager A, et al. Normalization of mass cytometry data with bead standards. Cytometry Pt A. 2013;83A(5):483-494. doi:10.1002/cyto.a.22271."
+    }
+  }
+}

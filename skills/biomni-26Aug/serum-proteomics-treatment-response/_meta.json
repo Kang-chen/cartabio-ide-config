@@ -1,0 +1,12 @@
+{
+  "name": "serum-proteomics-treatment-response",
+  "description": "Full pipeline for DIA-MS serum/plasma proteomics in longitudinal treatment-response studies. Covers MNAR (missing-not-at-random) protein detection via Fisher exact test, Wilcoxon differential expression for small discovery cohorts (n=8–20 per group), mixed-effects longitudinal modelling (protein ~ time × response_group + covariates), clinical score trajectory clustering (DTW + Ward.D2 hierarchical), and Tier 1/2/3 biomarker ranking with mechanistic annotation (SAM/HPA/ECM/APO axes). Psoriasis-focused with PASI trajectory clustering and MMIP responder logic, but parameterisable for any skin or immune-mediated disease. Use this skill when you have serum proteomics with ≥2 timepoints, ≥2 response groups, and want to identify pre-treatment biomarkers (MNAR pattern), mid-treatment inflammatory surge markers (T2 reactogenicity), and ranked ELISA validation candidates. Complements proteomics-diff-exp (upstream PSM aggregation), lasso-biomarker-panel (downstream panel selection), and functional-enrichment-from-degs (pathway enrichment).",
+  "category": "general",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "",
+  "created_by_name": "Fang Wan",
+  "updated_at": "2026-07-10T02:20:29.522000",
+  "visibility": "public",
+  "id": "skill_61c2b524c9bf4f48ba0da09d1e44e4bd"
+}

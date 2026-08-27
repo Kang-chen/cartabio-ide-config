@@ -1,0 +1,33 @@
+uniprot,label,target_class,chembl_target_id,chembl_pref_name
+Q12809,hERG (KCNH2),Ion channel,CHEMBL240,Voltage-gated inwardly rectifying potassium channel KCNH2
+Q14524,Nav1.5 (SCN5A),Ion channel,CHEMBL1980,Sodium channel protein type 5 subunit alpha
+Q13936,Cav1.2 (CACNA1C),Ion channel,CHEMBL1940,Voltage-dependent L-type calcium channel subunit alpha-1C
+P35499,Nav1.4 (SCN4A),Ion channel,CHEMBL2072,Sodium channel protein type 4 subunit alpha
+P35367,Histamine H1,GPCR (aminergic),CHEMBL231,Histamine H1 receptor
+P25021,Histamine H2,GPCR (aminergic),CHEMBL1941,Histamine H2 receptor
+P28223,5-HT2A,GPCR (aminergic),CHEMBL224,5-hydroxytryptamine receptor 2A
+P41595,5-HT2B,GPCR (aminergic),CHEMBL1833,5-hydroxytryptamine receptor 2B
+P28335,5-HT2C,GPCR (aminergic),CHEMBL225,5-hydroxytryptamine receptor 2C
+P08908,5-HT1A,GPCR (aminergic),CHEMBL214,5-hydroxytryptamine receptor 1A
+P28221,5-HT1D,GPCR (aminergic),CHEMBL1983,5-hydroxytryptamine receptor 1D
+P08588,Beta-1 adrenergic,GPCR (aminergic),CHEMBL213,Beta-1 adrenergic receptor
+P07550,Beta-2 adrenergic,GPCR (aminergic),CHEMBL210,Beta-2 adrenergic receptor
+P35348,Alpha-1A adrenergic,GPCR (aminergic),CHEMBL229,Alpha-1A adrenergic receptor
+P08913,Alpha-2A adrenergic,GPCR (aminergic),CHEMBL1867,Alpha-2A adrenergic receptor
+P14416,Dopamine D2,GPCR (aminergic),CHEMBL217,D(2) dopamine receptor
+P35462,Dopamine D3,GPCR (aminergic),CHEMBL234,D(3) dopamine receptor
+P21728,Dopamine D1,GPCR (aminergic),CHEMBL2056,D(1A) dopamine receptor
+P11229,Muscarinic M1,GPCR (aminergic),CHEMBL216,Muscarinic acetylcholine receptor M1
+P08172,Muscarinic M2,GPCR (aminergic),CHEMBL211,Muscarinic acetylcholine receptor M2
+P20309,Muscarinic M3,GPCR (aminergic),CHEMBL245,Muscarinic acetylcholine receptor M3
+P35372,Mu opioid,GPCR (aminergic),CHEMBL233,Mu-type opioid receptor
+P23975,Norepinephrine transporter,Transporter,CHEMBL222,Sodium-dependent noradrenaline transporter
+P31645,Serotonin transporter,Transporter,CHEMBL228,Sodium-dependent serotonin transporter
+Q01959,Dopamine transporter,Transporter,CHEMBL238,Sodium-dependent dopamine transporter
+P08183,P-glycoprotein (ABCB1),Transporter,CHEMBL4302,ATP-dependent translocase ABCB1
+P08684,CYP3A4,Enzyme,CHEMBL340,Cytochrome P450 3A4
+P10635,CYP2D6,Enzyme,CHEMBL289,Cytochrome P450 2D6
+P11712,CYP2C9,Enzyme,CHEMBL3397,Cytochrome P450 2C9
+P27338,MAO-B,Enzyme,CHEMBL2039,Amine oxidase [flavin-containing] B
+P21397,MAO-A,Enzyme,CHEMBL1951,Amine oxidase [flavin-containing] A
+P22303,Acetylcholinesterase,Enzyme,CHEMBL220,Acetylcholinesterase

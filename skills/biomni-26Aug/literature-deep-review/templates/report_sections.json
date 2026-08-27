@@ -1,0 +1,137 @@
+{
+  "_comment": [
+    "Copy to <run>/deliverables/report_sections.json. These are the prose",
+    "sections the reviewer authors; everything else in the report is assembled",
+    "from the canonical evidence by report_model.py.",
+    "This file REPLACES build_pdf.py's --intro-file / --methods-file /",
+    "--conclusions-file / --next-steps-file arguments. Those four loose files went",
+    "to the PDF only, and build_review.py had no way to receive them at all, so",
+    "review.md shipped with no Introduction, Methods, Conclusions or Next steps",
+    "while the PDF had all four. They still work as a fallback when this file is",
+    "absent, so existing runs keep building.",
+    "THE RULE, identical to claim_narratives.jsonl: every statement must EITHER",
+    "cite evidence_ids that exist in evidence/evidence.jsonl, OR set",
+    "\"inference\": true, in which case it renders under an explicit",
+    "reviewer-inference label in both deliverables. A statement with neither is a",
+    "contract violation and both builders refuse to render. Methods and Next steps",
+    "are normally the reviewer's own words and are flagged as such: an un-cited",
+    "sentence in the Conclusions is exactly as unattributable as an un-cited",
+    "sentence under a claim.",
+    "CONCLUSIONS have an additional consistency contract. Every evidence-based",
+    "conclusion lists claim_ids, and every listed claim must contribute at least",
+    "one of the statement's evidence_ids. If all cited rows are secondary or",
+    "indirect, word the conclusion accordingly and set qualified=true; the report",
+    "then prints a secondary/indirect-evidence marker.",
+    "Each section is a list of statements rendered in order — as paragraphs for",
+    "introduction/methods/conclusions, and as a numbered list for next_steps.",
+    "A bare list is accepted in place of {\"statements\": [...]}. Omit a section",
+    "you have nothing for; the report then prints an explicit not-supplied note",
+    "under the heading rather than an empty section.",
+    "THREE SECTIONS BEHAVE DIFFERENTLY.",
+    "key_findings renders in the SUMMARY, directly under Table 1. Every item",
+    "must cite retained evidence_ids. Do not put grounded executive-summary",
+    "findings under external_findings merely because they are important.",
+    "external_findings renders in the SUMMARY, right under Table 1, not as its own",
+    "heading. Put a result here when it bears on the conclusion but has no",
+    "retrievable full text — a conference abstract, a trial registry entry, an",
+    "announcement. A shipped review's single most decision-relevant fact (its",
+    "phase 3 trial missing the primary endpoint) reached the reader two thirds of",
+    "the way through Conclusions as an unattributed \"[reviewer inference]\",",
+    "because it could not be grounded. An honest gap in grounding must change how",
+    "a finding is LABELLED, not where it sits.",
+    "limitations is APPENDED to measured facts the builders emit themselves —",
+    "full texts obtained vs selected, claims dropped, figures shown vs considered,",
+    "claims on weak tiers. Write only what those numbers do not already say."
+  ],
+  "introduction": {
+    "statements": [
+      {
+        "text": "REPLACE with the decision the review informs and why the question is open.",
+        "evidence_ids": [],
+        "inference": true
+      },
+      {
+        "text": "REPLACE with the state of the field as the retrieved papers report it.",
+        "evidence_ids": [
+          "REPLACE-evidence-id"
+        ]
+      }
+    ]
+  },
+  "methods": {
+    "statements": [
+      {
+        "text": "REPLACE with the search: sources queried, date window, and inclusion rule.",
+        "evidence_ids": [],
+        "inference": true
+      },
+      {
+        "text": "REPLACE with how evidence was accepted: verbatim quote plus resolvable locator per claim, support tiers derived from the accepted rows rather than asserted.",
+        "evidence_ids": [],
+        "inference": true
+      }
+    ]
+  },
+  "key_findings": {
+    "statements": [
+      {
+        "text": "REPLACE, or omit. State the most decision-relevant result that is grounded in retained full text.",
+        "evidence_ids": [
+          "REPLACE-evidence-id"
+        ]
+      }
+    ]
+  },
+  "external_findings": {
+    "statements": [
+      {
+        "text": "REPLACE, or omit this section. Example: the phase 3 trial of X in Y did not meet its primary clinical endpoint; reported at conference level, so no full text was retrievable and no verbatim anchor exists.",
+        "evidence_ids": [],
+        "inference": true
+      }
+    ]
+  },
+  "conclusions": {
+    "statements": [
+      {
+        "text": "REPLACE with the bottom line the evidence supports, hedged to the weakest support tier it rests on.",
+        "evidence_ids": [
+          "REPLACE-evidence-id"
+        ],
+        "claim_ids": [
+          "REPLACE-claim-id"
+        ],
+        "qualified": false
+      },
+      {
+        "text": "REPLACE with what follows for the decision, which no single source states.",
+        "evidence_ids": [],
+        "inference": true
+      }
+    ]
+  },
+  "limitations": {
+    "statements": [
+      {
+        "text": "REPLACE, or omit. The builders already state the retrieval shortfall, dropped claims, figures passed over and weak-tier claims; add only what those numbers do not say (e.g. a named foundational paper that was not retrievable and which claim it would upgrade).",
+        "evidence_ids": [],
+        "inference": true
+      }
+    ]
+  },
+  "next_steps": {
+    "statements": [
+      {
+        "text": "REPLACE with the experiment or retrieval that would close the largest evidence gap.",
+        "evidence_ids": [],
+        "inference": true
+      },
+      {
+        "text": "REPLACE with the contradiction worth adjudicating first, and how.",
+        "evidence_ids": [
+          "REPLACE-evidence-id"
+        ]
+      }
+    ]
+  }
+}

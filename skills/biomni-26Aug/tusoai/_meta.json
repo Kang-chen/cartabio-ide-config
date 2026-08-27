@@ -1,0 +1,12 @@
+{
+  "name": "tusoai",
+  "description": "Use TusoAI external APIs for fast, many-iteration computational-method development when the required API keys are available and changes can stay focused. Covers evaluator fidelity, durable checkpoints, resumable multi-machine search, history review, and recovery.",
+  "category": "data_analysis",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Set up the RNA integration benchmark from this paper: https://www.nature.com/articles/s41592-021-01336-8#Sec2 Using the tusoai skill, make a method for this task. Use these user-provided API keys when running TusoAI: ChatGPT/OpenAI API key: [INSERT OPENAI API KEY]; Semantic Scholar API key: [INSERT SEMANTIC SCHOLAR API KEY]. Run with a $10 cost limit and a 72-hour time limit. After the method is built, apply it to their full testing set and measure performance exactly as they do, comparing performance against the precomputed baselines they provide.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:55.453000",
+  "visibility": "public",
+  "id": "skill_4824c98eebb04d268bd7434b34682102"
+}

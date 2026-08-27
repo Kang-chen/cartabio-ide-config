@@ -1,0 +1,12 @@
+{
+  "name": "evidence-synthesis-meta-analysis",
+  "description": "Use to systematically synthesize and pool effect estimates across studies or trials. Supports continuous, binary, and time-to-event outcomes with random-effects meta-analysis, forest plots, heterogeneity/I-squared, PRISMA-style evidence review, and uploaded effect-size tables.",
+  "category": "data_analysis",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Meta-analyze the evidence for ...",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:06.352000",
+  "visibility": "public",
+  "id": "skill_c8c810255403eb169f5a580f37c919fb"
+}

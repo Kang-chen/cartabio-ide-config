@@ -1,0 +1,12 @@
+{
+  "name": "molecular-property-admet",
+  "description": "Use to predict and compare SMILES-based small-molecule physicochemical properties, drug-likeness, and ADMET. Covers Lipinski/Veber/QED, PAINS and toxicophore alerts, CYP inhibition, hERG, AMES, DILI, compound standardization, and hit triage.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Profile my small-molecule SMILES for drug-likeness and ADMET (CYP, hERG, AMES, DILI) and flag developability liabilities.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:32.991000",
+  "visibility": "public",
+  "id": "skill_c30c5d550c6b897400e363e8d1664a3c"
+}

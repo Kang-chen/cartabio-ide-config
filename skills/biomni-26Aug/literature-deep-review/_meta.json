@@ -1,0 +1,12 @@
+{
+  "name": "literature-deep-review",
+  "description": "Use for audit-ready biomedical reviews that require exact quotations, stable sentence or figure locators, claim-evidence tables, contradiction checks, or verifiable figure evidence. Retrieves full text, independently verifies anchors and reuse permissions, and delivers Markdown, machine-readable evidence, and a verified PDF; not for ordinary narrative overviews.",
+  "category": "literature",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Run a grounded evidence review of GRN as a therapeutic target in frontotemporal dementia, with exact quotations and resolvable locators behind every delivered claim.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:48.696000",
+  "visibility": "public",
+  "id": "skill_bed70a7f98864bd48324eb9295c4fdd0"
+}

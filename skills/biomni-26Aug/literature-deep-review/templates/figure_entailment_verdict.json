@@ -1,0 +1,12 @@
+{
+  "entails": true,
+  "direction_match": true,
+  "model_match": true,
+  "outcome_match": true,
+  "subject_match": true,
+  "crop_complete": true,
+  "labels_legible": true,
+  "no_page_contamination": true,
+  "reviewer": "biomni-native-visual-reviewer",
+  "rationale": "Replace with a specific description of the visible panels, direction, model, outcome, crop edges, and labels. Set any failed dimension to false."
+}

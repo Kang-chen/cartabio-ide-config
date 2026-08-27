@@ -1,0 +1,12 @@
+{
+  "name": "phylo-create-skill",
+  "description": "Use to create, test, validate, package, or revise reusable Phylo Biomni skills across analysis, evidence synthesis, protocols, guidance, utilities, and platform workflows.",
+  "category": "general",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Create a reusable Biomni skill for multivariable differential expression on the Bioconductor airway dataset.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:27.696000",
+  "visibility": "public",
+  "id": "skill_80991743e52842abb92207cd7ff8c29e"
+}

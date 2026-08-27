@@ -1,0 +1,22 @@
+gene_symbol,aliases,modality,lead_program_example,clinical_status,indications,lung_adeno_relevance,recall_core,notes,date_added,provenance
+TACSTD2,TROP2;TROP-2;GA733-1,ADC,datopotamab deruxtecan (Dato-DXd),clinical_late,NSCLC|breast|urothelial,primary,1,TROPION-Lung program; broadly high in LUAD epithelium; benchmark NSCLC ADC antigen,2026-08-06,pre_registered
+MET,c-MET;HGFR,ADC|bispecific,telisotuzumab vedotin (approved);amivantamab,approved_nsclc,NSCLC (c-Met-high),primary,1,Teliso-V approved 2025 for EGFR-WT nonsquamous c-Met-high NSCLC; amivantamab (EGFRxMET) approved,2026-08-06,pre_registered
+ERBB2,HER2;NEU,ADC,trastuzumab deruxtecan (approved),approved_nsclc,NSCLC (HER2-mutant)|pan-tumor,primary,1,T-DXd accelerated approval in HER2-mutant NSCLC; cardiac/GI normal-tissue caution,2026-08-06,pre_registered
+ERBB3,HER3,ADC,patritumab deruxtecan (HER3-DXd),clinical_late,NSCLC (EGFR-mutant),primary,1,HER3-DXd in EGFR-mutant NSCLC post-TKI; emerging validated NSCLC antigen,2026-08-06,pre_registered
+CEACAM5,CEA;CD66e,ADC|bispecific,tusamitamab ravtansine,clinical,NSCLC (nonsquamous CEACAM5-high)|CRC,primary,1,High in nonsquamous NSCLC; carcinoembryonic antigen; shed-antigen sink caution,2026-08-06,pre_registered
+EGFR,HER1;ERBB1,ADC|bispecific,amivantamab (approved),approved_nsclc,NSCLC,primary,1,Amivantamab (EGFRxMET) approved; driver in EGFR-mutant LUAD; normal-epithelium expression limits TI,2026-08-06,pre_registered
+MSLN,mesothelin;MPF,ADC|CAR-T,anetumab ravtansine;various,clinical,NSCLC adeno subset|mesothelioma|ovarian,primary,1,Expressed in an adenocarcinoma subset; low normal-tissue (mesothelium); benchmark antigen,2026-08-06,pre_registered
+FOLR1,FRalpha;folate receptor alpha,ADC,mirvetuximab soravtansine (approved ovarian),approved_other_indication,NSCLC adeno subset|ovarian,primary,1,FRalpha in a lung adenocarcinoma subset; validated ADC antigen class,2026-08-06,pre_registered
+CD276,B7-H3;B7H3,ADC|CAR-T,ifinatamab deruxtecan (I-DXd),clinical,NSCLC|pan-tumor,primary,1,Pan-tumor surface antigen; broad NSCLC expression; active ADC/CAR-T programs,2026-08-06,pre_registered
+DLL3,delta-like-3,ADC|bispecific,tarlatamab (approved SCLC),approved_other_indication,SCLC/neuroendocrine|NSCLC-NE subset,secondary,0,Tumor-restricted Notch ligand; mainly SCLC and neuroendocrine NSCLC,2026-08-06,pre_registered
+PTK7,CCK4,ADC,cofetuzumab pelidotin,clinical,NSCLC|TNBC,secondary,0,Pseudokinase surface receptor; NSCLC ADC programs,2026-08-06,pre_registered
+ROR1,NTRKR1,ADC|CAR-T,zilovertamab vedotin,clinical,NSCLC|heme,secondary,0,Onco-fetal RTK; low normal-tissue expression,2026-08-06,pre_registered
+AXL,UFO,ADC,enapotamab vedotin (historical),clinical,NSCLC|melanoma,secondary,0,RTK; EMT/resistance-associated; NSCLC ADC programs,2026-08-06,pre_registered
+SLC34A2,NaPi2b;NaPi-IIb,ADC,lifastuzumab vedotin (historical),clinical,NSCLC adeno|ovarian,secondary,0,LUNG TISSUE-OF-ORIGIN CAUTION: validated ADC antigen but highly expressed in normal alveolar AT2 cells - narrow NSCLC window,2026-08-06,pre_registered
+MUC1,CD227;mucin-1,CAR-T|ADC,various,clinical,NSCLC|pan-carcinoma,secondary,0,Aberrantly glycosylated tumor form; also normal epithelium - therapeutic-index caution,2026-08-06,pre_registered
+LYPD3,C4.4A,ADC,lupartumab amadotin,clinical,NSCLC (squamous-biased),secondary,0,GPI-anchored uPAR-family surface protein,2026-08-06,pre_registered
+L1CAM,CD171,CAR-T,various,clinical,NSCLC subset|neuroblastoma,secondary,0,Ig-superfamily adhesion molecule; CAR-T antigen,2026-08-06,pre_registered
+EPCAM,TACSTD1;CD326,bispecific,catumaxomab (historical),not_a_target,pan-epithelial incl normal lung,negative_control,0,CAUTIONARY: pan-epithelial incl normal lung epithelium; poor therapeutic window - should rank LOW on safety,2026-08-06,pre_registered
+CDH1,E-cadherin;CD324,none_recommended,,not_a_target,pan-epithelial adhesion,negative_control,0,CAUTIONARY: pan-epithelial housekeeping; tumor-specific within the TME but ubiquitous in normal epithelium - must fail the safety factor,2026-08-06,pre_registered
+ATP1A1,Na/K-ATPase alpha-1,none_recommended,,not_a_target,ubiquitous ion pump,negative_control,0,CAUTIONARY: pan-essential housekeeping; multipass low-ectodomain - must rank LOW,2026-08-06,pre_registered
+CGN,cingulin,none_recommended,,not_a_target,cytoplasmic tight-junction plaque,negative_control,0,CAUTIONARY: NOT cell-surface (cytoplasmic) - the topology filter must exclude it,2026-08-06,pre_registered

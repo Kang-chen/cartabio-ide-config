@@ -1,0 +1,646 @@
+[
+  {
+    "folder": "cell-cell-communication",
+    "id": "skill_4fd6fa5f7294443f987c36586080b69f",
+    "name": "cell-cell-communication",
+    "category": "transcriptomics",
+    "description": "Use to infer and visualize ligand-receptor signaling and cell-cell communication networks from scRNA-seq data with CellChat v2."
+  },
+  {
+    "folder": "cell-surface-antigen-discovery",
+    "id": "skill_37c83b1a2ba2ef32921254e95c376919",
+    "name": "cell-surface-antigen-discovery",
+    "category": "drug_discovery",
+    "description": "Use to discover and rank tumor-selective, antibody-accessible cell-surface antigens for ADC, CAR-T, bispecific/T-cell engager, or radioligand programs. Integrates single-cell tumor expression, surface topology, normal-tissue HPA safety, tractability, and known-antigen controls."
+  },
+  {
+    "folder": "antibody-developability-humanization",
+    "id": "skill_1428c3775e3d807bc46446cc90c2a6a0",
+    "name": "antibody-developability-humanization",
+    "category": "molecular_design",
+    "description": "Use to assess or humanize existing mAb, IgG, Fv, scFv, VHH, or nanobody sequences. Covers sequence liabilities and developability, MHC-II/HLA-DR immunogenicity, CDR grafting onto human germlines, framework back-mutations, and humanness scoring."
+  },
+  {
+    "folder": "chip-atlas-diff-analysis",
+    "id": "skill_7f4da97222334fba9984eab5b78eb392",
+    "name": "chip-atlas-diff-analysis",
+    "category": "epigenomics",
+    "description": "Use to compare groups of ChIP-seq, ATAC-seq, DNase-seq, or bisulfite-seq experiments and identify differential peak regions or differentially methylated regions through ChIP-Atlas."
+  },
+  {
+    "folder": "consensus-disease-signature",
+    "id": "skill_ba99051fddd1d71feb9c6b74443592be",
+    "name": "consensus-disease-signature",
+    "category": "transcriptomics",
+    "description": "Use to derive a cross-study consensus disease expression signature from multiple bulk RNA-seq or microarray cohorts. Combines cohort-level differential expression with random-effects meta-analysis, direction consistency, control-group sensitivity checks, pathway enrichment, and core up/down gene sets."
+  },
+  {
+    "folder": "cancer-cohort-genomics",
+    "id": "skill_861901b9194211e7a334b4f005209808",
+    "name": "cancer-cohort-genomics",
+    "category": "genomics_genetics",
+    "description": "Use to quantify mutation, amplification, deletion, or combined somatic alteration frequencies for genes across cancer types or cohorts. Covers cBioPortal, TCGA, MSK-IMPACT, pan-cancer comparisons, mutation hotspots, allele distributions, and matched cross-cohort analyses."
+  },
+  {
+    "folder": "cell-therapy-car-design",
+    "id": "skill_1a2d4c938cf0cd29657bf065517bca3a",
+    "name": "cell-therapy-car-design",
+    "category": "functional_genomics",
+    "description": "Use for end-to-end scFv-based CAR design coupled to reanalysis of pooled loss-of-function CRISPR-KO proliferation or fitness screens in T cells. Covers MAGeCK hit nomination, DepMap checks, second-generation CAR architecture, codon-optimized ORFs, and lentiviral GenBank cassettes from a validated scFv."
+  },
+  {
+    "folder": "cell-therapy-qc-scorecard",
+    "id": "skill_30aae8fada7b78e30f7275374cebbe68",
+    "name": "cell-therapy-qc-scorecard",
+    "category": "transcriptomics",
+    "description": "Use to QC, release-test, or compare scRNA-seq lots of cell-therapy products such as CAR-T, CAR-NK, iPSC-derived, or primary-cell products. Scores identity/purity, residual pluripotency, off-target lineages, maturity, and technical quality as GREEN/AMBER/RED."
+  },
+  {
+    "folder": "flow-cytometry-analysis",
+    "id": "skill_dfc4fd9cdc6b7fba7c880cc7f87ecd7f",
+    "name": "flow-cytometry-analysis",
+    "category": "proteomics_metabolomics",
+    "description": "Use for automated analysis of flow, mass, CyTOF, or spectral cytometry FCS files. Covers acquisition and spillover QC, compensation, arcsinh/logicle transforms, permissive control-aware gating, FlowSOM/CATALYST clustering, immunophenotype annotation, cross-sample quantification, manual-gate reconciliation, and diffcyt differential abundance."
+  },
+  {
+    "folder": "drug-repurposing-indication-expansion",
+    "id": "skill_9406c66f225cadbbb3cf0c85b95a7e5a",
+    "name": "drug-repurposing-indication-expansion",
+    "category": "drug_discovery",
+    "description": "Use to nominate approved or clinical drugs for a new disease indication by reversing a disease expression signature with LINCS L1000/Connectivity Map (CMap). Can start from a disease name, up/down genes, or DE table and emphasizes indication expansion, Repurposing Hub annotations, controls, and ranked clinically annotated candidates."
+  },
+  {
+    "folder": "clinical-trial-design-simulation",
+    "id": "skill_70b5de4b518cd101e23530cd587523c4",
+    "name": "clinical-trial-design-simulation",
+    "category": "experimental_design",
+    "description": "Use to size, power, simulate, or compare two-arm confirmatory clinical trials with survival, binary, or continuous endpoints. Supports fixed and adaptive designs, interim monitoring, futility, enrichment, sample-size re-estimation, and validation of power, type-I error/FWER, duration, and expected sample size."
+  },
+  {
+    "folder": "direction-of-effect-concordance",
+    "id": "skill_967e65dbbeb85ee774732a6211f1000c",
+    "name": "direction-of-effect-concordance",
+    "category": "drug_discovery",
+    "description": "Use to decide whether a therapeutic target should be inhibited or activated. Integrates human genetics, CRISPR/functional screens, drug mechanisms, and mouse phenotypes into an activate-vs-inhibit consensus with confidence and discordance flags; triggers on agonist/antagonist, LoF protective/harmful, or target directionality questions."
+  },
+  {
+    "folder": "fine-mapping-susie",
+    "id": "skill_f55142b5be96e79ec64484a53f8087a4",
+    "name": "fine-mapping-susie",
+    "category": "genomics_genetics",
+    "description": "Use to fine-map one GWAS locus with SuSiE, identify likely causal variants, and compute PIPs and 95% credible sets. Requires ancestry-matched LD, runs LD-mismatch diagnostics, accepts GWAS summary statistics or accessions, and annotates variants with GTEx/eQTL Catalogue eQTLs and ENCODE cCREs."
+  },
+  {
+    "folder": "clinicaltrials-landscape",
+    "id": "skill_546a8868863342c093eb2570dcd538f4",
+    "name": "clinicaltrials-landscape",
+    "category": "literature",
+    "description": "Use to map the ClinicalTrials.gov trial landscape for a disease, mechanism, intervention, phase, status, or sponsor through API v2."
+  },
+  {
+    "folder": "elastic-net-biomarker-panel",
+    "id": "skill_024b2165ef874c1aa509a07168b27d98",
+    "name": "elastic-net-biomarker-panel",
+    "category": "multi_omics",
+    "description": "Use to select compact predictive biomarker panels with elastic-net or pure-LASSO logistic regression, nested cross-validation, stability selection, and independent-cohort validation."
+  },
+  {
+    "folder": "drug-bioactivity-chembl",
+    "id": "skill_b14b08ae68081bbdaa898cc98affac2a",
+    "name": "drug-bioactivity-chembl",
+    "category": "drug_discovery",
+    "description": "Use to profile a compound's potency, binding affinity, and target selectivity from ChEMBL, or rank compounds for one target. Accepts compound names, ChEMBL IDs, or SMILES; covers IC50/Ki/Kd assay curation, on-target vs off-target activity, selectivity windows, and target-family profiles."
+  },
+  {
+    "folder": "evidence-synthesis-meta-analysis",
+    "id": "skill_c8c810255403eb169f5a580f37c919fb",
+    "name": "evidence-synthesis-meta-analysis",
+    "category": "data_analysis",
+    "description": "Use to systematically synthesize and pool effect estimates across studies or trials. Supports continuous, binary, and time-to-event outcomes with random-effects meta-analysis, forest plots, heterogeneity/I-squared, PRISMA-style evidence review, and uploaded effect-size tables."
+  },
+  {
+    "folder": "generative-molecule-design",
+    "id": "skill_0008d582238d9a1f65a2322b3bf71728",
+    "name": "generative-molecule-design",
+    "category": "molecular_design",
+    "description": "Use for goal-directed de novo small-molecule generation, lead generation, or scaffold hopping against a target. Runs graph-based generation with configurable activity, drug-likeness, synthesizability, novelty, and makeability objectives, then proposes retrosynthetic routes; activity may use an oracle, QSAR surrogate, or docking."
+  },
+  {
+    "folder": "genetic-constraint-gating",
+    "id": "skill_70fa3fe61a8d4640c4a520641092cfcd",
+    "name": "genetic-constraint-gating",
+    "category": "genomics_genetics",
+    "description": "Use to triage gene lists by gnomAD loss-of-function constraint and interpret target safety or knockout tolerance. Retrieves LOEUF, pLI, observed/expected, LoF Z, and missense constraint; resolves aliases; flags LoF-intolerant, haploinsufficient, or dosage-sensitive genes and suggests modality implications."
+  },
+  {
+    "folder": "genetic-variant-annotation",
+    "id": "skill_caf61714cb394d14b2d099387baec0b0",
+    "name": "genetic-variant-annotation",
+    "category": "genomics_genetics",
+    "description": "Use to annotate VCF variants with gene and functional consequences, clinical significance, population evidence, and pathogenicity predictions."
+  },
+  {
+    "folder": "gwas-to-function-twas",
+    "id": "skill_6313334ee7324c7099fa65c5f5ee9590",
+    "name": "gwas-to-function-twas",
+    "category": "genomics_genetics",
+    "description": "Use to connect GWAS loci to candidate causal genes and therapeutic targets through transcriptome-wide association studies (TWAS)."
+  },
+  {
+    "folder": "knowledge-graph-target-reasoning",
+    "id": "skill_66117a119805611838ba0a0cdde6edb2",
+    "name": "knowledge-graph-target-reasoning",
+    "category": "drug_discovery",
+    "description": "Use to discover and rank therapeutic targets for a disease through multi-hop biomedical knowledge-graph reasoning. Applies PrimeKG network propagation/RWR with optional TxGNN drug-target evidence and returns ranked genes/proteins with interpretable evidence paths; triggers on disease target nomination or network-based prioritization."
+  },
+  {
+    "folder": "large-scale-virtual-screening",
+    "id": "skill_b1cf4aefacef741d340cf8a7d522ab0b",
+    "name": "large-scale-virtual-screening",
+    "category": "drug_discovery",
+    "description": "Use for structure-based docking or virtual screening of compound libraries against a protein structure with AutoDock Vina. Covers receptor/library preparation, native-ligand redocking, hit ranking, scaffold clustering, prospective screens, and actives-vs-decoys benchmarks such as ROC-AUC, EF, and BEDROC."
+  },
+  {
+    "folder": "ligand-binding-mode-analysis",
+    "id": "skill_56f6a5b3514ba76baf5bca5c0c83d704",
+    "name": "ligand-binding-mode-analysis",
+    "category": "molecular_design",
+    "description": "Use to analyze how a ligand binds in a protein-ligand co-crystal from a PDB ID, uploaded PDB/CIF, or target-ligand pair resolved through RCSB. Identifies pocket residues, heavy-atom contacts, hydrogen bonds, ionic/hydrophobic/pi/halogen interactions, and confidence tiers with PLIP or geometry fallback."
+  },
+  {
+    "folder": "literature-deep-review",
+    "id": "skill_bed70a7f98864bd48324eb9295c4fdd0",
+    "name": "literature-deep-review",
+    "category": "literature",
+    "description": "Use for audit-ready biomedical reviews that require exact quotations, stable sentence or figure locators, claim-evidence tables, contradiction checks, or verifiable figure evidence. Retrieves full text, independently verifies anchors and reuse permissions, and delivers Markdown, machine-readable evidence, and a verified PDF; not for ordinary narrative overviews."
+  },
+  {
+    "folder": "literature-preclinical",
+    "id": "skill_9a35bb68f5c948ca828a10aa8ea2d667",
+    "name": "literature-preclinical",
+    "category": "general",
+    "description": "Use for literature synthesis focused on preclinical evidence for a target-disease pair. Extracts in vitro assays and cell lines, in vivo model types, dose/route, efficacy, PK/PD and toxicity endpoints, assesses cross-model concordance and IND-enabling gaps, and returns cited narrative plus an evidence table."
+  },
+  {
+    "folder": "literature-review",
+    "id": "skill_9b0361e33e5541bbb2b43f671dc0d5a5",
+    "name": "literature-review",
+    "category": "general",
+    "description": "Use for any scientific or biomedical question that requires finding and synthesizing evidence across multiple papers, including general scientific literature reviews, key-paper searches, state-of-the-art summaries, and evidence synthesis on any topic. Searches peer-reviewed records, grounds claims in retrieved abstracts or open full text, and returns a cited narrative, structured evidence table, and PDF report."
+  },
+  {
+    "folder": "mendelian-randomization-twosamplemr",
+    "id": "skill_6655c68c5e9249eba44e6519b7c0b11e",
+    "name": "mendelian-randomization-twosamplemr",
+    "category": "genomics_genetics",
+    "description": "Use to test causal relationships between exposures and outcomes from GWAS summary statistics and genetic instruments with two-sample Mendelian randomization."
+  },
+  {
+    "folder": "methods-landscape-review",
+    "id": "skill_685b09d4f2d509ab9198bf01121d7c7d",
+    "name": "methods-landscape-review",
+    "category": "literature",
+    "description": "Use to compare computational methods, tools, algorithms, or analytical approaches and recommend which to use from published benchmarks. Produces a comparison matrix, performance scorecard, benchmark catalog, and regime-specific guidance; also supports citation-verified narrative scientific evidence synthesis with an evidence table."
+  },
+  {
+    "folder": "microplate-layout-design__a8b63013",
+    "id": "skill_ea62d879a7384219a92cf683a8b63013",
+    "name": "microplate-layout-design",
+    "category": "experimental_design",
+    "description": "Use to design randomized and balanced microplate layouts with controls, replicates, edge-effect mitigation, and covariate-aware well assignment."
+  },
+  {
+    "folder": "molecular-property-admet",
+    "id": "skill_c30c5d550c6b897400e363e8d1664a3c",
+    "name": "molecular-property-admet",
+    "category": "drug_discovery",
+    "description": "Use to predict and compare SMILES-based small-molecule physicochemical properties, drug-likeness, and ADMET. Covers Lipinski/Veber/QED, PAINS and toxicophore alerts, CYP inhibition, hERG, AMES, DILI, compound standardization, and hit triage."
+  },
+  {
+    "folder": "off-target-safety-pharmacology",
+    "id": "skill_8c4bbb8b8155ca559167852f77ba44d1",
+    "name": "off-target-safety-pharmacology",
+    "category": "drug_discovery",
+    "description": "Use to predict and benchmark off-target or secondary-pharmacology liabilities for a small molecule supplied by name, SMILES, InChIKey, or ChEMBL ID. Builds a Bowes-style safety panel, combines orthogonal predictors with ADMET, separates the intended target from off-targets, and gates validation claims against measured ChEMBL data sufficiency."
+  },
+  {
+    "folder": "omics-dataset-retrieval",
+    "id": "skill_b12e61063fd8475896b26186626f2426",
+    "name": "omics-dataset-retrieval",
+    "category": "data_discovery",
+    "description": "Use to find, retrieve, catalog, and relevance-audit public omics datasets across GEO, SRA, ArrayExpress, CELLxGENE, and other repositories."
+  },
+  {
+    "folder": "pcr-primer-design",
+    "id": "skill_62f7fe9a2d3e475983cadecafd0547e3",
+    "name": "pcr-primer-design",
+    "category": "molecular_design",
+    "description": "Use to design and validate primers or probes for PCR, qPCR, TaqMan assays, genotyping, cloning, or sequencing applications."
+  },
+  {
+    "folder": "pharmacovigilance-ae-signal-detection",
+    "id": "skill_fb055d3413196f5e948f5159c1207321",
+    "name": "pharmacovigilance-ae-signal-detection",
+    "category": "drug_discovery",
+    "description": "Use to detect post-market adverse-event signals for a drug, class, or target from FDA FAERS/OpenFDA. Computes ROR, PRR, chi-square, and FDR disproportionality, maps MedDRA classes, filters reporting artifacts, and compares signals with FDA label warnings; triggers on pharmacovigilance, side effects, or labeled-vs-unlabeled events."
+  },
+  {
+    "folder": "pkpd-pharmacometrics",
+    "id": "skill_1c6f8253c75e4fca5754cfe885207a35",
+    "name": "pkpd-pharmacometrics",
+    "category": "drug_discovery",
+    "description": "Use to fit population PK or PK/PD models from NONMEM-style concentration-time data with nlmixr2/rxode2. Covers compartmental absorption/clearance models, Emax/effect-compartment/indirect response, covariates, VPCs, multi-dose simulation, exposure-response, and methodologic dose selection gated by a sourced target window."
+  },
+  {
+    "folder": "polygenic-risk-score-prs-catalog",
+    "id": "skill_7ef1858e91dd4b7fbe5daddf31e5002a",
+    "name": "polygenic-risk-score-prs-catalog",
+    "category": "genomics_genetics",
+    "description": "Use to calculate polygenic risk scores from PGS Catalog weights for one or more traits, including allele harmonization and population-level score comparisons."
+  },
+  {
+    "folder": "pooled-crispr-screens",
+    "id": "skill_d3fa7c2c0f2b43ffb679e44ad7a3eafe",
+    "name": "pooled-crispr-screens",
+    "category": "transcriptomics",
+    "description": "Use to analyze pooled CRISPR screens with single-cell RNA-seq readouts such as Perturb-seq or CROP-seq, linking guides to transcriptional phenotypes."
+  },
+  {
+    "folder": "proteomics-diff-exp",
+    "id": "skill_08c0e01956d643148a85f5334cfd7abd",
+    "name": "proteomics-diff-exp",
+    "category": "proteomics_metabolomics",
+    "description": "Use to test differential protein abundance in mass-spectrometry proteomics data with limma and DEqMS, including PSM-aware variance estimation."
+  },
+  {
+    "folder": "real-world-evidence",
+    "id": "skill_ea1afce75ae2b4fc030bbe787188145e",
+    "name": "real-world-evidence",
+    "category": "data_analysis",
+    "description": "Use to run a configurable real-world evidence cohort study on structured EHR or claims data. Covers diagnosis-code cohort construction, Table 1, treatment patterns, Kaplan-Meier/landmark survival, EPV-gated Cox models, and adaptation from MIMIC-IV to other diseases or datasets."
+  },
+  {
+    "folder": "scatac-multiome-analysis",
+    "id": "skill_206b4bf7080d00a289bb97143936de68",
+    "name": "scatac-multiome-analysis",
+    "category": "epigenomics",
+    "description": "Use for end-to-end scATAC-seq, snATAC-seq, or 10x Multiome chromatin-accessibility analysis from fragments, peak matrices, or Cell Ranger ATAC/ARC outputs. Covers ATAC QC, TF-IDF/LSI, clustering, MACS3 peaks, gene activity, cell annotation, label transfer, and differential accessibility with Signac/Seurat."
+  },
+  {
+    "folder": "scrnaseq-scanpy-core-analysis",
+    "id": "skill_e4c50152a70f4d6fa8a4802573755f54",
+    "name": "scrnaseq-scanpy-core-analysis",
+    "category": "transcriptomics",
+    "description": "Use for complete scRNA-seq analysis in Python with Scanpy, from raw counts and QC through normalization, integration, clustering, marker detection, cell-type annotation, and visualization."
+  },
+  {
+    "folder": "scrnaseq-seurat-core-analysis",
+    "id": "skill_97fe00d84ed84cb784c5c4dc3e0478ab",
+    "name": "scrnaseq-seurat-core-analysis",
+    "category": "transcriptomics",
+    "description": "Use for complete scRNA-seq analysis in R with Seurat, from raw counts and QC through normalization, integration, clustering, marker detection, cell-type annotation, and visualization."
+  },
+  {
+    "folder": "sgrna-design__8a00473e",
+    "id": "skill_57ac6963ab7d26bdd50823638a00473e",
+    "name": "sgrna-design",
+    "category": "molecular_design",
+    "description": "Use to find or design CRISPR guide RNAs for knockout, CRISPRi, or CRISPRa with SpCas9, SaCas9, or Cas12a. Prioritizes experimentally validated Addgene/literature guides, then CRISPick and rule-based designs, for arrayed or pooled screens across human, mouse, rat, and other organisms."
+  },
+  {
+    "folder": "signature-response-enrichment",
+    "id": "skill_b65a07539d1b4f5e8955b98c7aaca5fe",
+    "name": "signature-response-enrichment",
+    "category": "transcriptomics",
+    "description": "Use to test whether patients who fail a treatment retain higher activity of a specified gene signature. Runs GSVA change-from-baseline across on-treatment time points, compares responders with non-responders at endpoint, and checks directional replication across independent bulk-transcriptomic cohorts."
+  },
+  {
+    "folder": "target-tractability-druggability",
+    "id": "skill_9375050e400a2b52a377933c2f508d68",
+    "name": "target-tractability-druggability",
+    "category": "drug_discovery",
+    "description": "Use to assess whether a human target is druggable and which modality is most viable. Integrates Open Targets tractability, known drugs, DepMap essentiality, safety, structural pocket detection, and evidence for small molecules, antibodies, or degraders; triggers on druggable pocket or modality-selection questions."
+  },
+  {
+    "folder": "targeted-degrader-design",
+    "id": "skill_1de0c57c38270f6702c80157011ab521",
+    "name": "targeted-degrader-design",
+    "category": "molecular_design",
+    "description": "Use to design and computationally triage heterobifunctional PROTACs or targeted degraders for a protein. Covers CRBN/VHL E3 selection, warheads and exit vectors, linker enumeration, RDKit assembly, bRo5/ADMET scoring, docking, candidate ranking, and optional ternary-complex modeling."
+  },
+  {
+    "folder": "tusoai",
+    "id": "skill_4824c98eebb04d268bd7434b34682102",
+    "name": "tusoai",
+    "category": "data_analysis",
+    "description": "Use TusoAI external APIs for fast, many-iteration computational-method development when the required API keys are available and changes can stay focused. Covers evaluator fidelity, durable checkpoints, resumable multi-machine search, history review, and recovery."
+  },
+  {
+    "folder": "tusoskill",
+    "id": "skill_3433ea4640ad46929510cc17c8e4d606",
+    "name": "tusoskill",
+    "category": "data_analysis",
+    "description": "Use Biomni-native benchmark-first iteration for computational biology method development involving broad refactors, GPU-heavy workloads, unclear objectives, or no external API keys. Covers overfitting checks, durable state, repeated evaluation rounds, and reproducible method packaging."
+  },
+  {
+    "folder": "virtual-cell-perturbation",
+    "id": "skill_ee05eb5df2ca51cf172af24e65f59022",
+    "name": "virtual-cell-perturbation",
+    "category": "transcriptomics",
+    "description": "Use to predict or benchmark single-cell transcriptional responses to CRISPR, CRISPRi, or CRISPRa perturbations. Evaluates virtual-cell models such as scGPT, GEARS, scFoundation, or CellFlow on Perturb-seq/GEARS-format data, including unseen-perturbation generalization and held-out differential-expression metrics."
+  },
+  {
+    "folder": "chip-atlas-peak-enrichment",
+    "id": "skill_dd3e525ed3e84cb9a73aa45781117110",
+    "name": "chip-atlas-peak-enrichment",
+    "category": "epigenomics",
+    "description": "Use to test enrichment of genomic regions against public ChIP-seq peak sets from ChIP-Atlas."
+  },
+  {
+    "folder": "chip-atlas-target-genes",
+    "id": "skill_aaafb560ba89480dbb01b2979f49630d",
+    "name": "chip-atlas-target-genes",
+    "category": "epigenomics",
+    "description": "Use to retrieve ChIP-Atlas precomputed target genes for a transcription factor from public ChIP-seq experiments."
+  },
+  {
+    "folder": "coexpression-network",
+    "id": "skill_4aec92a664ad4b63baaf2b4981daa277",
+    "name": "coexpression-network",
+    "category": "transcriptomics",
+    "description": "Use to build gene co-expression networks from RNA-seq data and identify modules, module-trait relationships, and hub genes."
+  },
+  {
+    "folder": "deconvolution-bulk-rnaseq",
+    "id": "skill_9220a3a4f3fd3052b91800e13683d7cf",
+    "name": "deconvolution-bulk-rnaseq",
+    "category": "transcriptomics",
+    "description": "Use to estimate cell-type proportions in bulk RNA-seq from an annotated single-cell reference and test composition differences between groups or time points. Supports BayesPrism, DWLS, and optional MuSiC/Bisque with cross-method concordance."
+  },
+  {
+    "folder": "disease-progression-longitudinal",
+    "id": "skill_26fd7b7e1ad64ad89d97bb183182d4f0",
+    "name": "disease-progression-longitudinal",
+    "category": "multi_omics",
+    "description": "Use to reconstruct disease progression trajectories, temporal states, and patient heterogeneity from longitudinal multi-omics or repeated-measure omics data."
+  },
+  {
+    "folder": "experimental-design-statistics",
+    "id": "skill_40063c54fad9439a9acd36c76a25983f",
+    "name": "experimental-design-statistics",
+    "category": "experimental_design",
+    "description": "Use to design genomics or omics experiments with power and sample-size calculations, batch and covariate planning, replication, and multiple-testing correction."
+  },
+  {
+    "folder": "phylo-create-skill",
+    "id": "skill_80991743e52842abb92207cd7ff8c29e",
+    "name": "phylo-create-skill",
+    "category": "general",
+    "description": "Use to create, test, validate, package, or revise reusable Phylo Biomni skills across analysis, evidence synthesis, protocols, guidance, utilities, and platform workflows."
+  },
+  {
+    "folder": "upstream-regulator-analysis",
+    "id": "skill_cf9489278b984eef91e08a40b68943be",
+    "name": "upstream-regulator-analysis",
+    "category": "multi_omics",
+    "description": "Use to identify transcription factors and upstream regulators driving RNA-seq differential-expression patterns by integrating DE genes with ChIP-Atlas binding evidence."
+  },
+  {
+    "folder": "variant-calling-from-sequencing",
+    "id": "skill_21c4aae0e24ee315b4095239a58ceb6c",
+    "name": "variant-calling-from-sequencing",
+    "category": "genomics_genetics",
+    "description": "Use to call and benchmark germline SNVs/indels from FASTQ, BAM/CRAM, or caller VCFs for WES/WGS and short- or long-read data. Covers GATK/DeepVariant, VCF normalization, caller concordance, GIAB/hap.py accuracy, coverage, Ti/Tv, and dbSNP QC."
+  },
+  {
+    "folder": "tissue-expression-specificity",
+    "id": "skill_1770b7f9d13954ae16b07b3ec91515bf",
+    "name": "tissue-expression-specificity",
+    "category": "drug_discovery",
+    "description": "Use to determine where a human target is expressed and assess expression-based on-target safety. Integrates GTEx and Human Protein Atlas tissue profiles, ranks high-baseline organs, computes tissue-specificity/tau and cross-atlas concordance, and flags vital-organ liabilities; accepts gene symbols, Ensembl IDs, or UniProt accessions."
+  },
+  {
+    "folder": "clinical-variant-allelic-series",
+    "id": "skill_71ac25ccb32e00a971a5e49bcae1bfe2",
+    "name": "clinical-variant-allelic-series",
+    "category": "genomics_genetics",
+    "description": "Use to build a gene-level clinical allelic series or per-variant/per-residue actionability map. Integrates ClinVar and CIViC to answer which mutations are pathogenic, actionable, or targetable and produces mutation landscapes, lollipop plots, evidence tiers, and therapy matrices."
+  },
+  {
+    "folder": "functional-enrichment-from-degs",
+    "id": "skill_eb2ad58c6e5a40fa9328874443eef99d",
+    "name": "functional-enrichment-from-degs",
+    "category": "functional_analysis",
+    "description": "Use to run clusterProfiler functional enrichment on differential-expression results, including over-representation analysis and GSEA with exportable results and plots."
+  },
+  {
+    "folder": "grn-pyscenic",
+    "id": "skill_35e45ff33cb141a981a3fc5711c4760f",
+    "name": "grn-pyscenic",
+    "category": "transcriptomics",
+    "description": "Use to infer transcription-factor gene-regulatory networks and cell-level regulon activity from scRNA-seq data with pySCENIC."
+  },
+  {
+    "folder": "signature-reversal-lincs",
+    "id": "skill_3a9f742f9ccb071b1720a6c41dfdbb38",
+    "name": "signature-reversal-lincs",
+    "category": "drug_discovery",
+    "description": "Use when an up/down gene signature, DE result, or GEO/CREEDS signature should be queried against LINCS L1000/Connectivity Map (CMap) to find small molecules that reverse or mimic it. Covers connectivity scoring, reproducibility, positive controls, and MOA/target/clinical-phase annotation; accepts user-defined signatures and includes non-approved compounds."
+  },
+  {
+    "folder": "single-cell-census-query",
+    "id": "skill_99b62aa3fd5ef6688b599c2a76b92313",
+    "name": "single-cell-census-query",
+    "category": "transcriptomics",
+    "description": "Use to query CZ CELLxGENE Census for a gene panel's expression across cell types or to run donor-level pseudobulk disease-vs-control differential expression from public single-cell atlases. Produces cell-type expression and case-control evidence for genes in a tissue."
+  },
+  {
+    "folder": "survival-analysis-clinical",
+    "id": "skill_827c499e76084524a2e098d80383a3a4",
+    "name": "survival-analysis-clinical",
+    "category": "multi_omics",
+    "description": "Use for clinical time-to-event analysis with Kaplan-Meier curves, log-rank tests, Cox proportional-hazards regression, covariates, and risk stratification."
+  },
+  {
+    "folder": "scrna-disease-drug-discovery",
+    "id": "skill_d7c1ec9d98a54a4eb7ae69a23c8314fe",
+    "name": "scrna-disease-drug-discovery",
+    "category": "transcriptomics",
+    "description": "Use for end-to-end disease-focused scRNA-seq analysis that integrates cell states, differential expression, and human genetic evidence to prioritize therapeutic targets."
+  },
+  {
+    "folder": "scrna-trajectory-inference",
+    "id": "skill_9971a7d3e3134ee9acc25ba3d0e1fdae",
+    "name": "scrna-trajectory-inference",
+    "category": "transcriptomics",
+    "description": "Use to infer differentiation or disease trajectories from scRNA-seq, including pseudotime, branch structure, RNA velocity, terminal states, and cell-fate probabilities."
+  },
+  {
+    "folder": "rnaseq-fastq-to-counts",
+    "id": "skill_b6b5b3b7da495f7833229bedd699bc7a",
+    "name": "rnaseq-fastq-to-counts",
+    "category": "transcriptomics",
+    "description": "Use to turn raw bulk RNA-seq FASTQ or SRA/ENA/GEO accessions into a DE-ready gene-count matrix with STAR or Salmon/tximport. Covers read QC, reference indexing, strandedness, per-sample and merged counts, and local or HPC execution."
+  },
+  {
+    "folder": "open-targets",
+    "id": "skill_032628bba2f145cfba0f7c5acb46ee45",
+    "name": "open-targets",
+    "category": "drug_discovery",
+    "description": "Use to query Open Targets for target-disease associations, supporting evidence, known drugs, tractability, safety, genetics, and target annotations."
+  },
+  {
+    "folder": "microbiome-analysis",
+    "id": "skill_fd517e4fafbb82ec7030a849e0ea0c23",
+    "name": "microbiome-analysis",
+    "category": "functional_analysis",
+    "description": "Use for two-group 16S rRNA amplicon analysis from processed ASV/OTU feature tables. Covers alpha/beta diversity, consensus differential abundance with ANCOM-BC2/ALDEx2/MaAsLin2, PICRUSt2 function prediction, and inferred SCFA, bile-acid, or tryptophan-metabolite capacity."
+  },
+  {
+    "folder": "immune-repertoire-airr",
+    "id": "skill_d1c7d4c4273d38f002903e8199b4085c",
+    "name": "immune-repertoire-airr",
+    "category": "transcriptomics",
+    "description": "Use to analyze TCR-seq or BCR-seq immune repertoires from 10x V(D)J, immunoSEQ, MiXCR, or AIRR-C data. Covers clonotypes, clonal expansion, diversity, CDR3 sharing/public clones, V/J usage, rarefaction, and repertoire overlap for single-cell or bulk AIRR data."
+  },
+  {
+    "folder": "multi-omics-integration",
+    "id": "skill_b022f7a4010244ac8956c13d9dd60967",
+    "name": "multi-omics-integration",
+    "category": "multi_omics",
+    "description": "Use to integrate two or more omics layers with MOFA+, identify shared and view-specific latent factors, decompose variance, and interpret cross-omics drivers."
+  },
+  {
+    "folder": "spatial-transcriptomics",
+    "id": "skill_30b65ae0dee54a929017fbc760aefe01",
+    "name": "spatial-transcriptomics",
+    "category": "transcriptomics",
+    "description": "Use to analyze 10x Visium spatial transcriptomics data from QC and normalization through spatial domains, clustering, spatially variable genes, and neighborhood enrichment."
+  },
+  {
+    "folder": "protein-structure-prediction",
+    "id": "skill_6e83f49077c908119c713fef84e79b6f",
+    "name": "protein-structure-prediction",
+    "category": "molecular_design",
+    "description": "Use to predict a protein or complex 3D structure from sequence, FASTA, gene name, or UniProt accession with AlphaFold2, Boltz-2, Chai-1, or ESMCFold2. Returns PDB/CIF, per-residue pLDDT, pTM, confidence-band and UniProt-domain summaries, and supports explicitly requested cross-method comparisons."
+  },
+  {
+    "folder": "bulk-rnaseq-counts-to-de-deseq2",
+    "id": "skill_019caa158c8a4011b19285967639a364",
+    "name": "bulk-rnaseq-counts-to-de-deseq2",
+    "category": "transcriptomics",
+    "description": "Use to run DESeq2 differential expression on bulk RNA-seq raw gene-count matrices, including normalization, contrasts, and DE result export."
+  },
+  {
+    "folder": "binding-affinity-ml-model",
+    "id": "skill_5b530f17e1aaedd0139286faf1950c3c",
+    "name": "binding-affinity-ml-model",
+    "category": "molecular_design",
+    "description": "Use to train and honestly benchmark target-specific small-molecule affinity or potency models from ChEMBL IC50, Ki, or Kd data, including QSAR, fingerprint, GNN, or DeepPurpose models, then screen or repurpose external compounds for novel target-active scaffolds with scaffold-split and applicability-domain checks."
+  },
+  {
+    "folder": "binder-antibody-design",
+    "id": "skill_af98a09aa8536dce4a7157f8f270a880",
+    "name": "binder-antibody-design",
+    "category": "molecular_design",
+    "description": "Use to design new protein or peptide binders, mini-binders, antibodies, nanobodies, scFv, or VHH against a target from a PDB structure or UniProt ID. Covers RFdiffusion/RFantibody backbone generation, ProteinMPNN sequence design, co-fold validation, interface scoring, on-target epitope recovery, and candidate ranking."
+  },
+  {
+    "folder": "adme-ml-modeling",
+    "id": "skill_9fd3e0632ea54e148757bb2469292ab8",
+    "name": "adme-ml-modeling",
+    "category": "drug_discovery",
+    "description": "Use to audit, train, evaluate, save, and apply supervised single-endpoint small-molecule in-vitro ADME models from labeled assay tables. Covers solubility, permeability, clearance, binding, transporter, CYP, hERG, or BBB endpoints; leakage-resistant temporal/scaffold evaluation, censored values, calibrated uncertainty, applicability domains, and model-bundle scoring."
+  },
+  {
+    "folder": "bulk-omics-clustering",
+    "id": "skill_51a601b71a454a00aa0d378fe8e3205c",
+    "name": "bulk-omics-clustering",
+    "category": "multi_omics",
+    "description": "Use to cluster samples or features in bulk transcriptomics, proteomics, or metabolomics matrices and identify data-driven groups or patterns."
+  },
+  {
+    "folder": "first-in-class-oncology-digest",
+    "id": "skill_a368f04949fa455c88cf142586b63ebb",
+    "name": "first-in-class-oncology-digest",
+    "category": "general",
+    "description": "On-demand digest of novel first-in-class oncology targets and mechanisms disclosed across peer-reviewed literature, conference proceedings, company pipeline news, and SEC/regulatory filings. Now includes preclinical-stage novel target discoveries alongside clinical disclosures, and actively reviews cancer biology literature for new mechanistic insights that may reveal previously unrecognized therapeutic targets. Produces a structured Word report with summary table and full target briefs."
+  },
+  {
+    "folder": "neoantigen-prioritization",
+    "id": "skill_e0558e6edd3e4a17a9ec2416753b2535",
+    "name": "neoantigen-prioritization",
+    "category": "drug_discovery",
+    "description": "Run a real-data-only, TESLA-guided neoantigen prioritization workflow from somatic VCF, patient HLA-I genotype, and optional RNA expression/RNA BAM to a ranked per-peptide Tier 1/2/3 validation shortlist, complete CSV/JSON exports, figures, benchmark context, and a Biomni PDF. Use for personalized-vaccine or TCR-discovery candidate selection, especially when missense and indel/frameshift neoORF peptides, MHCflurry binding, expression-aware abundance, the seven TESLA presentation/recognition features, durable long-horizon execution, checkpointing, cold-start resume, context recovery, or auditable Biomni handoff are required. Also use to run or validate the bundled real Pt22 melanoma demo. Do not use for a patient-level checkpoint-response score; use neoantigen-io-response for that question."
+  },
+  {
+    "folder": "lipidomics-summary-stats",
+    "id": "skill_5495d1cb2a06476db4635429aed57685",
+    "name": "lipidomics-summary-stats",
+    "category": "general",
+    "description": "Read complex lipid and free sterol Excel spreadsheets, harmonize column names, compute per-metabolite log2FC and p-values for all pairwise comparisons, and output a styled master Excel workbook with per-class tabs and a significant hits summary."
+  },
+  {
+    "folder": "serum-proteomics-treatment-response",
+    "id": "skill_61c2b524c9bf4f48ba0da09d1e44e4bd",
+    "name": "serum-proteomics-treatment-response",
+    "category": "general",
+    "description": "Full pipeline for DIA-MS serum/plasma proteomics in longitudinal treatment-response studies. Covers MNAR (missing-not-at-random) protein detection via Fisher exact test, Wilcoxon differential expression for small discovery cohorts (n=8–20 per group), mixed-effects longitudinal modelling (protein ~ time × response_group + covariates), clinical score trajectory clustering (DTW + Ward.D2 hierarchical), and Tier 1/2/3 biomarker ranking with mechanistic annotation (SAM/HPA/ECM/APO axes). Psoriasis-focused with PASI trajectory clustering and MMIP responder logic, but parameterisable for any skin or immune-mediated disease. Use this skill when you have serum proteomics with ≥2 timepoints, ≥2 response groups, and want to identify pre-treatment biomarkers (MNAR pattern), mid-treatment inflammatory surge markers (T2 reactogenicity), and ranked ELISA validation candidates. Complements proteomics-diff-exp (upstream PSM aggregation), lasso-biomarker-panel (downstream panel selection), and functional-enrichment-from-degs (pathway enrichment)."
+  },
+  {
+    "folder": "bulk-rnaseq-differential-expression-multi-method",
+    "id": "skill_a99d7b18e7694005b651a299b906fd3e",
+    "name": "bulk-rnaseq-differential-expression-multi-method",
+    "category": "general",
+    "description": "General-purpose bulk RNA-seq differential expression (DEG) analysis with automatic, data-driven method selection across DESeq2, edgeR (quasi-likelihood F-test), and limma-voom. Use this whenever someone has a bulk RNA-seq count matrix (genes x samples) and wants differentially expressed genes between conditions — treated vs control, KO vs WT, tumor vs normal, dose-response, time course — even if they don't name a method, and especially when they're unsure which of DESeq2/edgeR/limma-voom to use. The skill inspects the data (raw integer counts vs normalized, replicates per group, library-size spread, batch/paired structure, design rank), recommends the most appropriate method with plain-language reasoning, asks the user to confirm, then runs a unified workflow producing a standardized results table, QC plots (PCA, MA, volcano, mean-variance), significant-gene lists (BH-FDR padj), and an optional cross-method concordance check. Handles two-group and multi-group/contrast designs, batch and paired covariates, and tximport/featureCounts/SummarizedExperiment inputs."
+  },
+  {
+    "folder": "microplate-layout-design__1c0a19d0",
+    "id": "skill_717f11d1af7c4ae2b8c2a7771c0a19d0",
+    "name": "microplate-layout-design",
+    "category": "experimental_design",
+    "description": "Design optimized microplate layouts with randomization, edge effect mitigation, and covariate balancing."
+  },
+  {
+    "folder": "rgcca-multiblock",
+    "id": "skill_37f9007c8154410e904ab691b3ae543e",
+    "name": "rgcca-multiblock",
+    "category": "general",
+    "description": "Run RGCCA (Regularised Generalised Canonical Correlation Analysis) multiblock integration on 2+ omics or clinical data blocks using the RGCCA R package v3.0.3. Use this skill whenever a user wants to integrate multiple data blocks (e.g. transcriptomics + proteomics + clinical), run SGCCA, PLS, CCA, or any RGCCA-family method, tune regularisation parameters by cross-validation or permutation, compare parameter grid runs, or extract block scores, loadings, and AVE metrics from a multiblock latent-variable model. Triggers on: \"RGCCA\", \"SGCCA\", \"multiblock\", \"multi-omics integration\", \"canonical correlation\", \"block scores\", \"AVE inner\", \"regularised CCA\", \"latent variable integration\", \"multiblock PLS\", \"GCCA\"."
+  },
+  {
+    "folder": "heart-conference-monitor",
+    "id": "skill_085ee300b03349c9879c757c0c8106b2",
+    "name": "heart-conference-monitor",
+    "category": "general",
+    "description": "Automated pipeline to monitor 24 major cardiology/cardiovascular conferences, retrieve abstracts via PubMed API + web scraping, cluster by topic using BERTopic NLP, generate AI summaries per cluster, and render an interactive Plotly HTML dashboard."
+  },
+  {
+    "folder": "protein-human-mouse-struct-collector",
+    "id": "skill_1af241ccbf5244f1b7125bc7bca91685",
+    "name": "protein-human-mouse-struct-collector",
+    "category": "general",
+    "description": "Collect all human and mouse UniProt entries, PDB experimental structures, and AlphaFold predicted structures for any protein of interest. Downloads PDB and AlphaFold CIF files (with species-aware naming), fetches full-field JSON metadata from RCSB PDB Data API and AlphaFold EBI API, generates two Excel files (UniProt-only and comprehensive UniProt+PDB+AlphaFold), produces a detailed Markdown report plus a reproducible Jupyter notebook, and generates AlphaFold3 input JSON files for every sequence source (PDB experimental, AlphaFold predicted, and UniProt) paired with any user-specified ligand. Use this skill whenever someone asks to collect, download, or summarize structural data for a protein across human and mouse, or to generate AF3 input JSON files for all available sequences of a protein with a ligand."
+  },
+  {
+    "folder": "sgrna-design__70fb471f",
+    "id": "skill_1e197cad364d44be84b0e57f70fb471f",
+    "name": "sgrna-design",
+    "category": "general",
+    "description": "Find or design sgRNAs (guide RNAs) for CRISPR experiments using a three-tiered approach: (1) validated sequences from a bundled Addgene database + literature search, (2) precomputed CRISPick designs from the Broad Institute GPP, (3) de-novo design rules. Use whenever someone asks for a guide RNA / sgRNA / CRISPR guide to knock out (KO), activate (CRISPRa), or inhibit (CRISPRi) a gene, mentions SpCas9 / SaCas9 / AsCas12a / enAsCas12a, asks \"what guide should I use for <gene>\", or wants CRISPR targeting sequences for a screen — even if they don't say \"design\". Covers human, mouse, rat, and other model organisms. Does NOT run wet-lab validation or genome-wide off-target alignment."
+  },
+  {
+    "folder": "phylogenetics-toolkit",
+    "id": "skill_1254f1f67f344fa78a75c274f1a21d5d",
+    "name": "phylogenetics-toolkit",
+    "category": "general",
+    "description": "End-to-end phylogenetic analysis workflow: sequence retrieval → domain extraction → multiple sequence alignment → phylogenetic tree inference → ancestral sequence reconstruction → molecular clock analysis → motif matching → annotated figure + Newick tree + markdown report. Developed and validated on EC 2.7.7.* nucleotidyltransferases and RT palm domain phylogeny (DRT3 placement)."
+  },
+  {
+    "folder": "celegans-rnai",
+    "id": "skill_ea2ad97f92a9410ba9bc278b3ca73d1e",
+    "name": "celegans-rnai",
+    "category": "general",
+    "description": "C. elegans L4440 feeding RNAi design and evaluation. Two functions: (1) design — given a gene name, auto-retrieve sequence and output primer pairs with restriction-site adapters ready for L4440 cloning; (2) evaluate — given a gene name and an existing RNAi target sequence or primer pair, score it across four quality dimensions."
+  }
+]

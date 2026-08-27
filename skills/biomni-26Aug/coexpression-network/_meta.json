@@ -1,0 +1,12 @@
+{
+  "name": "coexpression-network",
+  "description": "Use to build gene co-expression networks from RNA-seq data and identify modules, module-trait relationships, and hub genes.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Build a co-expression network to identify gene modules and hub genes from my RNA-seq data.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:38.785000",
+  "visibility": "public",
+  "id": "skill_4aec92a664ad4b63baaf2b4981daa277"
+}

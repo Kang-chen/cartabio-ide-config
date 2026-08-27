@@ -1,0 +1,12 @@
+{
+  "name": "clinical-trial-design-simulation",
+  "description": "Use to size, power, simulate, or compare two-arm confirmatory clinical trials with survival, binary, or continuous endpoints. Supports fixed and adaptive designs, interim monitoring, futility, enrichment, sample-size re-estimation, and validation of power, type-I error/FWER, duration, and expected sample size.",
+  "category": "experimental_design",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Size and power my two-arm trial by simulation (endpoint, effect size, adaptive features) and report operating characteristics with a design PDF.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:07.487000",
+  "visibility": "public",
+  "id": "skill_70b5de4b518cd101e23530cd587523c4"
+}

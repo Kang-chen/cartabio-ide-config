@@ -1,0 +1,12 @@
+{
+  "name": "fine-mapping-susie",
+  "description": "Use to fine-map one GWAS locus with SuSiE, identify likely causal variants, and compute PIPs and 95% credible sets. Requires ancestry-matched LD, runs LD-mismatch diagnostics, accepts GWAS summary statistics or accessions, and annotates variants with GTEx/eQTL Catalogue eQTLs and ENCODE cCREs.",
+  "category": "genomics_genetics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Fine-map the T2D GWAS locus at PROX1 using SuSiE and annotate the credible set.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:07.322000",
+  "visibility": "public",
+  "id": "skill_f55142b5be96e79ec64484a53f8087a4"
+}

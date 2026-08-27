@@ -1,0 +1,26 @@
+study,year,measure,effect,ci_lo,ci_hi,se,n_trt,n_ctrl,subgroup,design,source_id,notes
+# --- SCHEMA (one row per comparison; delete these comment rows before use) ---
+# study     : short label shown on the forest plot (e.g. "SURMOUNT-1 (Jastreboff 2022)")
+# year      : publication year (integer)
+# measure   : effect measure for THIS row. One of: MD, SMD, OR, RR, HR
+#             (keep ONE measure per meta-analysis; do not mix MD with OR in one pool)
+# effect    : point estimate on the NATURAL scale (MD/SMD as-is; OR/RR/HR as the ratio, NOT log)
+# ci_lo     : lower 95% CI bound on the natural scale
+# ci_hi     : upper 95% CI bound on the natural scale
+# se        : standard error on the ANALYSIS scale; leave blank to auto-derive from CI
+#             (for MD/SMD analysis scale = natural; for OR/RR/HR analysis scale = log)
+# n_trt     : sample size, treatment/exposed arm (for display; optional)
+# n_ctrl    : sample size, control/unexposed arm (for display; optional)
+# subgroup  : categorical moderator for subgroup analysis (e.g. drug, dose, design); blank = none
+# design    : "RCT" or "Observational" (used for a design subgroup / sensitivity split)
+# source_id : DOI / PMID / NCT so every row is traceable and citable
+# notes     : estimand, dose, timepoint, imputation flags, per-arm-CI derivation, etc.
+#
+# --- EXAMPLE ROWS (continuous MD; synthetic, replace with real extracted data) ---
+Trial A (Author 2020),2020,MD,-12.4,-13.4,-11.5,,1306,655,DrugX,RCT,10.0000/example.a,68 wk; treatment-policy estimand
+Trial B (Author 2021),2021,MD,-10.3,-12.0,-8.6,,407,204,DrugX,RCT,10.0000/example.b,68 wk
+Trial C (Author 2022),2022,MD,-5.4,-5.8,-5.0,,2487,1244,DrugY,RCT,10.0000/example.c,56 wk
+#
+# --- EXAMPLE ROWS (binary OR; synthetic; note effect + CI are on the ratio scale) ---
+# Trial D (Author 2019),2019,OR,0.62,0.48,0.80,,500,500,,RCT,10.0000/example.d,event = response at 12 wk
+# Trial E (Author 2020),2020,OR,0.71,0.55,0.92,,640,640,,Observational,10.0000/example.e,adjusted OR

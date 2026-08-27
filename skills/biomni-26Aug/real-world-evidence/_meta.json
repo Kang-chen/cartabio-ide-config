@@ -1,0 +1,12 @@
+{
+  "name": "real-world-evidence",
+  "description": "Use to run a configurable real-world evidence cohort study on structured EHR or claims data. Covers diagnosis-code cohort construction, Table 1, treatment patterns, Kaplan-Meier/landmark survival, EPV-gated Cox models, and adaptation from MIMIC-IV to other diseases or datasets.",
+  "category": "data_analysis",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Run a real-world-evidence cohort study on clinical EHR data: define a disease cohort by diagnosis codes, characterize baseline, profile treatment patterns, analyze survival vs a comparator, and generate a branded PDF report with an infographic, methods, results, conclusions, figures, and references.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:15.186000",
+  "visibility": "public",
+  "id": "skill_ea1afce75ae2b4fc030bbe787188145e"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "elastic-net-biomarker-panel",
+  "description": "Use to select compact predictive biomarker panels with elastic-net or pure-LASSO logistic regression, nested cross-validation, stability selection, and independent-cohort validation.",
+  "category": "multi_omics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Build a 5-15 gene biomarker panel from the MARS sepsis consortium whole-blood transcriptomics dataset (GSE65682, Affymetrix HG-U219) that classifies immunosuppressed Mars1 ICU sepsis patients against all other endotypes, using elastic-net logistic regression with nested cross-validation and stability selection, then validate the locked panel on an independent cohort. Generate a PDF report with intro, methods, results, conclusions, and figures from all analyses performed.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:07.279000",
+  "visibility": "public",
+  "id": "skill_024b2165ef874c1aa509a07168b27d98"
+}

@@ -1,0 +1,5 @@
+channel,control_file,control_type,percentile
+Live_Dead|Viability|Zombie,controls/unstained.fcs,unstained,0.99
+CD3,controls/fmo_CD3.fcs,fmo,0.99
+CD8,controls/fmo_CD8.fcs,fmo,0.99
+Pt195|195Pt|cisplatin,controls/unstained_cytof.fcs,unstained,0.995

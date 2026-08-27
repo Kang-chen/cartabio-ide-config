@@ -1,0 +1,12 @@
+{
+  "name": "omics-dataset-retrieval",
+  "description": "Use to find, retrieve, catalog, and relevance-audit public omics datasets across GEO, SRA, ArrayExpress, CELLxGENE, and other repositories.",
+  "category": "data_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Find all publicly available omics datasets for my disease of interest. Generate a PDF report with an intro, methods, results, conclusions and figures from all of the analyses you perform.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:28.135000",
+  "visibility": "public",
+  "id": "skill_b12e61063fd8475896b26186626f2426"
+}

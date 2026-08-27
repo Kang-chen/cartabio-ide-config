@@ -1,0 +1,12 @@
+{
+  "name": "adme-ml-modeling",
+  "description": "Use to audit, train, evaluate, save, and apply supervised single-endpoint small-molecule in-vitro ADME models from labeled assay tables. Covers solubility, permeability, clearance, binding, transporter, CYP, hERG, or BBB endpoints; leakage-resistant temporal/scaffold evaluation, censored values, calibrated uncertainty, applicability domains, and model-bundle scoring.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Audit this labelled single-endpoint in-vitro ADME assay table, train a leakage-resistant model with a locked outer temporal or scaffold split and nested inner selection, score the held-out molecules with calibrated intervals and applicability-domain flags, then produce a final PDF report of the locked outer assessment, uncertainty disclosure, and domain status.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:51:47.097000",
+  "visibility": "public",
+  "id": "skill_9fd3e0632ea54e148757bb2469292ab8"
+}

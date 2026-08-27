@@ -1,0 +1,37 @@
+{
+  "case_id": "DEMO-TESLA-FIXTURE-INDEL",
+  "role": "SYNTHETIC code-path fixture (NOT a sequenced patient). The PRIMARY real demo is the fully-open Hugo 2016 melanoma patient Pt22 in demo_case_hugo_pt22.json.",
+  "description": "Minimal synthetic fixture whose sole purpose is to exercise code paths the real PRIMARY demo cannot: (1) neoORF peptide generation from frameshift indels, and (2) the germline-AF and synonymous exclusion filters. The VCF carries real, well-known oncogenic variant coordinates/HGVS on GRCh38 (BRAF V600E, KRAS G12D, TP53 R248L) plus two real-style frameshifts (FBXW7 p.Lys465fs, BRCA1 p.Glu826fs), one synonymous KRAS variant (excluded), and one common-germline BRAF variant (gnomAD-filtered), so every exclusion path is visible. These variants are assembled by hand, NOT called from a single specimen, and NO binding result from this file is presented as real patient data. It is retained only because Hugo 2016's public MAF is SNV-only (0 indels), so a real melanoma case with open per-patient HLA-I cannot exercise the neoORF path.",
+  "inputs": {
+    "vcf": "demo_somatic.vcf",
+    "hla": "demo_hla.txt",
+    "expression_table": "demo_expression_tpm.tsv"
+  },
+  "hla": [
+    "HLA-A*02:01",
+    "HLA-A*11:01",
+    "HLA-B*07:02",
+    "HLA-B*44:02",
+    "HLA-C*05:01",
+    "HLA-C*07:02"
+  ],
+  "provenance": {
+    "variants": "SYNTHETIC: real variant coordinates/HGVS on GRCh38 Ensembl transcripts, hand-assembled (not from one sequenced specimen).",
+    "expression": "GTEx Analysis v8 (2017-06-05, RNASeQCv1.1.9) gene median TPM, Skin - Sun Exposed (Lower leg); public GTEx bucket. REFERENCE (normal-tissue) abundance, used only to exercise the abundance path in this fixture; NOT tumor-specific.",
+    "hla": "common HLA-I genotype (MHCflurry-supported alleles), not a real patient's genotype.",
+    "note": "REAL-DATA-ONLY contract for the SKILL's outputs: binding is real MHCflurry on real peptides/HLA; protein/CDS fetched from UniProt/Ensembl and validated; missing expression/VAF stay null (never fabricated). This fixture's *variants* are synthetic and clearly labelled as such; it is used for code-path testing, not as a scientific showcase."
+  },
+  "primary_demo_pointer": {
+    "case_id": "DEMO-TESLA-HUGO-PT22",
+    "file": "demo_case_hugo_pt22.json",
+    "note": "Use the real, fully-open Hugo 2016 Pt22 melanoma case for the biologically faithful demo (real VAF/CCF/TPM x VAF)."
+  },
+  "benchmark": {
+    "table": "benchmark/TESLA_neoepitopes.csv",
+    "source": "Wells et al., Cell 2020 (DOI:10.1016/j.cell.2020.09.015) TESLA neoepitopes, redistributed as an independent evaluation set (Mendeley Data doi:10.17632/6x87nx8jtc.1, CC BY 4.0)",
+    "n_peptides": 714,
+    "n_immunogenic": 33,
+    "n_nonimmunogenic": 681,
+    "n_alleles": 16
+  }
+}

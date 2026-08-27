@@ -1,0 +1,12 @@
+{
+  "name": "binding-affinity-ml-model",
+  "description": "Use to train and honestly benchmark target-specific small-molecule affinity or potency models from ChEMBL IC50, Ki, or Kd data, including QSAR, fingerprint, GNN, or DeepPurpose models, then screen or repurpose external compounds for novel target-active scaffolds with scaffold-split and applicability-domain checks.",
+  "category": "molecular_design",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Train and benchmark a QSAR model on ChEMBL bioactivity for my target, then screen a library for novel scaffolds: ...",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:52:32.467000",
+  "visibility": "public",
+  "id": "skill_5b530f17e1aaedd0139286faf1950c3c"
+}

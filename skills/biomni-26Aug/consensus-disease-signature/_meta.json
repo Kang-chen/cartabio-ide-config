@@ -1,0 +1,12 @@
+{
+  "name": "consensus-disease-signature",
+  "description": "Use to derive a cross-study consensus disease expression signature from multiple bulk RNA-seq or microarray cohorts. Combines cohort-level differential expression with random-effects meta-analysis, direction consistency, control-group sensitivity checks, pathway enrichment, and core up/down gene sets.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Build a consensus disease signature by meta-analyzing differential expression across several bulk-transcriptome cohorts.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:21.471000",
+  "visibility": "public",
+  "id": "skill_ba99051fddd1d71feb9c6b74443592be"
+}

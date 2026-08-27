@@ -1,0 +1,12 @@
+{
+  "name": "targeted-degrader-design",
+  "description": "Use to design and computationally triage heterobifunctional PROTACs or targeted degraders for a protein. Covers CRBN/VHL E3 selection, warheads and exit vectors, linker enumeration, RDKit assembly, bRo5/ADMET scoring, docking, candidate ranking, and optional ternary-complex modeling.",
+  "category": "molecular_design",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Design and triage targeted protein degraders (PROTACs) for my target: pick E3/warhead/linker, assemble a library, and rank candidates.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:56.503000",
+  "visibility": "public",
+  "id": "skill_1de0c57c38270f6702c80157011ab521"
+}

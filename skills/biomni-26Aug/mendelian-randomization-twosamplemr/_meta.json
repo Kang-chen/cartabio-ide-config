@@ -1,0 +1,12 @@
+{
+  "name": "mendelian-randomization-twosamplemr",
+  "description": "Use to test causal relationships between exposures and outcomes from GWAS summary statistics and genetic instruments with two-sample Mendelian randomization.",
+  "category": "genomics_genetics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "I want to test whether LDL cholesterol has a causal effect on coronary heart disease using Mendelian Randomization.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:37.926000",
+  "visibility": "public",
+  "id": "skill_6655c68c5e9249eba44e6519b7c0b11e"
+}

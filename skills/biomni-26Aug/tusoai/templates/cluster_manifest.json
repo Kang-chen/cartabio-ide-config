@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "task_id": "replace-me",
+  "history_name": "replace-me_stable_history",
+  "shared_output_dir": "/mnt/shared-workspace/tusoai/replace-me/run",
+  "task_bundle": "/mnt/shared-workspace/tusoai/replace-me/task_bundle.pkl",
+  "task_bundle_sha256": "replace-me",
+  "deadline_epoch": null,
+  "shutdown_reserve_seconds": 2700,
+  "global_cost_budget_usd": 10.0,
+  "epoch_cost_budget_usd": 3.0,
+  "nodes": [
+    {
+      "node_id": "leader-0",
+      "role": "leader",
+      "machine_id": "replace-me",
+      "n_jobs": 8,
+      "cpu_threads_per_job": 2,
+      "gpu_ids": [],
+      "node_cost_limit_usd": 0.75
+    },
+    {
+      "node_id": "worker-1",
+      "role": "follower",
+      "machine_id": "replace-me",
+      "n_jobs": 8,
+      "cpu_threads_per_job": 2,
+      "gpu_ids": [],
+      "node_cost_limit_usd": 0.75
+    }
+  ]
+}

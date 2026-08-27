@@ -1,0 +1,12 @@
+{
+  "name": "drug-bioactivity-chembl",
+  "description": "Use to profile a compound's potency, binding affinity, and target selectivity from ChEMBL, or rank compounds for one target. Accepts compound names, ChEMBL IDs, or SMILES; covers IC50/Ki/Kd assay curation, on-target vs off-target activity, selectivity windows, and target-family profiles.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Profile the potency and selectivity of imatinib against its targets from ChEMBL and write a PDF report.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:06.496000",
+  "visibility": "public",
+  "id": "skill_b14b08ae68081bbdaa898cc98affac2a"
+}

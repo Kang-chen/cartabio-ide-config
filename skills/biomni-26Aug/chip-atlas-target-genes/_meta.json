@@ -1,0 +1,12 @@
+{
+  "name": "chip-atlas-target-genes",
+  "description": "Use to retrieve ChIP-Atlas precomputed target genes for a transcription factor from public ChIP-seq experiments.",
+  "category": "epigenomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Find target genes for a transcription factor using ChIP-Atlas public ChIP-seq data.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:40.555000",
+  "visibility": "public",
+  "id": "skill_aaafb560ba89480dbb01b2979f49630d"
+}

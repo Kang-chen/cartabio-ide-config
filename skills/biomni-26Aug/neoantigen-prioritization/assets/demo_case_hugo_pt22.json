@@ -1,0 +1,132 @@
+{
+  "case_id": "DEMO-TESLA-HUGO-PT22",
+  "role": "PRIMARY demo (real patient tumor, fully open access)",
+  "description": "Real anti-PD-1-treated metastatic melanoma patient (Pt22) from Hugo et al., Cell 2016. Somatic variants (with tumor allele read counts -> VAF), tumor RNA-seq expression, and per-patient HLA-I genotype are ALL publicly available for the same patient, with no controlled-access barrier. This case exercises the full TESLA feature set the earlier A375 cell-line demo could not: real DNA VAF, cancer cell fraction (CCF), and TPM x VAF tumor abundance. All 247 real somatic variants are shipped (232 missense + 9 nonsense + 6 splice); the pipeline validates each missense against the canonical protein, scores 214 that pass WT-residue validation, and applies the abundance filter using measured expression and VAF.",
+  "specimen": {
+    "patient": "Pt22",
+    "type": "metastatic cutaneous melanoma (pre-treatment biopsy)",
+    "cohort": "Hugo et al., Cell 2016 (UCLA); anti-PD-1 (pembrolizumab) cohort",
+    "cbioportal_study": "mel_ucla_2016",
+    "cbioportal_sample": "Pt22 (study mel_ucla_2016)",
+    "geo_rnaseq": "GSE78220 (RNA-seq), sample column 'Pt22.baseline'",
+    "driver": "BRAF V600E",
+    "note": "Real patient tumor. Selected because DNA variants (with read counts), RNA-seq, and HLA-I are ALL open for the same patient, making the demo fully reproducible with no dbGaP/GDC controlled-access requirement."
+  },
+  "inputs": {
+    "vcf": "demo_hugo_pt22_somatic.vcf",
+    "hla": "demo_hugo_pt22_hla.txt",
+    "expression_table": "demo_hugo_pt22_expression.tsv"
+  },
+  "hla": [
+    "HLA-A*01:01",
+    "HLA-A*02:01",
+    "HLA-B*27:05",
+    "HLA-B*37:01",
+    "HLA-C*02:02",
+    "HLA-C*06:02"
+  ],
+  "variant_composition": {
+    "total_shipped": 247,
+    "missense": 232,
+    "nonsense": 9,
+    "splice": 6,
+    "indels": 0,
+    "note": "Hugo 2016 cBioPortal MAF is SNV-only (0 indels across the entire 25,166-record cohort), so this real case does not exercise the neoORF/indel path. The neoORF path is covered separately by the synthetic code-path fixture demo_somatic.vcf (see caveats)."
+  },
+  "representative_variants": [
+    {
+      "gene": "BRAF",
+      "protein": "p.Val600Glu",
+      "class": "missense",
+      "grch38": "chr7:140753336 A>T",
+      "vaf": 0.3105,
+      "ccf": 0.621,
+      "tpm": 9.89,
+      "result": "Tier2; neoepitope KIGDFGLATEK on HLA-C*02:02 (%rank 1.24, 678 nM). Canonical driver positive control."
+    },
+    {
+      "gene": "PDGFRA",
+      "protein": "p.Arg376Gln",
+      "class": "missense",
+      "vaf": 0.11,
+      "tpm": 34.7,
+      "result": "Tier1 top priority; IRYQSKLKL on HLA-C*06:02 (%rank 0.012)."
+    },
+    {
+      "gene": "NCKAP1L",
+      "protein": "p.Pro509Leu",
+      "class": "missense",
+      "vaf": 0.186,
+      "tpm": 47.2,
+      "result": "Tier1; HENLDLAKV on HLA-B*37:01; high expression x clonal-ish VAF -> high abundance."
+    },
+    {
+      "gene": "PRKN",
+      "protein": "p.Val380Leu",
+      "class": "missense",
+      "vaf": 0.053,
+      "tpm": null,
+      "result": "Tier1 despite no expression value (PRKN absent from RNA-seq matrix); abundance falls back to VAF-only (documented behavior)."
+    },
+    {
+      "gene": "UGT3A1",
+      "protein": "p.Asp460Asn",
+      "class": "missense",
+      "vaf": 0.144,
+      "tpm": 0.0,
+      "result": "excluded_low_abundance; RLVGWINHI on HLA-A*02:01 is an excellent binder (%rank 0.002) but TPM=0 -> abundance=0 -> filtered. Demonstrates the TPM x VAF abundance filter."
+    },
+    {
+      "gene": "MTNR1A",
+      "protein": "p.Ile202Met",
+      "class": "missense",
+      "vaf": 0.071,
+      "tpm": 0.0,
+      "result": "excluded_low_abundance; strong binder FLVPMIMVI killed by zero expression."
+    }
+  ],
+  "results_summary": {
+    "engine": "MHCflurry 2.2.1 (Class1 presentation)",
+    "vcf_build": "GRCh38 (lifted from GRCh37)",
+    "n_variants_shipped": 247,
+    "n_missense_scored": 214,
+    "n_missense_wt_validation_skipped": 18,
+    "n_candidate_peptides": 8009,
+    "vaf_non_null": "8009/8009 (100%)",
+    "ccf_non_null": "8009/8009 (100%)",
+    "tier_counts": {
+      "Tier1": 67,
+      "Tier2": 276,
+      "Tier3": 695,
+      "excluded_low_abundance": 1978,
+      "excluded_nonbinder": 4993
+    },
+    "prioritized_total": 343,
+    "note": "18 missense are deterministically skipped because the stated WT residue disagrees with the canonical UniProt protein at that position (transcript/isoform differences in the cBioPortal RefSeq annotation). The pipeline never fabricates a residue, so these are dropped rather than force-applied."
+  },
+  "provenance": {
+    "variants": "Somatic mutation calls for sample Pt22 retrieved from cBioPortal study mel_ucla_2016 (Hugo 2016) via the public REST API (mutations/fetch, projection=DETAILED). Native calls are GRCh37 with tumorRefCount/tumorAltCount per variant. Each variant was lifted GRCh37->GRCh38 with pyliftover (hg19->hg38); 3 strand-flipped variants had REF/ALT reverse-complemented; every lifted REF was verified against the GRCh38 reference via the Ensembl sequence/region batch API. 249 native calls -> 248 lifted (GSTT2 V118M chr22 unmappable, segmental-dup) -> 247 REF-verified (NBPF14 S157C dropped: strand-flip REF disagreed with GRCh38). VAF = tumorAltCount/(tumorRefCount+tumorAltCount); CCF proxy = min(1, VAF x 2).",
+    "expression": "Hugo 2016 tumor RNA-seq from GEO GSE78220 (GSE78220_PatientFPKM.xlsx), column 'Pt22.baseline'. FPKM converted to TPM (TPM_i = FPKM_i / sum(FPKM) x 1e6) after EXCLUDING 1,630 MIR* microRNA rows that carried 81.3% of the FPKM mass and otherwise crushed protein-coding TPM (e.g. MIR6723 = 969,042 FPKM). Reference sanity after exclusion: ACTB~5643, GAPDH~2687, B2M~13831, BRAF~9.89. Column labelled 'expression' so the skill's abundance parser consumes it. 3 mutated genes (CFAP54, PRKN, SCAND3) are absent from the matrix -> no expression value (abundance falls back to VAF-only for those).",
+    "hla": "Pt22 class-I HLA-I genotype from cBioPortal mel_ucla_2016 SAMPLE-level clinical attributes (HLA_A/HLA_B/HLA_C): A0101/A0201, B2705/B3701, C0202/C0602 -> HLA-A*01:01, HLA-A*02:01, HLA-B*27:05, HLA-B*37:01, HLA-C*02:02, HLA-C*06:02 (all 6 MHCflurry-supported). This is the KEY advantage over TCGA: Hugo 2016 releases per-patient HLA-I openly, whereas TCGA HLA-I is germline-derived and controlled-access.",
+    "wt_validation": "Each missense variant's WT residue is validated against the canonical human protein resolved by gene symbol from UniProt (reviewed, organism 9606). The VCF ships no transcript ID in the CSQ Feature field, so resolution is deterministic UniProt-by-symbol (no dependency on the flaky Ensembl sequence/id endpoint). 214/232 validate; 18 disagree at the isoform level and are skipped.",
+    "note": "REAL-DATA-ONLY contract: binding is real MHCflurry on real peptides x real HLA; VAF/CCF from real tumor read counts; expression from real tumor RNA-seq; HLA is the patient's real genotype. Missing values stay null (never fabricated)."
+  },
+  "caveats": [
+    "Real patient tumor, but WES/RNA-seq are from a single pre-treatment biopsy (no tumor-normal pair shipped here; the NORMAL sample in the VCF is a 0/0 placeholder so the parser reads the TUMOR genotype/AF).",
+    "Missense-only in practice: Hugo 2016's public MAF has 0 indels, so the neoORF/frameshift path is NOT exercised by this case. It is covered by the separate synthetic code-path fixture demo_somatic.vcf (FBXW7/BRCA1 frameshifts), which is clearly labelled synthetic and used only to test neoORF logic.",
+    "Germline handling: no matched-normal is applied here; putative germline is instead removed by the gnomAD population-AF filter (germline_af_max) using gnomAD AF annotated per variant where available.",
+    "18 of 232 missense are dropped by WT-residue validation (isoform/transcript disagreement between the cBioPortal RefSeq annotation and the UniProt canonical protein) - an honest consequence of the no-fabrication contract, not an error.",
+    "Coordinates were lifted GRCh37->GRCh38; 2 variants were lost in lift/REF-verification (GSTT2, NBPF14) as documented."
+  ],
+  "sources": {
+    "hugo2016": "Hugo et al., Cell 2016;165(1):35-44. doi:10.1016/j.cell.2016.02.065 (anti-PD-1 melanoma genomic/transcriptomic responses; source of variants, RNA-seq, HLA).",
+    "geo_gse78220": "NCBI GEO GSE78220 (Hugo 2016 RNA-seq FPKM matrix, GSE78220_PatientFPKM.xlsx).",
+    "cbioportal": "Cerami et al., Cancer Discovery 2012;2(5):401-404, doi:10.1158/2159-8290.CD-12-0095; Gao et al., Science Signaling 2013;6(269):pl1, doi:10.1126/scisignal.2004088 (cBioPortal study mel_ucla_2016).",
+    "uniprot": "UniProt Consortium, Nucleic Acids Res 2023;51(D1):D523-D531 (canonical protein sequences for WT-residue validation)."
+  },
+  "benchmark": {
+    "table": "benchmark/TESLA_neoepitopes.csv",
+    "source": "Wells et al., Cell 2020 (DOI:10.1016/j.cell.2020.09.015) TESLA neoepitopes, redistributed as an independent evaluation set (Mendeley Data doi:10.17632/6x87nx8jtc.1, CC BY 4.0)",
+    "note": "The benchmark is independent of the demo specimen; performance metrics are computed on the TESLA cohort, not on Pt22."
+  }
+}

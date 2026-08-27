@@ -1,0 +1,218 @@
+{
+  "created_at": "2026-07-08T17:15:26Z",
+  "default_budget": {
+    "iterations": 50
+  },
+  "description": "Develop computational biology methods natively in Biomni through benchmark-first 50-iteration rounds with broad code refactors, overfitting checks, durable state, and reproducible method packaging. Use for GPU-heavy tasks, unclear objectives, or work without external API keys; prefer tusoai for faster many-iteration discovery with focused code changes when the required API keys are available.",
+  "entrypoint": "SKILL.md",
+  "file_count": 41,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "97182d9f0d5c320f8d04fd49afa2abec398c297b1d3225b871e5029360094b48",
+      "size": 1560
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "195be446c91b45eb749a952b0b4391a5aa9a0bf3bd86d970f4e63ea32ff49bed",
+      "size": 42425
+    },
+    {
+      "path": "VERSION",
+      "sha256": "7fbd210ebec11f65a97190ef900795c4b8da3805af3f5a1b8d1d272556b292ca",
+      "size": 5
+    },
+    {
+      "path": "references/benchmark_and_evaluation.md",
+      "sha256": "d05d382c40603aad8fc50a03cfbb6282a39f0fac5d3774dbbab9e468dad81a96",
+      "size": 1348
+    },
+    {
+      "path": "references/biological_reasoning_and_priors.md",
+      "sha256": "798fa1a53678a4b35e1d4425a526929ebabb4a411034bffb3abbee55e21ab1ed",
+      "size": 1315
+    },
+    {
+      "path": "references/data_integration_and_search.md",
+      "sha256": "8dc43153974633c1002554ed881055af067c1579dc9fa30539119115833f01fb",
+      "size": 1642
+    },
+    {
+      "path": "references/derivation_and_model_formulation.md",
+      "sha256": "36c004e6667c1046905da6b57e24121f3f7279b95286ed8a0c2ee03b13326f37",
+      "size": 897
+    },
+    {
+      "path": "references/diagnostics_ablations_and_error_analysis.md",
+      "sha256": "815f1bccc9412014665c3462101fa0af2a3b02c869f3c71fc5321687fff41a94",
+      "size": 1606
+    },
+    {
+      "path": "references/efficiency_simplification_and_scaling.md",
+      "sha256": "8f36618a83500bce1b96c74362c5d5f6577967547d9ea84ba0cb10b720b48afc",
+      "size": 1097
+    },
+    {
+      "path": "references/final_delivery_contract.md",
+      "sha256": "e76aad2783231f08b54cf276e53812bd4f1b407151440c7486e20cd32d9635a1",
+      "size": 1039
+    },
+    {
+      "path": "references/foundation_model_optimization.md",
+      "sha256": "8900c90cab13f332287ad29c8a1d6441b74c88c23364b0c1ebfa30e957870e85",
+      "size": 1113
+    },
+    {
+      "path": "references/integrity_and_reproducibility.md",
+      "sha256": "c91cae5bc1221e07f1061dd559ac4d881fec4094bbb860cb7b5a13af73c01af2",
+      "size": 922
+    },
+    {
+      "path": "references/method_development_loop.md",
+      "sha256": "eb321c8988230b356dca6cab55fcd9cd3c99a896025d58692606115570f52ffd",
+      "size": 5148
+    },
+    {
+      "path": "references/state_and_memory.md",
+      "sha256": "d1cf091d7d151be8dc6838a326fb1814d595996600775941129f0629d9cc83ba",
+      "size": 2837
+    },
+    {
+      "path": "scripts/benchmark_runner.py",
+      "sha256": "c6940d2b5f3ab903416a6d35052ee16862aa096b7d5cea32769eb063d22cf9dd",
+      "size": 3836
+    },
+    {
+      "path": "scripts/biomni_method_state.py",
+      "sha256": "8d4d1ed1d9f3dc6d0a5b0e69cd18274bb97d2f95eb0bb96e8951f5a0a2ae11f3",
+      "size": 26110
+    },
+    {
+      "path": "scripts/create_benchmark_scaffold.py",
+      "sha256": "233afdea4b6b11cb4ba1725fe19d5838a69aa789582e425e87d13e75d4ddd6d1",
+      "size": 4136
+    },
+    {
+      "path": "scripts/create_manifest.py",
+      "sha256": "d523a82e1c6d2bdba0c455fec495cc66e502dc1cd598ddaca3277419edd62fd6",
+      "size": 1429
+    },
+    {
+      "path": "scripts/protected_hashes.py",
+      "sha256": "7be196172d4ec79709a25a043f2957209676c10f59a841b9ca90346fc9536ca1",
+      "size": 2011
+    },
+    {
+      "path": "scripts/safe_zip.py",
+      "sha256": "e0fc2ad2d2588256000b6c4864d60889f3e989655d3817630949e740e4c30d59",
+      "size": 2099
+    },
+    {
+      "path": "scripts/verify_delivery.py",
+      "sha256": "e3a427132088483c25a16a65f9289f4cda68515f061eea06352da6c1ca45dc32",
+      "size": 1259
+    },
+    {
+      "path": "scripts/verify_skill_package.py",
+      "sha256": "1b1e262d4ca29ea69ae1a273df901c01cafc390b22e9bc32e1fc100f78a5c57e",
+      "size": 3481
+    },
+    {
+      "path": "strategy_library/component_catalog.json",
+      "sha256": "b8f10830ba2a0d5b48900accac92f4fdadadd69a19c12bfaf2f89898d6cc26ba",
+      "size": 1560
+    },
+    {
+      "path": "strategy_library/design_axes.json",
+      "sha256": "f0ba59cbb1bda2a215c588d609603eda2477f1be04a9d98b0b72e326f50e37ac",
+      "size": 1346
+    },
+    {
+      "path": "strategy_library/intervention_weights.json",
+      "sha256": "9d0a86406f696c2b83ed60d582cfeddce2e06458c5bd438bf81e0c5726d05c4c",
+      "size": 841
+    },
+    {
+      "path": "templates/benchmark_card.md",
+      "sha256": "541ce6246ba72a72fddfca8981c11a5b6137785b825f90b82a8cb1a38451e0e6",
+      "size": 642
+    },
+    {
+      "path": "templates/biological_prior_card.md",
+      "sha256": "97d61c490219d046dbbedde63ec7ace52496758335807ea19a92a35bd0c7377d",
+      "size": 173
+    },
+    {
+      "path": "templates/candidate_card.md",
+      "sha256": "d8251853e600778ffb600c9323d5dfa2054ba8056d341a86c30f1d2908db6224",
+      "size": 251
+    },
+    {
+      "path": "templates/data_source_card.md",
+      "sha256": "07c9afb77ef9c92fba501cc72ca38b7ed4995de3d7823e01d0c47d3de289e7ad",
+      "size": 238
+    },
+    {
+      "path": "templates/derivation_record.md",
+      "sha256": "1e51bd0af36c35a2def7390a9a42a90f68e858a62f29c77e9c329a6b03953df0",
+      "size": 294
+    },
+    {
+      "path": "templates/error_analysis.md",
+      "sha256": "8ea61575ae768e432d3fcd3fabcca352c1da2d4f0567353a66d3faf1357b9b89",
+      "size": 270
+    },
+    {
+      "path": "templates/experiment_record.md",
+      "sha256": "d92402b09b72461173a1ff7c7f8d777340c06768049e1cf6ed3972b0de97c01b",
+      "size": 435
+    },
+    {
+      "path": "templates/feedback_item.md",
+      "sha256": "94a539e3b122d40ac04ca949875d98ac4920d08ab820bf3e23bd82fd75bb9b81",
+      "size": 201
+    },
+    {
+      "path": "templates/final_report.md",
+      "sha256": "dfb58b471618f4e8fe7f44275be63f503ef79121757bc855ed3e487fb7348d49",
+      "size": 478
+    },
+    {
+      "path": "templates/literature_notes.md",
+      "sha256": "706df7c8037781beb47ff9de5548df3d8c6aeec6f64c7f3fade85dd51721d37f",
+      "size": 161
+    },
+    {
+      "path": "templates/method_blueprint.md",
+      "sha256": "d84d6e27b944a8157729de7c7ca21a09fb7754d62babadcc984ac2afeb1d0785",
+      "size": 586
+    },
+    {
+      "path": "templates/method_card.md",
+      "sha256": "3d6d03d3bdacd2a83c5a9c2919bed75f4ac8f38047f347fb49113c5b5329f760",
+      "size": 320
+    },
+    {
+      "path": "templates/package_readme.md",
+      "sha256": "8355413940f498fcd341ffa444e65aa536e211bd8de7a1f1c47753c4edacecff",
+      "size": 144
+    },
+    {
+      "path": "templates/reproduce.sh",
+      "sha256": "d4ad0f26c588635f8c4d8acb3a6a30f875c3312fc00bd6127704bfe3d218fe0a",
+      "size": 321
+    },
+    {
+      "path": "templates/risk_register.md",
+      "sha256": "35bb2d81eb73e001487b20435bcec724d9db6c9751e14e59677d604acf1448b0",
+      "size": 285
+    },
+    {
+      "path": "templates/run_manifest.json",
+      "sha256": "5dd1528cf5414d8c5c3fa1ce60d80aa3665c4e93de13cce703af4c562bafc2c3",
+      "size": 326
+    }
+  ],
+  "name": "tusoskill",
+  "version": "1.1.0"
+}

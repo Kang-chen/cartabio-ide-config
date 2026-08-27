@@ -1,0 +1,12 @@
+{
+  "name": "pharmacovigilance-ae-signal-detection",
+  "description": "Use to detect post-market adverse-event signals for a drug, class, or target from FDA FAERS/OpenFDA. Computes ROR, PRR, chi-square, and FDR disproportionality, maps MedDRA classes, filters reporting artifacts, and compares signals with FDA label warnings; triggers on pharmacovigilance, side effects, or labeled-vs-unlabeled events.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Run a FAERS adverse-event signal-detection scan for upadacitinib",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:24.986000",
+  "visibility": "public",
+  "id": "skill_fb055d3413196f5e948f5159c1207321"
+}

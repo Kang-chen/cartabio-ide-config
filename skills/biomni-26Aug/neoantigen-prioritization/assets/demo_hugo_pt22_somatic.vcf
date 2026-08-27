@@ -1,0 +1,284 @@
+##fileformat=VCFv4.2
+##DEMO_ROLE="PRIMARY real demo: Hugo et al. Cell 2016 melanoma patient Pt22 (cBioPortal mel_ucla_2016, RNA-seq GSE78220). Fully open access. Real VAF/CCF/TPM. See demo_case_hugo_pt22.json."
+##reference=GRCh38
+##source=cBioPortal_mel_ucla_2016_Hugo2016_liftover_GRCh37_to_GRCh38
+##INFO=<ID=CSQ,Number=.,Type=String,Description="Consequence annotations from Ensembl VEP (GRCh38). Format: Allele|Consequence|IMPACT|SYMBOL|Gene|Feature_type|Feature|BIOTYPE|HGVSc|HGVSp|Protein_position|gnomADe_AF">
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene symbol">
+##INFO=<ID=SRC,Number=1,Type=String,Description="Source of the somatic call">
+##FILTER=<ID=PASS,Description="Somatic consensus call (Hugo 2016 WES; cBioPortal MUTATION_EXTENDED)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for the ref and alt alleles (tumour). NORMAL AD is unavailable in cBioPortal and set to 0,0.">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Total read depth at the site (tumour). NORMAL DP unavailable, set to 0.">
+##FORMAT=<ID=AF,Number=A,Type=Float,Description="Tumour DNA variant allele fraction = t_alt/(t_ref+t_alt) from WES.">
+##contig=<ID=1,length=248956422,assembly=GRCh38>
+##contig=<ID=2,length=242193529,assembly=GRCh38>
+##contig=<ID=3,length=198295559,assembly=GRCh38>
+##contig=<ID=4,length=190214555,assembly=GRCh38>
+##contig=<ID=5,length=181538259,assembly=GRCh38>
+##contig=<ID=6,length=170805979,assembly=GRCh38>
+##contig=<ID=7,length=159345973,assembly=GRCh38>
+##contig=<ID=8,length=145138636,assembly=GRCh38>
+##contig=<ID=9,length=138394717,assembly=GRCh38>
+##contig=<ID=10,length=133797422,assembly=GRCh38>
+##contig=<ID=11,length=135086622,assembly=GRCh38>
+##contig=<ID=12,length=133275309,assembly=GRCh38>
+##contig=<ID=13,length=114364328,assembly=GRCh38>
+##contig=<ID=14,length=107043718,assembly=GRCh38>
+##contig=<ID=15,length=101991189,assembly=GRCh38>
+##contig=<ID=16,length=90338345,assembly=GRCh38>
+##contig=<ID=17,length=83257441,assembly=GRCh38>
+##contig=<ID=18,length=80373285,assembly=GRCh38>
+##contig=<ID=19,length=58617616,assembly=GRCh38>
+##contig=<ID=20,length=64444167,assembly=GRCh38>
+##contig=<ID=21,length=46709983,assembly=GRCh38>
+##contig=<ID=22,length=50818468,assembly=GRCh38>
+##contig=<ID=X,length=156040895,assembly=GRCh38>
+##note="NORMAL column is a placeholder (0/0:0,0:0:0.0): cBioPortal exposes only tumour read counts (tumorRefCount/tumorAltCount); matched-normal counts are not provided. Calls are already somatic consensus (tumour vs matched normal) from Hugo et al. 2016. Germline filtering downstream uses population AF (gnomAD via VEP), not raw tumour-normal subtraction."
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	TUMOR	NORMAL
+1	6468408	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|PLEKHG5|PLEKHG5|||protein_coding||p.Gly866Ser|866|;GENE=PLEKHG5;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:74,5:79:0.0633	0/0:0,0:0:0.0
+1	11796321	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|MTHFR|MTHFR|||protein_coding||p.Ala222Val|222|;GENE=MTHFR;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:77,4:81:0.0494	0/0:0,0:0:0.0
+1	12022277	.	A	T	.	PASS	CSQ=T|missense_variant|MODERATE|MIIP|MIIP|||protein_coding||p.Lys99Asn|99|;GENE=MIIP;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:73,6:79:0.0759	0/0:0,0:0:0.0
+1	15729114	.	C	T	.	PASS	CSQ=T|stop_gained|HIGH|PLEKHM2|PLEKHM2|||protein_coding||p.Gln667Ter|667|;GENE=PLEKHM2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:44,7:51:0.1373	0/0:0,0:0:0.0
+1	45332180	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|MUTYH|MUTYH|||protein_coding||p.Arg293Trp|293|;GENE=MUTYH;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:46,6:52:0.1154	0/0:0,0:0:0.0
+1	45714256	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|IPP|IPP|||protein_coding||p.Ser507Phe|507|;GENE=IPP;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:114,9:123:0.0732	0/0:0,0:0:0.0
+1	46361784	.	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|NSUN4|NSUN4|||protein_coding||p.Ile365Val|365|;GENE=NSUN4;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:132,8:140:0.0571	0/0:0,0:0:0.0
+1	51145734	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|C1ORF185|C1ORF185|||protein_coding||p.Arg90Lys|90|;GENE=C1ORF185;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:130,24:154:0.1558	0/0:0,0:0:0.0
+1	53075877	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|PODN|PODN|||protein_coding||p.Arg211Cys|211|;GENE=PODN;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:54,5:59:0.0847	0/0:0,0:0:0.0
+1	56906679	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|C8A|C8A|||protein_coding||p.Arg370Lys|370|;GENE=C8A;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:158,18:176:0.1023	0/0:0,0:0:0.0
+1	74631742	.	G	C	.	PASS	CSQ=C|missense_variant|MODERATE|ERICH3|ERICH3|||protein_coding||p.Pro264Ala|264|;GENE=ERICH3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:111,5:116:0.0431	0/0:0,0:0:0.0
+1	103551024	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|RNPC3|RNPC3|||protein_coding||p.Ala482Val|482|;GENE=RNPC3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:138,10:148:0.0676	0/0:0,0:0:0.0
+1	151564538	.	T	C	.	PASS	CSQ=C|missense_variant|MODERATE|TUFT1|TUFT1|||protein_coding||p.Leu113Pro|113|;GENE=TUFT1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:80,9:89:0.1011	0/0:0,0:0:0.0
+1	156526600	.	C	T	.	PASS	CSQ=T|splice_region_variant|LOW|IQGAP3|IQGAP3|||protein_coding||||;GENE=IQGAP3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:104,37:141:0.2624	0/0:0,0:0:0.0
+1	156924048	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|LRRC71|LRRC71|||protein_coding||p.Pro87Leu|87|;GENE=LRRC71;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:14,5:19:0.2632	0/0:0,0:0:0.0
+1	175403208	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|TNR|TNR|||protein_coding||p.Gly303Glu|303|;GENE=TNR;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:35,12:47:0.2553	0/0:0,0:0:0.0
+1	190454880	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|BRINP3|BRINP3|||protein_coding||p.Arg4Gln|4|;GENE=BRINP3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:129,7:136:0.0515	0/0:0,0:0:0.0
+1	196258349	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|KCNT2|KCNT2|||protein_coding||p.Arg1019Gln|1019|;GENE=KCNT2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:125,9:134:0.0672	0/0:0,0:0:0.0
+1	200907884	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|INAVA|INAVA|||protein_coding||p.Glu191Lys|191|;GENE=INAVA;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:93,36:129:0.2791	0/0:0,0:0:0.0
+1	216199989	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|USH2A|USH2A|||protein_coding||p.Gly1150Glu|1150|;GENE=USH2A;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:118,53:171:0.3099	0/0:0,0:0:0.0
+1	216519365	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|ESRRG|ESRRG|||protein_coding||p.Glu307Lys|307|;GENE=ESRRG;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:93,36:129:0.2791	0/0:0,0:0:0.0
+1	217774367	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|SPATA17|SPATA17|||protein_coding||p.Glu185Lys|185|;GENE=SPATA17;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:123,8:131:0.0611	0/0:0,0:0:0.0
+1	236537507	.	T	A	.	PASS	CSQ=A|missense_variant|MODERATE|LGALS8|LGALS8|||protein_coding||p.Phe19Tyr|19|;GENE=LGALS8;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:213,9:222:0.0405	0/0:0,0:0:0.0
+1	236537557	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|LGALS8|LGALS8|||protein_coding||p.Arg36Cys|36|;GENE=LGALS8;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:256,13:269:0.0483	0/0:0,0:0:0.0
+1	236555893	.	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|HEATR1|HEATR1|||protein_coding||p.Val1854Ala|1854|;GENE=HEATR1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:159,7:166:0.0422	0/0:0,0:0:0.0
+1	236586349	.	T	C	.	PASS	CSQ=C|missense_variant|MODERATE|HEATR1|HEATR1|||protein_coding||p.Met607Val|607|;GENE=HEATR1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:155,7:162:0.0432	0/0:0,0:0:0.0
+1	247037598	.	C	G	.	PASS	CSQ=G|missense_variant|MODERATE|ZNF670|ZNF670|||protein_coding||p.Glu341Gln|341|;GENE=ZNF670;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:236,16:252:0.0635	0/0:0,0:0:0.0
+2	15366648	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|NBAS|NBAS|||protein_coding||p.Ser1250Phe|1250|;GENE=NBAS;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:110,11:121:0.0909	0/0:0,0:0:0.0
+2	56372366	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|CCDC85A|CCDC85A|||protein_coding||p.Pro447Leu|447|;GENE=CCDC85A;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:68,6:74:0.0811	0/0:0,0:0:0.0
+2	60546006	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|BCL11A|BCL11A|||protein_coding||p.Ser117Phe|117|;GENE=BCL11A;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:191,36:227:0.1586	0/0:0,0:0:0.0
+2	61203142	.	A	C	.	PASS	CSQ=C|missense_variant|MODERATE|USP34|USP34|||protein_coding||p.Leu3169Arg|3169|;GENE=USP34;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:113,15:128:0.1172	0/0:0,0:0:0.0
+2	62764342	.	T	C	.	PASS	CSQ=C|missense_variant|MODERATE|EHBP1|EHBP1|||protein_coding||p.Ile80Thr|80|;GENE=EHBP1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:266,33:299:0.1104	0/0:0,0:0:0.0
+2	70785602	.	C	G	.	PASS	CSQ=G|missense_variant|MODERATE|FIGLA|FIGLA|||protein_coding||p.Ser141Thr|141|;GENE=FIGLA;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:209,9:218:0.0413	0/0:0,0:0:0.0
+2	70816072	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|CLEC4F|CLEC4F|||protein_coding||p.Glu437Lys|437|;GENE=CLEC4F;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:149,28:177:0.1582	0/0:0,0:0:0.0
+2	73450771	.	G	C	.	PASS	CSQ=C|missense_variant|MODERATE|ALMS1|ALMS1|||protein_coding||p.Gly1414Ala|1414|;GENE=ALMS1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:151,8:159:0.0503	0/0:0,0:0:0.0
+2	102235232	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|IL1RL2|IL1RL2|||protein_coding||p.Pro545Ser|545|;GENE=IL1RL2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:80,13:93:0.1398	0/0:0,0:0:0.0
+2	106435178	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|RGPD3|RGPD3|||protein_coding||p.Asp595Asn|595|;GENE=RGPD3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:335,52:387:0.1344	0/0:0,0:0:0.0
+2	117935554	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|CCDC93|CCDC93|||protein_coding||p.Asp557Asn|557|;GENE=CCDC93;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:56,10:66:0.1515	0/0:0,0:0:0.0
+2	141062139	.	A	T	.	PASS	CSQ=T|stop_gained|HIGH|LRP1B|LRP1B|||protein_coding||p.Leu383Ter|383|;GENE=LRP1B;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:101,11:112:0.0982	0/0:0,0:0:0.0
+2	151621017	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|NEB|NEB|||protein_coding||p.Arg3245Cys|3245|;GENE=NEB;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:119,13:132:0.0985	0/0:0,0:0:0.0
+2	157321602	.	T	G	.	PASS	CSQ=G|missense_variant|MODERATE|ERMN|ERMN|||protein_coding||p.His175Pro|175|;GENE=ERMN;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:164,28:192:0.1458	0/0:0,0:0:0.0
+2	159984061	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|PLA2R1|PLA2R1|||protein_coding||p.Glu684Lys|684|;GENE=PLA2R1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:72,6:78:0.0769	0/0:0,0:0:0.0
+2	178565659	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|TTN|TTN|||protein_coding||p.Glu25184Lys|25184|;GENE=TTN;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:111,18:129:0.1395	0/0:0,0:0:0.0
+2	209984912	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|UNC80|UNC80|||protein_coding||p.Arg3039Lys|3039|;GENE=UNC80;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:74,10:84:0.119	0/0:0,0:0:0.0
+2	227051116	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|COL4A4|COL4A4|||protein_coding||p.Pro1004Leu|1004|;GENE=COL4A4;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:94,5:99:0.0505	0/0:0,0:0:0.0
+2	227991010	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|SPHKAP|SPHKAP|||protein_coding||p.Arg1650Lys|1650|;GENE=SPHKAP;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:145,27:172:0.157	0/0:0,0:0:0.0
+2	240868897	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|AGXT|AGXT|||protein_coding||p.Pro11Leu|11|;GENE=AGXT;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:80,4:84:0.0476	0/0:0,0:0:0.0
+3	8633821	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|SSUH2|SSUH2|||protein_coding||p.Pro40Ser|40|;GENE=SSUH2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:59,7:66:0.1061	0/0:0,0:0:0.0
+3	17014804	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|PLCL2|PLCL2|||protein_coding||p.Asp845Asn|845|;GENE=PLCL2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:102,14:116:0.1207	0/0:0,0:0:0.0
+3	39184636	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|XIRP1|XIRP1|||protein_coding||p.Gly1604Arg|1604|;GENE=XIRP1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:102,5:107:0.0467	0/0:0,0:0:0.0
+3	62481778	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|CADPS|CADPS|||protein_coding||p.Pro1040Ser|1040|;GENE=CADPS;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:240,40:280:0.1429	0/0:0,0:0:0.0
+3	65429639	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|MAGI1|MAGI1|||protein_coding||p.Gly683Glu|683|;GENE=MAGI1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:76,15:91:0.1648	0/0:0,0:0:0.0
+3	66038278	.	A	T	.	PASS	CSQ=T|missense_variant|MODERATE|MAGI1|MAGI1|||protein_coding||p.Trp11Arg|11|;GENE=MAGI1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:48,9:57:0.1579	0/0:0,0:0:0.0
+3	97873943	.	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|CRYBG3|CRYBG3|||protein_coding||p.Lys917Glu|917|;GENE=CRYBG3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:73,11:84:0.131	0/0:0,0:0:0.0
+3	100886304	.	G	A	.	PASS	CSQ=A|stop_gained|HIGH|ABI3BP|ABI3BP|||protein_coding||p.Arg168Ter|168|;GENE=ABI3BP;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:141,18:159:0.1132	0/0:0,0:0:0.0
+3	123700869	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|MYLK|MYLK|||protein_coding||p.Glu867Lys|867|;GENE=MYLK;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:49,5:54:0.0926	0/0:0,0:0:0.0
+3	149183604	.	C	G	.	PASS	CSQ=G|missense_variant|MODERATE|CP|CP|||protein_coding||p.Val763Leu|763|;GENE=CP;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:153,12:165:0.0727	0/0:0,0:0:0.0
+3	179234297	.	A	T	.	PASS	CSQ=T|missense_variant|MODERATE|PIK3CA|PIK3CA|||protein_coding||p.His1047Leu|1047|;GENE=PIK3CA;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:73,7:80:0.0875	0/0:0,0:0:0.0
+3	195786494	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|MUC4|MUC4|||protein_coding||p.Arg1696Cys|1696|;GENE=MUC4;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:975,43:1018:0.0422	0/0:0,0:0:0.0
+4	1022365	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|FGFRL1|FGFRL1|||protein_coding||p.Pro81Leu|81|;GENE=FGFRL1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:101,6:107:0.0561	0/0:0,0:0:0.0
+4	7664421	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|SORCS2|SORCS2|||protein_coding||p.Pro341Ser|341|;GENE=SORCS2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:83,11:94:0.117	0/0:0,0:0:0.0
+4	37433979	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|NWD2|NWD2|||protein_coding||p.Gly222Asp|222|;GENE=NWD2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:78,9:87:0.1034	0/0:0,0:0:0.0
+4	54270638	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|PDGFRA|PDGFRA|||protein_coding||p.Arg376Gln|376|;GENE=PDGFRA;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:105,13:118:0.1102	0/0:0,0:0:0.0
+4	54727271	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|KIT|KIT|||protein_coding||p.Val532Ile|532|;GENE=KIT;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:154,14:168:0.0833	0/0:0,0:0:0.0
+4	73987988	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|PPBP|PPBP|||protein_coding||p.Gly39Glu|39|;GENE=PPBP;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:119,9:128:0.0703	0/0:0,0:0:0.0
+4	122209328	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|BLTP1|BLTP1|||protein_coding||p.Thr641Ile|641|;GENE=BLTP1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:81,5:86:0.0581	0/0:0,0:0:0.0
+4	122209330	.	C	A	.	PASS	CSQ=A|missense_variant|MODERATE|BLTP1|BLTP1|||protein_coding||p.Gln642Lys|642|;GENE=BLTP1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:78,5:83:0.0602	0/0:0,0:0:0.0
+4	154298510	.	G	C	.	PASS	CSQ=C|missense_variant|MODERATE|DCHS2|DCHS2|||protein_coding||p.Thr1480Arg|1480|;GENE=DCHS2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:176,8:184:0.0435	0/0:0,0:0:0.0
+4	176687509	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|VEGFC|VEGFC|||protein_coding||p.Gly275Arg|275|;GENE=VEGFC;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:120,9:129:0.0698	0/0:0,0:0:0.0
+4	186534136	.	T	C	.	PASS	CSQ=C|missense_variant|MODERATE|MTNR1A|MTNR1A|||protein_coding||p.Ile202Met|202|;GENE=MTNR1A;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:79,6:85:0.0706	0/0:0,0:0:0.0
+5	843608	.	C	A	.	PASS	CSQ=A|missense_variant|MODERATE|ZDHHC11|ZDHHC11|||protein_coding||p.Arg207Met|207|;GENE=ZDHHC11;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:176,9:185:0.0486	0/0:0,0:0:0.0
+5	35954396	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|UGT3A1|UGT3A1|||protein_coding||p.Asp460Asn|460|;GENE=UGT3A1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:95,16:111:0.1441	0/0:0,0:0:0.0
+5	55114271	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|CDC20B|CDC20B|||protein_coding||p.Arg503Trp|503|;GENE=CDC20B;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:53,4:57:0.0702	0/0:0,0:0:0.0
+5	60928910	.	C	A	.	PASS	CSQ=A|missense_variant|MODERATE|ERCC8|ERCC8|||protein_coding||p.Gly43Cys|43|;GENE=ERCC8;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:123,16:139:0.1151	0/0:0,0:0:0.0
+5	76697994	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|IQGAP2|IQGAP2|||protein_coding||p.Arg1405Gln|1405|;GENE=IQGAP2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:92,18:110:0.1636	0/0:0,0:0:0.0
+5	122152684	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|ZNF474|ZNF474|||protein_coding||p.Gly232Ser|232|;GENE=ZNF474;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:76,14:90:0.1556	0/0:0,0:0:0.0
+5	128966192	.	T	G	.	PASS	CSQ=G|missense_variant|MODERATE|SLC27A6|SLC27A6|||protein_coding||p.Leu19Val|19|;GENE=SLC27A6;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:158,8:166:0.0482	0/0:0,0:0:0.0
+5	140857594	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|PCDHA10|PCDHA10|||protein_coding||p.Val516Met|516|;GENE=PCDHA10;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:106,28:134:0.209	0/0:0,0:0:0.0
+5	141201358	.	C	G	.	PASS	CSQ=G|missense_variant|MODERATE|PCDHB11|PCDHB11|||protein_coding||p.Asp528Glu|528|;GENE=PCDHB11;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:85,7:92:0.0761	0/0:0,0:0:0.0
+5	168671484	.	C	T	.	PASS	CSQ=T|splice_region_variant|LOW|SLIT3|SLIT3|||protein_coding||||;GENE=SLIT3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:26,5:31:0.1613	0/0:0,0:0:0.0
+6	3105985	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|RIPK1|RIPK1|||protein_coding||p.Pro504Ser|504|;GENE=RIPK1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:109,11:120:0.0917	0/0:0,0:0:0.0
+6	7576337	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|DSP|DSP|||protein_coding||p.Arg892Cys|892|;GENE=DSP;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:134,11:145:0.0759	0/0:0,0:0:0.0
+6	26031751	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|H3C2|H3C2|||protein_coding||p.Leu104Phe|104|;GENE=H3C2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:126,18:144:0.125	0/0:0,0:0:0.0
+6	27312026	.	G	T	.	PASS	CSQ=T|missense_variant|MODERATE|POM121L2|POM121L2|||protein_coding||p.Pro49Thr|49|;GENE=POM121L2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:145,7:152:0.0461	0/0:0,0:0:0.0
+6	28573329	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|SCAND3|SCAND3|||protein_coding||p.Glu854Lys|854|;GENE=SCAND3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:208,22:230:0.0957	0/0:0,0:0:0.0
+6	42964462	.	G	T	.	PASS	CSQ=T|missense_variant|MODERATE|PEX6|PEX6|||protein_coding||p.Pro939Gln|939|;GENE=PEX6;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:95,5:100:0.05	0/0:0,0:0:0.0
+6	43188008	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|CUL9|CUL9|||protein_coding||p.Thr626Ile|626|;GENE=CUL9;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:57,22:79:0.2785	0/0:0,0:0:0.0
+6	63711846	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|PHF3|PHF3|||protein_coding||p.Asp1420Asn|1420|;GENE=PHF3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:88,18:106:0.1698	0/0:0,0:0:0.0
+6	64439338	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|EYS|EYS|||protein_coding||p.Arg1887Cys|1887|;GENE=EYS;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:54,9:63:0.1429	0/0:0,0:0:0.0
+6	96203654	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|FUT9|FUT9|||protein_coding||p.Pro167Ser|167|;GENE=FUT9;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:137,21:158:0.1329	0/0:0,0:0:0.0
+6	128218985	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|PTPRK|PTPRK|||protein_coding||p.Arg269Cys|269|;GENE=PTPRK;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:186,27:213:0.1268	0/0:0,0:0:0.0
+6	130827597	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|SMLR1|SMLR1|||protein_coding||p.Val62Met|62|;GENE=SMLR1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:136,7:143:0.049	0/0:0,0:0:0.0
+6	160477128	.	C	T	.	PASS	CSQ=T|splice_region_variant|LOW|LPAL2|LPAL2|||protein_coding||||;GENE=LPAL2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:306,14:320:0.0437	0/0:0,0:0:0.0
+6	161386823	.	C	G	.	PASS	CSQ=G|missense_variant|MODERATE|PRKN|PRKN|||protein_coding||p.Val380Leu|380|;GENE=PRKN;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:107,6:113:0.0531	0/0:0,0:0:0.0
+6	167297959	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|UNC93A|UNC93A|||protein_coding||p.Glu172Lys|172|;GENE=UNC93A;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:118,16:134:0.1194	0/0:0,0:0:0.0
+7	12369673	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|VWDE|VWDE|||protein_coding||p.Gly878Asp|878|;GENE=VWDE;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:160,46:206:0.2233	0/0:0,0:0:0.0
+7	37884369	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|NME8|NME8|||protein_coding||p.Ser354Leu|354|;GENE=NME8;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:120,34:154:0.2208	0/0:0,0:0:0.0
+7	86786370	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|GRM3|GRM3|||protein_coding||p.Pro193Leu|193|;GENE=GRM3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:93,27:120:0.225	0/0:0,0:0:0.0
+7	93468739	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|CALCR|CALCR|||protein_coding||p.Ser184Phe|184|;GENE=CALCR;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:69,5:74:0.0676	0/0:0,0:0:0.0
+7	100991683	.	C	A	.	PASS	CSQ=A|missense_variant|MODERATE|MUC12|MUC12|||protein_coding||p.Pro517Thr|517|;GENE=MUC12;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:226,11:237:0.0464	0/0:0,0:0:0.0
+7	100992310	.	C	A	.	PASS	CSQ=A|missense_variant|MODERATE|MUC12|MUC12|||protein_coding||p.Arg726Ser|726|;GENE=MUC12;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:161,10:171:0.0585	0/0:0,0:0:0.0
+7	101034174	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|MUC17|MUC17|||protein_coding||p.Gly920Arg|920|;GENE=MUC17;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:305,15:320:0.0469	0/0:0,0:0:0.0
+7	101034663	.	T	C	.	PASS	CSQ=C|missense_variant|MODERATE|MUC17|MUC17|||protein_coding||p.Ser1083Pro|1083|;GENE=MUC17;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:422,19:441:0.0431	0/0:0,0:0:0.0
+7	132187564	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|PLXNA4|PLXNA4|||protein_coding||p.Ser967Phe|967|;GENE=PLXNA4;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:64,10:74:0.1351	0/0:0,0:0:0.0
+7	140753336	.	A	T	.	PASS	CSQ=T|missense_variant|MODERATE|BRAF|BRAF|||protein_coding||p.Val600Glu|600|;GENE=BRAF;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:131,59:190:0.3105	0/0:0,0:0:0.0
+7	141601261	.	T	A	.	PASS	CSQ=A|missense_variant|MODERATE|AGK|AGK|||protein_coding||p.Met93Lys|93|;GENE=AGK;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:109,29:138:0.2101	0/0:0,0:0:0.0
+7	142040782	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|MGAM|MGAM|||protein_coding||p.Gly812Arg|812|;GENE=MGAM;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:167,41:208:0.1971	0/0:0,0:0:0.0
+7	143399678	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|EPHA1|EPHA1|||protein_coding||p.Glu270Lys|270|;GENE=EPHA1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:64,18:82:0.2195	0/0:0,0:0:0.0
+7	149072450	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|ZNF786|ZNF786|||protein_coding||p.Gly108Arg|108|;GENE=ZNF786;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:73,13:86:0.1512	0/0:0,0:0:0.0
+7	150477535	.	A	C	.	PASS	CSQ=C|missense_variant|MODERATE|GIMAP8|GIMAP8|||protein_coding||p.Lys585Gln|585|;GENE=GIMAP8;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:127,18:145:0.1241	0/0:0,0:0:0.0
+8	3230208	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|CSMD1|CSMD1|||protein_coding||p.Asp1393Asn|1393|;GENE=CSMD1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:117,11:128:0.0859	0/0:0,0:0:0.0
+8	10607568	.	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|RP1L1|RP1L1|||protein_coding||p.Leu2177Ser|2177|;GENE=RP1L1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:49,11:60:0.1833	0/0:0,0:0:0.0
+8	24917623	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|NEFM|NEFM|||protein_coding||p.Glu590Lys|590|;GENE=NEFM;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:126,32:158:0.2025	0/0:0,0:0:0.0
+8	30144541	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|MBOAT4|MBOAT4|||protein_coding||p.Pro21Ser|21|;GENE=MBOAT4;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:105,32:137:0.2336	0/0:0,0:0:0.0
+8	39610663	.	T	A	.	PASS	CSQ=A|missense_variant|MODERATE|ADAM18|ADAM18|||protein_coding||p.Ile160Asn|160|;GENE=ADAM18;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:78,25:103:0.2427	0/0:0,0:0:0.0
+8	65739502	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|PDE7A|PDE7A|||protein_coding||p.Val199Ile|199|;GENE=PDE7A;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:77,22:99:0.2222	0/0:0,0:0:0.0
+8	73421446	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|STAU2|STAU2|||protein_coding||p.Glu547Lys|547|;GENE=STAU2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:129,11:140:0.0786	0/0:0,0:0:0.0
+8	118379445	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|SAMD12|SAMD12|||protein_coding||p.Ser193Phe|193|;GENE=SAMD12;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:95,35:130:0.2692	0/0:0,0:0:0.0
+8	123963371	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|FER1L6|FER1L6|||protein_coding||p.Pro57Leu|57|;GENE=FER1L6;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:228,23:251:0.0916	0/0:0,0:0:0.0
+8	132963038	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|TG|TG|||protein_coding||p.Asp1838Asn|1838|;GENE=TG;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:98,8:106:0.0755	0/0:0,0:0:0.0
+8	142752432	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|LYPD2|LYPD2|||protein_coding||p.Ala7Val|7|;GENE=LYPD2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:81,7:88:0.0795	0/0:0,0:0:0.0
+8	142752438	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|LYPD2|LYPD2|||protein_coding||p.Arg5Gln|5|;GENE=LYPD2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:80,6:86:0.0698	0/0:0,0:0:0.0
+8	143276211	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|GLI4|GLI4|||protein_coding||p.Ala180Thr|180|;GENE=GLI4;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:20,4:24:0.1667	0/0:0,0:0:0.0
+9	14722479	.	G	C	.	PASS	CSQ=C|missense_variant|MODERATE|CER1|CER1|||protein_coding||p.Ala65Gly|65|;GENE=CER1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:75,4:79:0.0506	0/0:0,0:0:0.0
+9	70536068	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|TRPM3|TRPM3|||protein_coding||p.Arg1670Gln|1670|;GENE=TRPM3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:151,7:158:0.0443	0/0:0,0:0:0.0
+9	99863775	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|NR4A3|NR4A3|||protein_coding||p.Gly597Ser|597|;GENE=NR4A3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:75,18:93:0.1935	0/0:0,0:0:0.0
+9	115401284	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|DELEC1|DELEC1|||protein_coding||p.Ala60Val|60|;GENE=DELEC1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:117,7:124:0.0565	0/0:0,0:0:0.0
+10	7964204	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|TAF3|TAF3|||protein_coding||p.His232Tyr|232|;GENE=TAF3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:65,8:73:0.1096	0/0:0,0:0:0.0
+10	20828597	.	T	C	.	PASS	CSQ=C|missense_variant|MODERATE|NEBL|NEBL|||protein_coding||p.Asn570Ser|570|;GENE=NEBL;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:100,7:107:0.0654	0/0:0,0:0:0.0
+10	25466681	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|GPR158|GPR158|||protein_coding||p.Glu456Lys|456|;GENE=GPR158;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:27,5:32:0.1562	0/0:0,0:0:0.0
+10	43114671	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|RET|RET|||protein_coding||p.Gly691Ser|691|;GENE=RET;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:45,6:51:0.1176	0/0:0,0:0:0.0
+10	46550016	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|GPRIN2|GPRIN2|||protein_coding||p.Val241Met|241|;GENE=GPRIN2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:64,11:75:0.1467	0/0:0,0:0:0.0
+10	49107660	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|VSTM4|VSTM4|||protein_coding||p.Glu131Lys|131|;GENE=VSTM4;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:61,7:68:0.1029	0/0:0,0:0:0.0
+10	52771475	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|MBL2|MBL2|||protein_coding||p.Gly54Asp|54|;GENE=MBL2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:103,5:108:0.0463	0/0:0,0:0:0.0
+10	69416256	.	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|TACR2|TACR2|||protein_coding||p.Ile23Thr|23|;GENE=TACR2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:97,6:103:0.0583	0/0:0,0:0:0.0
+10	79946568	.	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|SFTPD|SFTPD|||protein_coding||p.Met31Thr|31|;GENE=SFTPD;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:90,4:94:0.0426	0/0:0,0:0:0.0
+10	98388419	.	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|PYROXD2|PYROXD2|||protein_coding||p.Met461Thr|461|;GENE=PYROXD2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:51,5:56:0.0893	0/0:0,0:0:0.0
+11	1250661	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|MUC5B|MUC5B|||protein_coding||p.Pro4594Leu|4594|;GENE=MUC5B;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:100,5:105:0.0476	0/0:0,0:0:0.0
+11	1250664	.	C	G	.	PASS	CSQ=G|missense_variant|MODERATE|MUC5B|MUC5B|||protein_coding||p.Thr4595Ser|4595|;GENE=MUC5B;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:103,5:108:0.0463	0/0:0,0:0:0.0
+11	5948103	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|OR56A3|OR56A3|||protein_coding||p.Leu253Phe|253|;GENE=OR56A3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:116,15:131:0.1145	0/0:0,0:0:0.0
+11	6214515	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|FHIP1B|FHIP1B|||protein_coding||p.Pro818Leu|818|;GENE=FHIP1B;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:91,14:105:0.1333	0/0:0,0:0:0.0
+11	6217896	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|FHIP1B|FHIP1B|||protein_coding||p.Arg564Cys|564|;GENE=FHIP1B;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:75,10:85:0.1176	0/0:0,0:0:0.0
+11	7089317	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|RBMXL2|RBMXL2|||protein_coding||p.Ala66Val|66|;GENE=RBMXL2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:39,5:44:0.1136	0/0:0,0:0:0.0
+11	17593656	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|OTOG|OTOG|||protein_coding||p.Arg1075Gln|1075|;GENE=OTOG;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:56,5:61:0.082	0/0:0,0:0:0.0
+11	55795860	.	A	T	.	PASS	CSQ=T|missense_variant|MODERATE|OR5D14|OR5D14|||protein_coding||p.Gln102Leu|102|;GENE=OR5D14;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:237,10:247:0.0405	0/0:0,0:0:0.0
+11	61125763	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|CD5|CD5|||protein_coding||p.Ala471Val|471|;GENE=CD5;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:47,4:51:0.0784	0/0:0,0:0:0.0
+11	74371733	.	T	C	.	PASS	CSQ=C|missense_variant|MODERATE|PGM2L1|PGM2L1|||protein_coding||p.Thr122Ala|122|;GENE=PGM2L1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:72,14:86:0.1628	0/0:0,0:0:0.0
+11	85734464	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|SYTL2|SYTL2|||protein_coding||p.Arg288Cys|288|;GENE=SYTL2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:121,10:131:0.0763	0/0:0,0:0:0.0
+11	100191205	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|CNTN5|CNTN5|||protein_coding||p.Glu554Lys|554|;GENE=CNTN5;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:153,27:180:0.15	0/0:0,0:0:0.0
+11	102779285	.	C	A	.	PASS	CSQ=A|stop_gained|HIGH|MMP10|MMP10|||protein_coding||p.Glu142Ter|142|;GENE=MMP10;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:133,20:153:0.1307	0/0:0,0:0:0.0
+11	108513612	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|EXPH5|EXPH5|||protein_coding||p.Ser632Phe|632|;GENE=EXPH5;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:91,6:97:0.0619	0/0:0,0:0:0.0
+11	124264866	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|OR8G5|OR8G5|||protein_coding||p.Glu14Lys|14|;GENE=OR8G5;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:81,15:96:0.1562	0/0:0,0:0:0.0
+11	124383031	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|OR8B2|OR8B2|||protein_coding||p.Leu105Phe|105|;GENE=OR8B2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:153,23:176:0.1307	0/0:0,0:0:0.0
+12	10451108	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|KLRC1|KLRC1|||protein_coding||p.Pro17Ser|17|;GENE=KLRC1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:151,17:168:0.1012	0/0:0,0:0:0.0
+12	15962943	.	G	A	.	PASS	CSQ=A|stop_gained|HIGH|DERA|DERA|||protein_coding||p.Trp168Ter|168|;GENE=DERA;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:166,22:188:0.117	0/0:0,0:0:0.0
+12	43383677	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|ADAMTS20|ADAMTS20|||protein_coding||p.Asp1560Asn|1560|;GENE=ADAMTS20;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:199,36:235:0.1532	0/0:0,0:0:0.0
+12	48914501	.	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|DRC2|DRC2|||protein_coding||p.His133Arg|133|;GENE=DRC2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:41,4:45:0.0889	0/0:0,0:0:0.0
+12	51976554	.	T	G	.	PASS	CSQ=G|missense_variant|MODERATE|ACVR1B|ACVR1B|||protein_coding||p.Ser187Ala|187|;GENE=ACVR1B;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:81,12:93:0.129	0/0:0,0:0:0.0
+12	52314636	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|KRT83|KRT83|||protein_coding||p.His493Tyr|493|;GENE=KRT83;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:62,4:66:0.0606	0/0:0,0:0:0.0
+12	54519233	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|NCKAP1L|NCKAP1L|||protein_coding||p.Pro509Leu|509|;GENE=NCKAP1L;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:70,16:86:0.186	0/0:0,0:0:0.0
+12	55637489	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|OR10P1|OR10P1|||protein_coding||p.Val200Met|200|;GENE=OR10P1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:84,5:89:0.0562	0/0:0,0:0:0.0
+12	57764523	.	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|CYP27B1|CYP27B1|||protein_coding||p.Tyr331His|331|;GENE=CYP27B1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:63,12:75:0.16	0/0:0,0:0:0.0
+12	72562189	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|TRHDE|TRHDE|||protein_coding||p.Gly560Ser|560|;GENE=TRHDE;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:145,15:160:0.0938	0/0:0,0:0:0.0
+12	80342056	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|OTOGL|OTOGL|||protein_coding||p.Ser1699Leu|1699|;GENE=OTOGL;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:133,16:149:0.1074	0/0:0,0:0:0.0
+12	80542164	.	C	A	.	PASS	CSQ=A|missense_variant|MODERATE|PTPRQ|PTPRQ|||protein_coding||p.Pro1170Gln|1170|;GENE=PTPRQ;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:131,27:158:0.1709	0/0:0,0:0:0.0
+12	96740026	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|CFAP54|CFAP54|||protein_coding||p.Asp2346Asn|2346|;GENE=CFAP54;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:131,22:153:0.1438	0/0:0,0:0:0.0
+12	96945795	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|NEDD1|NEDD1|||protein_coding||p.Ser586Phe|586|;GENE=NEDD1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:148,22:170:0.1294	0/0:0,0:0:0.0
+12	112152500	.	G	A	.	PASS	CSQ=A|splice_region_variant|LOW|TRAFD1|TRAFD1|||protein_coding||||;GENE=TRAFD1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:113,13:126:0.1032	0/0:0,0:0:0.0
+12	121177300	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|P2RX7|P2RX7|||protein_coding||p.Ala178Thr|178|;GENE=P2RX7;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:147,7:154:0.0455	0/0:0,0:0:0.0
+13	53042051	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|OLFM4|OLFM4|||protein_coding||p.Glu167Lys|167|;GENE=OLFM4;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:151,26:177:0.1469	0/0:0,0:0:0.0
+13	85794999	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|SLITRK6|SLITRK6|||protein_coding||p.Asp504Asn|504|;GENE=SLITRK6;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:141,24:165:0.1455	0/0:0,0:0:0.0
+13	112376446	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|SPACA7|SPACA7|||protein_coding||p.Glu21Lys|21|;GENE=SPACA7;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:60,7:67:0.1045	0/0:0,0:0:0.0
+14	20014388	.	T	A	.	PASS	CSQ=A|missense_variant|MODERATE|OR4K14|OR4K14|||protein_coding||p.Asp269Val|269|;GENE=OR4K14;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:75,12:87:0.1379	0/0:0,0:0:0.0
+14	30885890	.	C	G	.	PASS	CSQ=G|missense_variant|MODERATE|COCH|COCH|||protein_coding||p.Thr352Ser|352|;GENE=COCH;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:80,6:86:0.0698	0/0:0,0:0:0.0
+14	54962995	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|WDHD1|WDHD1|||protein_coding||p.Glu830Lys|830|;GENE=WDHD1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:73,12:85:0.1412	0/0:0,0:0:0.0
+15	23566542	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|MKRN3|MKRN3|||protein_coding||p.Arg254Cys|254|;GENE=MKRN3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:215,35:250:0.14	0/0:0,0:0:0.0
+15	41862141	.	G	A	.	PASS	CSQ=A|stop_gained|HIGH|SPTBN5|SPTBN5|||protein_coding||p.Gln2513Ter|2513|;GENE=SPTBN5;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:30,4:34:0.1176	0/0:0,0:0:0.0
+15	83263188	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|BNC1|BNC1|||protein_coding||p.Ser688Phe|688|;GENE=BNC1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:68,11:79:0.1392	0/0:0,0:0:0.0
+15	84904200	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|SLC28A1|SLC28A1|||protein_coding||p.Val189Ile|189|;GENE=SLC28A1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:64,5:69:0.0725	0/0:0,0:0:0.0
+15	92128397	.	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|SLCO3A1|SLCO3A1|||protein_coding||p.Asn474Asp|474|;GENE=SLCO3A1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:107,18:125:0.144	0/0:0,0:0:0.0
+16	1626054	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|CRAMP1|CRAMP1|||protein_coding||p.Ser143Phe|143|;GENE=CRAMP1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:113,11:124:0.0887	0/0:0,0:0:0.0
+16	9938002	.	C	A	.	PASS	CSQ=A|missense_variant|MODERATE|GRIN2A|GRIN2A|||protein_coding||p.Gly322Trp|322|;GENE=GRIN2A;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:70,7:77:0.0909	0/0:0,0:0:0.0
+16	20359488	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|PDILT|PDILT|||protein_coding||p.Gly529Glu|529|;GENE=PDILT;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:144,6:150:0.04	0/0:0,0:0:0.0
+16	20359494	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|PDILT|PDILT|||protein_coding||p.Arg527Lys|527|;GENE=PDILT;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:136,6:142:0.0423	0/0:0,0:0:0.0
+16	24790416	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|TNRC6A|TNRC6A|||protein_coding||p.Ala592Thr|592|;GENE=TNRC6A;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:146,7:153:0.0458	0/0:0,0:0:0.0
+16	57731235	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|DRC7|DRC7|||protein_coding||p.Glu868Lys|868|;GENE=DRC7;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:57,7:64:0.1094	0/0:0,0:0:0.0
+16	66580105	.	T	C	.	PASS	CSQ=C|missense_variant|MODERATE|CMTM2|CMTM2|||protein_coding||p.Ile122Thr|122|;GENE=CMTM2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:175,12:187:0.0642	0/0:0,0:0:0.0
+16	66767450	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|TERB1|TERB1|||protein_coding||p.Pro582Leu|582|;GENE=TERB1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:146,25:171:0.1462	0/0:0,0:0:0.0
+16	66767451	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|TERB1|TERB1|||protein_coding||p.Pro582Ser|582|;GENE=TERB1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:144,24:168:0.1429	0/0:0,0:0:0.0
+16	70892485	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|HYDIN|HYDIN|||protein_coding||p.Ser3098Phe|3098|;GENE=HYDIN;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:154,17:171:0.0994	0/0:0,0:0:0.0
+16	77431491	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|ADAMTS18|ADAMTS18|||protein_coding||p.Arg100Gln|100|;GENE=ADAMTS18;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:64,8:72:0.1111	0/0:0,0:0:0.0
+16	81061486	.	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|C16ORF46|C16ORF46|||protein_coding||p.Ile288Thr|288|;GENE=C16ORF46;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:157,7:164:0.0427	0/0:0,0:0:0.0
+16	81198689	.	T	C	.	PASS	CSQ=C|missense_variant|MODERATE|PKD1L2|PKD1L2|||protein_coding||p.Ile506Val|506|;GENE=PKD1L2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:95,5:100:0.05	0/0:0,0:0:0.0
+17	2332965	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|TSR1|TSR1|||protein_coding||p.Ser434Phe|434|;GENE=TSR1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:86,17:103:0.165	0/0:0,0:0:0.0
+17	10504937	.	T	C	.	PASS	CSQ=C|missense_variant|MODERATE|MYH1|MYH1|||protein_coding||p.Asn855Ser|855|;GENE=MYH1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:152,25:177:0.1412	0/0:0,0:0:0.0
+17	10512460	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|MYH1|MYH1|||protein_coding||p.Met365Ile|365|;GENE=MYH1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:130,23:153:0.1503	0/0:0,0:0:0.0
+17	35865282	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|HEATR9|HEATR9|||protein_coding||p.Asp85Asn|85|;GENE=HEATR9;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:159,15:174:0.0862	0/0:0,0:0:0.0
+17	39977009	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|GSDMA|GSDMA|||protein_coding||p.Ala430Val|430|;GENE=GSDMA;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:87,7:94:0.0745	0/0:0,0:0:0.0
+17	40978832	.	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|KRT40|KRT40|||protein_coding||p.Trp390Arg|390|;GENE=KRT40;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:76,5:81:0.0617	0/0:0,0:0:0.0
+17	48596485	.	C	T	.	PASS	CSQ=T|stop_gained|HIGH|HOXB6|HOXB6|||protein_coding||p.Trp201Ter|201|;GENE=HOXB6;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:103,11:114:0.0965	0/0:0,0:0:0.0
+17	50551109	.	T	A	.	PASS	CSQ=A|missense_variant|MODERATE|SPATA20|SPATA20|||protein_coding||p.Ser483Thr|483|;GENE=SPATA20;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:84,4:88:0.0455	0/0:0,0:0:0.0
+17	53824246	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|KIF2B|KIF2B|||protein_coding||p.Glu405Lys|405|;GENE=KIF2B;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:174,15:189:0.0794	0/0:0,0:0:0.0
+17	63910802	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|CSHL1|CSHL1|||protein_coding||p.Arg45Cys|45|;GENE=CSHL1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:100,15:115:0.1304	0/0:0,0:0:0.0
+17	68877518	.	C	T	.	PASS	CSQ=T|splice_region_variant|LOW|ABCA8|ABCA8|||protein_coding||||;GENE=ABCA8;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:175,26:201:0.1294	0/0:0,0:0:0.0
+17	74842510	.	C	A	.	PASS	CSQ=A|missense_variant|MODERATE|GRIN2C|GRIN2C|||protein_coding||p.Arg1209Ser|1209|;GENE=GRIN2C;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:51,4:55:0.0727	0/0:0,0:0:0.0
+17	75570986	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|LLGL2|LLGL2|||protein_coding||p.Leu688Phe|688|;GENE=LLGL2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:84,12:96:0.125	0/0:0,0:0:0.0
+17	78161096	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|C17ORF99|C17ORF99|||protein_coding||p.Ala71Val|71|;GENE=C17ORF99;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:60,10:70:0.1429	0/0:0,0:0:0.0
+17	78462848	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|DNAH17|DNAH17|||protein_coding||p.Ser3043Phe|3043|;GENE=DNAH17;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:55,9:64:0.1406	0/0:0,0:0:0.0
+17	78574846	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|DNAH17|DNAH17|||protein_coding||p.Ser71Phe|71|;GENE=DNAH17;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:120,11:131:0.084	0/0:0,0:0:0.0
+18	3126813	.	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|MYOM1|MYOM1|||protein_coding||p.Ile960Thr|960|;GENE=MYOM1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:224,11:235:0.0468	0/0:0,0:0:0.0
+18	57669437	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|ATP8B1|ATP8B1|||protein_coding||p.Glu660Lys|660|;GENE=ATP8B1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:55,9:64:0.1406	0/0:0,0:0:0.0
+18	58535253	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|ALPK2|ALPK2|||protein_coding||p.Ser1645Leu|1645|;GENE=ALPK2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:188,21:209:0.1005	0/0:0,0:0:0.0
+19	731144	.	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|PALM|PALM|||protein_coding||p.Thr107Ala|107|;GENE=PALM;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:113,7:120:0.0583	0/0:0,0:0:0.0
+19	6897453	.	C	G	.	PASS	CSQ=G|missense_variant|MODERATE|ADGRE1|ADGRE1|||protein_coding||p.Ser140Arg|140|;GENE=ADGRE1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:142,10:152:0.0658	0/0:0,0:0:0.0
+19	7765983	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|CLEC4M|CLEC4M|||protein_coding||p.Arg187Gln|187|;GENE=CLEC4M;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:113,12:125:0.096	0/0:0,0:0:0.0
+19	8103661	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|FBN3|FBN3|||protein_coding||p.Gly1614Ser|1614|;GENE=FBN3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:138,9:147:0.0612	0/0:0,0:0:0.0
+19	8916888	.	G	A	.	PASS	CSQ=A|stop_gained|HIGH|MUC16|MUC16|||protein_coding||p.Arg12194Ter|12194|;GENE=MUC16;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:206,22:228:0.0965	0/0:0,0:0:0.0
+19	8948451	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|MUC16|MUC16|||protein_coding||p.Ser9440Phe|9440|;GENE=MUC16;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:219,32:251:0.1275	0/0:0,0:0:0.0
+19	8953267	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|MUC16|MUC16|||protein_coding||p.Glu7835Lys|7835|;GENE=MUC16;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:149,22:171:0.1287	0/0:0,0:0:0.0
+19	18853258	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|UPF1|UPF1|||protein_coding||p.Arg355Gln|355|;GENE=UPF1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:93,5:98:0.051	0/0:0,0:0:0.0
+19	36818878	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|ZNF790|ZNF790|||protein_coding||p.Arg489His|489|;GENE=ZNF790;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:126,14:140:0.1	0/0:0,0:0:0.0
+19	41094343	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|CYP2A13|CYP2A13|||protein_coding||p.Glu358Lys|358|;GENE=CYP2A13;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:192,30:222:0.1351	0/0:0,0:0:0.0
+19	44944779	.	T	C	.	PASS	CSQ=C|missense_variant|MODERATE|APOC4-APOC2|APOC4-APOC2|||protein_coding||p.Leu36Pro|36|;GENE=APOC4-APOC2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:46,5:51:0.098	0/0:0,0:0:0.0
+19	47067450	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|ZC3H4|ZC3H4|||protein_coding||p.Pro940Ser|940|;GENE=ZC3H4;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:40,7:47:0.1489	0/0:0,0:0:0.0
+19	49880379	.	T	C	.	PASS	CSQ=C|missense_variant|MODERATE|TBC1D17|TBC1D17|||protein_coding||p.Leu99Pro|99|;GENE=TBC1D17;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:78,8:86:0.093	0/0:0,0:0:0.0
+19	51993997	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|ZNF615|ZNF615|||protein_coding||p.Thr360Ile|360|;GENE=ZNF615;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:204,9:213:0.0423	0/0:0,0:0:0.0
+19	53351144	.	G	C	.	PASS	CSQ=C|missense_variant|MODERATE|ZNF845|ZNF845|||protein_coding||p.Glu157Gln|157|;GENE=ZNF845;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:337,15:352:0.0426	0/0:0,0:0:0.0
+19	54595758	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|LILRA1|LILRA1|||protein_coding||p.Gly261Arg|261|;GENE=LILRA1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:93,13:106:0.1226	0/0:0,0:0:0.0
+19	54939042	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|NLRP7|NLRP7|||protein_coding||p.Glu593Lys|593|;GENE=NLRP7;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:96,9:105:0.0857	0/0:0,0:0:0.0
+19	55518232	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|SSC5D|SSC5D|||protein_coding||p.Pro1319Leu|1319|;GENE=SSC5D;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:121,8:129:0.062	0/0:0,0:0:0.0
+20	23036333	.	T	G	.	PASS	CSQ=G|missense_variant|MODERATE|SSTR4|SSTR4|||protein_coding||p.Phe284Val|284|;GENE=SSTR4;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:173,14:187:0.0749	0/0:0,0:0:0.0
+20	49636322	.	T	C	.	PASS	CSQ=C|missense_variant|MODERATE|B4GALT5|B4GALT5|||protein_coding||p.Asn386Ser|386|;GENE=B4GALT5;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:237,61:298:0.2047	0/0:0,0:0:0.0
+20	58714659	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|NPEPL1|NPEPL1|||protein_coding||p.Pro468Ser|468|;GENE=NPEPL1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:87,6:93:0.0645	0/0:0,0:0:0.0
+20	63533611	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|PTK6|PTK6|||protein_coding||p.Glu103Lys|103|;GENE=PTK6;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:49,19:68:0.2794	0/0:0,0:0:0.0
+21	10592353	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|TPTE|TPTE|||protein_coding||p.Gly384Arg|384|;GENE=TPTE;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:782,40:822:0.0487	0/0:0,0:0:0.0
+21	36930289	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|HLCS|HLCS|||protein_coding||p.Pro381Ser|381|;GENE=HLCS;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:92,7:99:0.0707	0/0:0,0:0:0.0
+22	26026695	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|MYO18B|MYO18B|||protein_coding||p.Glu2241Lys|2241|;GENE=MYO18B;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:50,5:55:0.0909	0/0:0,0:0:0.0
+22	42128945	.	C	T	.	PASS	CSQ=T|splice_region_variant|LOW|CYP2D6|CYP2D6|||protein_coding||||;GENE=CYP2D6;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:85,9:94:0.0957	0/0:0,0:0:0.0
+22	50435000	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|PPP6R2|PPP6R2|||protein_coding||p.His479Tyr|479|;GENE=PPP6R2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:98,7:105:0.0667	0/0:0,0:0:0.0
+X	1378751	.	G	C	.	PASS	CSQ=C|missense_variant|MODERATE|IL3RA|IL3RA|||protein_coding||p.Val323Leu|323|;GENE=IL3RA;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:118,7:125:0.056	0/0:0,0:0:0.0
+X	1419060	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|ASMTL|ASMTL|||protein_coding||p.Gly434Ser|434|;GENE=ASMTL;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:129,7:136:0.0515	0/0:0,0:0:0.0
+X	7105637	.	G	A	.	PASS	CSQ=A|missense_variant|MODERATE|PUDP|PUDP|||protein_coding||p.Thr88Met|88|;GENE=PUDP;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:78,5:83:0.0602	0/0:0,0:0:0.0
+X	53544610	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|HUWE1|HUWE1|||protein_coding||p.Arg3734Gln|3734|;GENE=HUWE1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:43,23:66:0.3485	0/0:0,0:0:0.0
+X	104040193	.	C	T	.	PASS	CSQ=T|stop_gained|HIGH|H2BW2|H2BW2|||protein_coding||p.Gln73Ter|73|;GENE=H2BW2;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:50,4:54:0.0741	0/0:0,0:0:0.0
+X	111744740	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|ALG13|ALG13|||protein_coding||p.Pro923Leu|923|;GENE=ALG13;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:26,4:30:0.1333	0/0:0,0:0:0.0
+X	133536270	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|GPC3|GPC3|||protein_coding||p.Asp533Asn|533|;GENE=GPC3;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:51,11:62:0.1774	0/0:0,0:0:0.0
+X	135911723	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|SAGE1|SAGE1|||protein_coding||p.Ser764Phe|764|;GENE=SAGE1;SRC=Hugo2016_cBioPortal_mel_ucla_2016_lifted	GT:AD:DP:AF	0/1:50,13:63:0.2063	0/0:0,0:0:0.0

@@ -1,0 +1,12 @@
+{
+  "name": "knowledge-graph-target-reasoning",
+  "description": "Use to discover and rank therapeutic targets for a disease through multi-hop biomedical knowledge-graph reasoning. Applies PrimeKG network propagation/RWR with optional TxGNN drug-target evidence and returns ranked genes/proteins with interpretable evidence paths; triggers on disease target nomination or network-based prioritization.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Prioritize therapeutic targets for Parkinson's disease using the knowledge graph, explain the top hits, and generate a PDF report.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:55.556000",
+  "visibility": "public",
+  "id": "skill_66117a119805611838ba0a0cdde6edb2"
+}

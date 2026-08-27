@@ -1,0 +1,12 @@
+{
+  "name": "cell-surface-antigen-discovery",
+  "description": "Use to discover and rank tumor-selective, antibody-accessible cell-surface antigens for ADC, CAR-T, bispecific/T-cell engager, or radioligand programs. Integrates single-cell tumor expression, surface topology, normal-tissue HPA safety, tractability, and known-antigen controls.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Nominate cell-surface antigens for ADC or CAR-T development by integrating single-cell tumor specificity across atlases, the surfaceome with extracellular-topology accessibility, a Human Protein Atlas normal-tissue therapeutic index, and antibody tractability. Score known validated targets alongside novel candidates as a validation harness, add per-candidate literature evidence, and generate a PDF report with an infographic summary plus intro, methods, results, conclusions, figures, and references.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T22:59:18.570000",
+  "visibility": "public",
+  "id": "skill_37c83b1a2ba2ef32921254e95c376919"
+}

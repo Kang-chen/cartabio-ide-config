@@ -1,0 +1,99 @@
+# ============================================================================
+# example_config.yaml  --  worked example for consensus-disease-signature
+#
+# This is the exact configuration used to build the validated ULCERATIVE COLITIS
+# consensus signature (3 independent microarray cohorts, 3 platforms). Copy it,
+# change `disease`, `contrast`, and `cohorts` for a new condition.
+#
+# Run:  Rscript scripts/run_meta_signature.R  path/to/config.yaml
+#
+# See references/parameters.md for the full field reference.
+# ============================================================================
+
+disease: "ulcerative colitis"          # free text; used in titles/summary.json
+output_dir: "/mnt/results"             # tables/ and figures/ are created here
+
+# Global 2-group contrast. Per-cohort specs may override case/control values and
+# the grouping column when a cohort labels things differently.
+contrast:
+  case:    ["ulcerative colitis"]      # meaning of the "Case" group
+  control: ["control"]                 # meaning of the "Control" group
+  column:  "disease"                   # default metadata column (override per cohort)
+
+fdr: 0.05                              # consensus FDR threshold
+core_lfc: 1.0                          # extra |log2FC| threshold for the "core" set
+
+# Control-type keywords treated as "non-inflammatory" for the heterogeneous-control
+# sensitivity meta-analysis (case-insensitive substring match vs each cohort's
+# control_type). Default shown; override for your disease if needed.
+noninflammatory_control_types: ["normal", "trauma", "healthy", "control"]
+
+# --------------------------------------------------------------------------
+# Cohorts. Each needs: id, source ("geo" | "matrix"), platform, and a way to
+# assign the 2-group contrast (group_column + case_values/control_values, plus
+# optional `filters` to restrict tissue / timepoint / etc.).
+#
+# NOTE ON QUIRKS (real data): GEO metadata is messy. Values below are copied
+# verbatim from the series (including the "left-sided coltis" spelling in
+# GSE47908 and the Week-0 visit filter that removes on-treatment samples in
+# GSE92415). Always inspect pData() before trusting field names/values.
+# --------------------------------------------------------------------------
+cohorts:
+
+  # Affymetrix Human Gene 1.0 ST. Colon-restricted; UC vs control.
+  - id: "GSE75214"
+    source: "geo"
+    platform: "GPL6244"
+    type: "microarray"
+    control_type: "normal"              # baseline = non-inflamed control colon
+    group_column: "disease:ch1"
+    case_values:    ["ulcerative colitis"]
+    control_values: ["control"]
+    filters:
+      "tissue:ch1": ["colon"]           # exclude ileum samples
+
+  # Affymetrix HT HG-U133+ PM (probe IDs carry _PM -> auto-stripped by annotate).
+  # Keep only baseline (Week 0) UC to avoid pseudo-replication from on-treatment visits.
+  - id: "GSE92415"
+    source: "geo"
+    platform: "GPL13158"
+    type: "microarray"
+    control_type: "normal"              # baseline = healthy colon
+    group_column: "disease:ch1"
+    case_values:    ["Ulcerative Colitis (UC)"]
+    control_values: ["Healthy"]
+    filters:
+      "visit:ch1": ["Week 0"]           # drop Week-6 on-treatment samples
+
+  # Affymetrix HG-U133 Plus 2.0. Both colitis extents count as UC; exclude dysplasia.
+  # (The engine's build_group keeps only listed case/control values, so the six
+  #  "ulcerative colitis-associated dysplasia" samples are dropped automatically.)
+  - id: "GSE47908"
+    source: "geo"
+    platform: "GPL570"
+    type: "microarray"
+    control_type: "normal"             # baseline = non-inflamed control colon
+    group_column: "disease state:ch1"
+    case_values:    ["left-sided coltis", "pancolitis"]   # sic: "coltis" is the actual label
+    control_values: ["control"]
+
+# --------------------------------------------------------------------------
+# ALTERNATIVE: user-supplied matrix cohort (e.g. proprietary cohort, or an
+# ArrayExpress/BioStudies E-MTAB flat file exported to a matrix). Uncomment and
+# adapt. Features may be gene symbols (platform: "SYMBOL"), Ensembl ("ENSEMBL"),
+# or Entrez ("ENTREZID"); RNA-seq counts use type: "rnaseq".
+# --------------------------------------------------------------------------
+#  - id: "MYCOHORT"
+#    source: "matrix"
+#    matrix_path:   "/mnt/user-uploads/mycohort_counts.tsv"   # genes x samples
+#    metadata_path: "/mnt/user-uploads/mycohort_meta.csv"     # rows = samples
+#    sample_id_col: "sample_id"
+#    platform: "SYMBOL"            # or "ENSEMBL" / "ENTREZID" / a GPL for probes
+#    type: "rnaseq"               # -> limma-voom on raw counts; else "microarray"
+#    control_type: "normal"        # e.g. normal / osteoarthritis / trauma / healthy
+#    log2_transform: false         # true if matrix holds linear intensities
+#    group_column: "condition"
+#    case_values:    ["disease"]
+#    control_values: ["healthy"]
+#    filters:
+#      "tissue": ["lesional"]

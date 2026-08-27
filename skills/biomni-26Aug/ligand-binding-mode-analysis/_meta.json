@@ -1,0 +1,12 @@
+{
+  "name": "ligand-binding-mode-analysis",
+  "description": "Use to analyze how a ligand binds in a protein-ligand co-crystal from a PDB ID, uploaded PDB/CIF, or target-ligand pair resolved through RCSB. Identifies pocket residues, heavy-atom contacts, hydrogen bonds, ionic/hydrophobic/pi/halogen interactions, and confidence tiers with PLIP or geometry fallback.",
+  "category": "molecular_design",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Map the binding-pocket contacts for <ligand> bound to <protein> using its co-crystal structure and generate a PDF report.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:51.423000",
+  "visibility": "public",
+  "id": "skill_56f6a5b3514ba76baf5bca5c0c83d704"
+}

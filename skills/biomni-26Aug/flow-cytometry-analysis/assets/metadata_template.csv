@@ -1,0 +1,7 @@
+file_name,sample_id,group,batch,patient_id,age,sex
+sample01.fcs,S01,control,batch1,P001,34,F
+sample02.fcs,S02,control,batch1,P002,41,M
+sample03.fcs,S03,control,batch2,P003,29,F
+sample04.fcs,S04,treated,batch1,P004,52,M
+sample05.fcs,S05,treated,batch2,P005,38,F
+sample06.fcs,S06,treated,batch2,P006,45,M

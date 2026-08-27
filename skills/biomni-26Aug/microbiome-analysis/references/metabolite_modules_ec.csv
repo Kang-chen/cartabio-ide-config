@@ -1,0 +1,15 @@
+module,ec,enzyme,route,include_in_module,confidence,notes
+Butyrate,2.8.3.8,butyryl-CoA:acetate CoA-transferase (but/ctoA),but_route_health,yes,high,Health-associated colonic butyrate route; report separately from buk. EC present in PICRUSt2 EC output.
+Butyrate,2.8.3.9,butyryl-CoA:acetate CoA-transferase (but/ctoB),but_route_health,yes,high,Health-associated colonic butyrate route; report separately from buk. EC present in PICRUSt2 EC output.
+Butyrate,2.7.2.7,butyrate kinase (buk),buk_route_dysbiosis,yes,high,Dysbiosis-associated kinase route; report separately from but. EC present in PICRUSt2 EC output.
+Butyrate,2.3.1.19,phosphate butyryltransferase (ptb),buk_route_dysbiosis,yes,high,Feeds buk route. EC present in PICRUSt2 EC output.
+Butyrate,1.3.8.1,butyryl-CoA dehydrogenase (bcd),total_only,total_only,high,Include in Butyrate_total aggregate only; not in but/buk route split. EC present in PICRUSt2 EC output.
+Propionate,2.8.3.18,succinyl-CoA:acetate CoA-transferase,propionate,yes,high,Propionate module. EC present in PICRUSt2 EC output.
+Propionate,2.7.2.1,acetate kinase,propionate,yes,high,SHARED acetate/propionate kinase - NOT propionate-specific; often dominates module. Flag in interpretation. EC present in PICRUSt2 EC output.
+Acetate,2.7.2.1,acetate kinase,acetate,yes,high,Shared with propionate; often dominates. EC present in PICRUSt2 EC output.
+Acetate,2.3.1.8,phosphate acetyltransferase,acetate,yes,high,Acetate module. EC present in PICRUSt2 EC output.
+Acetate,6.2.1.1,acetyl-CoA synthetase,acetate,yes,high,Acetate module. EC present in PICRUSt2 EC output.
+BSH,3.5.1.24,choloylglycine hydrolase (bile salt hydrolase),bsh,yes,high,Single-enzyme module by design; bile-acid deconjugation. EC present in PICRUSt2 EC output.
+Indole,4.1.99.1,tryptophanase (tnaA),indole,yes,high,Single-enzyme module; produces indole (AhR ligand) from tryptophan. EC present in PICRUSt2 EC output.
+bai_secondary_BA,1.3.1.116,baiH (7alpha-dehydroxylation operon component),bai_operon,GATED_OFF,low,Secondary bile-acid operon. Only baiH has a clean EC; the other 7 operon genes (baiA/B/CD/E/F/G/I) have NO EC number and cannot be EC-keyed. Module is GATED OFF by default: 16S/PICRUSt2 cannot resolve this operon and this EC is ABSENT from PICRUSt2 EC output. See DATA_SOURCES.md.
+bai_secondary_BA,1.3.1.114,3-dehydro-bile acid Delta4/6-reductase (promiscuous),bai_ARTIFACT,NO_EXCLUDE,low,"CRITICAL: promiscuous/widespread oxidoreductase (formerly KO K07007); mean RA ~360x the next bai enzyme. If ever present it dominates the module and produces SPURIOUS bai depletion. MUST EXCLUDE from bai module. Absent from PICRUSt2 EC output in the reference dataset; exclusion rule retained defensively."

@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "description": "Initial adaptive weights for Biomni-native method development. Normalize and update during a run.",
+  "weights": {
+    "representation": 0.16,
+    "model_form": 0.14,
+    "objective_optimization": 0.13,
+    "data_integration": 0.12,
+    "diagnosis_error_analysis": 0.11,
+    "ablation_simplification": 0.1,
+    "robustness_calibration": 0.09,
+    "efficiency_scaling": 0.08,
+    "derivation_theory": 0.05,
+    "packaging_reproducibility": 0.02
+  },
+  "floors": {
+    "representation": 0.05,
+    "model_form": 0.05,
+    "objective_optimization": 0.04,
+    "data_integration": 0.04,
+    "diagnosis_error_analysis": 0.04,
+    "ablation_simplification": 0.04,
+    "robustness_calibration": 0.03,
+    "efficiency_scaling": 0.03,
+    "derivation_theory": 0.02,
+    "packaging_reproducibility": 0.01
+  }
+}

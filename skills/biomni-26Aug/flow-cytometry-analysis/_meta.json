@@ -1,0 +1,12 @@
+{
+  "name": "flow-cytometry-analysis",
+  "description": "Use for automated analysis of flow, mass, CyTOF, or spectral cytometry FCS files. Covers acquisition and spillover QC, compensation, arcsinh/logicle transforms, permissive control-aware gating, FlowSOM/CATALYST clustering, immunophenotype annotation, cross-sample quantification, manual-gate reconciliation, and diffcyt differential abundance.",
+  "category": "proteomics_metabolomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "I have flow/CyTOF FCS files — identify and quantify cell populations across my samples and make a PDF report with an intro, methods, results, conclusions, figures, and next steps.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:08.623000",
+  "visibility": "public",
+  "id": "skill_dfc4fd9cdc6b7fba7c880cc7f87ecd7f"
+}

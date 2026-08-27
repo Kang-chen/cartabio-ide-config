@@ -1,0 +1,12 @@
+{
+  "name": "disease-progression-longitudinal",
+  "description": "Use to reconstruct disease progression trajectories, temporal states, and patient heterogeneity from longitudinal multi-omics or repeated-measure omics data.",
+  "category": "multi_omics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Analyze disease progression trajectories from longitudinal patient omics data",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:34.171000",
+  "visibility": "public",
+  "id": "skill_26fd7b7e1ad64ad89d97bb183182d4f0"
+}

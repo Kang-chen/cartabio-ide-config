@@ -1,0 +1,12 @@
+{
+  "name": "heart-conference-monitor",
+  "description": "Automated pipeline to monitor 24 major cardiology/cardiovascular conferences, retrieve abstracts via PubMed API + web scraping, cluster by topic using BERTopic NLP, generate AI summaries per cluster, and render an interactive Plotly HTML dashboard.",
+  "category": "general",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "",
+  "created_by_name": "Wei Tang",
+  "updated_at": "2026-07-08T09:07:10.210000",
+  "visibility": "public",
+  "id": "skill_085ee300b03349c9879c757c0c8106b2"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "clinical-variant-allelic-series",
+  "description": "Use to build a gene-level clinical allelic series or per-variant/per-residue actionability map. Integrates ClinVar and CIViC to answer which mutations are pathogenic, actionable, or targetable and produces mutation landscapes, lollipop plots, evidence tiers, and therapy matrices.",
+  "category": "genomics_genetics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Build a clinical allelic series for my gene from ClinVar + CIViC: tier each variant by actionability with a lollipop plot and therapy matrix.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:20.937000",
+  "visibility": "public",
+  "id": "skill_71ac25ccb32e00a971a5e49bcae1bfe2"
+}

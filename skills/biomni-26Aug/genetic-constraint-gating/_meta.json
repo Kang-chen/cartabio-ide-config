@@ -1,0 +1,12 @@
+{
+  "name": "genetic-constraint-gating",
+  "description": "Use to triage gene lists by gnomAD loss-of-function constraint and interpret target safety or knockout tolerance. Retrieves LOEUF, pLI, observed/expected, LoF Z, and missense constraint; resolves aliases; flags LoF-intolerant, haploinsufficient, or dosage-sensitive genes and suggests modality implications.",
+  "category": "genomics_genetics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Flag which of these genes are loss-of-function intolerant using gnomAD LOEUF and pLI: ...",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:03.547000",
+  "visibility": "public",
+  "id": "skill_70fa3fe61a8d4640c4a520641092cfcd"
+}

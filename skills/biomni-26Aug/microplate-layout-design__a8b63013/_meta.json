@@ -1,0 +1,12 @@
+{
+  "name": "microplate-layout-design",
+  "description": "Use to design randomized and balanced microplate layouts with controls, replicates, edge-effect mitigation, and covariate-aware well assignment.",
+  "category": "experimental_design",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Design a randomized 96-well plate layout for a dose-response experiment. Generate a PDF report with an intro, methods, results, conclusions and figures from all of the analyses you perform.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:34.641000",
+  "visibility": "public",
+  "id": "skill_ea62d879a7384219a92cf683a8b63013"
+}

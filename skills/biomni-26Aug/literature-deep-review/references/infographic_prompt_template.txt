@@ -1,0 +1,221 @@
+# =============================================================================
+# Literature Deep Review — Report Infographic — Reusable Prompt Template
+# =============================================================================
+#
+# Style:        diagrammatic / scientific schematic (3-panel landscape)
+# Fonts:        Signifier headings; DieGrotesk labels/body
+# Palette:      Phylo palette (below)
+# Aspect:       3:2 landscape (1536 x 1024, or 3072 x 2048 for print)
+# Adapted from: target-prioritization-dashboard/skills/target-infographic
+#               (target-in-disease template), itself from the drug-asset template.
+#
+# WHAT CHANGED vs the target-infographic template
+# -----------------------------------------------
+# The target template answers "is this gene a good target in this disease?" and
+# fills its evidence strip from Open Targets scores, GWAS ORs and LOEUF. A
+# literature-deep-review report answers WHATEVER QUESTION IT WAS ASKED, and its
+# currency is different: verbatim quotes, resolvable locators, and support tiers
+# DERIVED from accepted evidence. So:
+#
+#   * TWO PROFILES. `target` keeps the biology -> disease mechanism -> therapeutic
+#     rationale arc. `general` covers every other review this skill runs —
+#     mechanism questions, biomarkers, modality comparisons, direction-of-effect
+#     controversies — with the same 3-panel shape and Phylo styling.
+#   * THE EVIDENCE STRIP IS THE REVIEW'S OWN. Support tier, independent study
+#     count, and named sources, not external database scores.
+#   * NOTHING IS HAND-TYPED. scripts/infographic_spec.py seeds the spec from the
+#     report model and REFUSES any number that does not appear in an accepted
+#     evidence row. The template's "no fabrication" rule is enforced, not asked
+#     for politely.
+#
+# -----------------------------------------------------------------------------
+# How to use
+# -----------------------------------------------------------------------------
+# 1.  python scripts/infographic_spec.py --root "$RUN" --seed
+#        Writes deliverables/infographic_spec.json pre-filled with the report's
+#        real title, question, axes, tiers and sources. Panel DESCRIPTIONS are
+#        left for you to author — a schematic cannot be auto-generated from claim
+#        text, but every fact it states can be checked.
+# 2.  Author the three PANEL_*_DESCRIPTION fields. Draw what the review found.
+# 3.  python scripts/infographic_spec.py --root "$RUN" --write-tool-request
+#        Validates the authored spec and writes the exact deferred-tool load,
+#        GenerateImage arguments, full Phylo prompt, and media-check request.
+# 4.  If needed, make a real ToolSearch(query="select:GenerateImage") call and
+#        wait. Then call the loaded Biomni GenerateImage tool with exactly the
+#        request's arguments. Prose describing a call is not execution.
+# 5.  python scripts/infographic_spec.py --root "$RUN" \
+#          --install-image /mnt/results/infographic.png
+#        Pass the exact returned path. This writes the generation receipt,
+#        installs the image, and overlays the verified header/evidence bands.
+# 6.  Run the request's Read media_output_check on the final installed
+#        deliverables/infographic.png. Regenerate if it is garbled, clipped,
+#        contains invented citation markers, or is not in this Phylo style.
+#        Record the pass with --record-media-check pass --media-check-detail
+#        "<inspection result>". The receipt is tied to the installed image hash.
+# 7.  python scripts/infographic_spec.py --root "$RUN" --verify
+#        Fails on a TODO, unsupported value/citation, missing image, or unreadable
+#        image, or stale/missing GenerateImage request and receipt. Both report
+#        builders embed deliverables/infographic.png.
+# 8.  QC the returned image: every value you injected must appear, correctly
+#     spelled. Re-render if a value is garbled — do not ship a garbled figure.
+#
+# -----------------------------------------------------------------------------
+# Variables — ALL PROFILES
+# -----------------------------------------------------------------------------
+#   {{PROFILE}}               "target" or "general" — selects the panel semantics
+#   {{SUBJECT}}               The thing the review is about. Target profile: the
+#                             gene symbol ("GRN"). General profile: the entity or
+#                             question subject ("Plasma p-tau217", "TDP-43
+#                             proteinopathy", "CAR-T in solid tumours").
+#   {{SUBJECT_LONG}}          Full name ("progranulin"; "phosphorylated tau 217")
+#   {{SUBJECT_CLASS_SHORT}}   e.g. "Secreted growth factor · lysosomal regulator"
+#   {{CONTEXT}}               The setting: a disease, population, or system
+#                             ("frontotemporal dementia"; "preclinical Alzheimer's")
+#   {{HEADLINE_TAG}}          The review's one-line bottom line, evidence-first.
+#                             e.g. "Convergent human genetics · target engagement
+#                             shown · no proven clinical benefit"
+#   {{REVIEW_QUESTION}}       The question as asked, short enough for a header line
+#
+# --- Panel A ---
+#   {{PANEL_A_TITLE}}         target:  what the subject IS
+#                             general: the system / baseline state
+#   {{PANEL_A_DESCRIPTION}}   Clean line-drawing. Name every label with leader
+#                             lines. This is the "what are we looking at" panel.
+#
+# --- Panel B — THE KEY PANEL ---
+#   {{PANEL_B_TITLE}}         target:  how the subject drives the disease
+#                             general: what the evidence actually shows
+#   {{PANEL_B_DESCRIPTION}}   Two contrasting states, side by side or stacked:
+#                             baseline/healthy versus changed/disease. ORANGE
+#                             arrow for the pathological or changed step; black or
+#                             magenta for the molecular cascade. Anchor every
+#                             element to a real finding from the Results section.
+#
+# --- Panel C ---
+#   {{PANEL_C_TITLE}}         target:  therapeutic rationale
+#                             general: what follows — implication, intervention,
+#                                      or the open question the review leaves
+#   {{PANEL_C_DESCRIPTION}}   Two stacked mini-cartoons: TOP (orange) = the
+#                             current/untreated/unresolved state; BOTTOM (green) =
+#                             the intervened/resolved state. Exaggerate the
+#                             difference. For a review with NO intervention to
+#                             draw, make BOTTOM the state that would obtain if the
+#                             open question resolved the way the evidence points,
+#                             and label it as a hypothesis.
+#   {{MODALITY}}              target profile only — drives the shape drawn in C.
+#                             Leave empty for `general`.
+#   {{DIRECTION}}             What C is arguing for: "Raise progranulin",
+#                             "Screen before symptom onset", "Adopt as a
+#                             surrogate endpoint".
+#
+# --- Evidence strip (3 bullets, side by side) — THE REVIEW'S OWN EVIDENCE ---
+#   {{EVIDENCE_1}}            Strongest axis: tier + independent study count +
+#                             named sources. e.g. "Genetics: convergent (3
+#                             independent primary studies) — Ward 2024, Huang
+#                             2020, Huin 2019"
+#   {{EVIDENCE_2}}            Mechanism or biomarker: the measured effect with its
+#                             real number and source.
+#   {{EVIDENCE_3}}            The COUNTERWEIGHT — the safety signal, contradiction,
+#                             null result or evidence gap. A review with no
+#                             counterweight has not looked; this bullet is not
+#                             optional.
+#
+# Notes:
+#   - Every number, identifier and citation must trace to an accepted evidence
+#     row. `--verify` enforces this.
+#   - Keep each bullet to ~2 lines.
+#   - Never write the literal sequence "{{" or "}}" inside a value.
+#
+# =============================================================================
+# PROMPT (everything below this line is sent to the model)
+# =============================================================================
+
+A detailed scientific mechanism diagram in the established Phylo three-panel visual style, summarizing the findings of a source-grounded literature review. Preserve this Phylo style exactly; do not replace it with a generic template. This is an EVIDENCE SUMMARY, not an advertisement and not decorative illustration.
+
+SUBJECT: {{SUBJECT}} ({{SUBJECT_LONG}}), {{SUBJECT_CLASS_SHORT}}, examined in {{CONTEXT}}. The review asked: {{REVIEW_QUESTION}}. Every element drawn must correspond to a finding the review actually grounded in a cited source — this image is the visual abstract of a document whose entire premise is that each claim carries a verbatim quote.
+
+LANDSCAPE 3:2 format (wider than tall), sized to sit at the top of a report page above the text. Background must be #FAF9F3 warm off-white. Style reference: a "Nature Reviews" or "Cell Reviews" methods schematic — precise, line-art-forward, labeled arrows, anatomical clarity.
+
+PHYLO PALETTE only:
+- #FAF9F3 background
+- #000000 black for lines and primary text
+- #CC2FB2 magenta — the SUBJECT of the review + engagement / intervention arrows
+- #75A025 green — resolved / treated / supported state and its arrows
+- #FF9400 orange — pathological / unresolved / disease state and its arrows
+- #ECE9E2 cream — secondary fills
+- #FD9BED light pink — engagement or highlight halo
+- #0279EE blue — tiny link/reference markers
+
+TYPOGRAPHY — match the Biomni application:
+- Set the main header and A/B/C panel titles in "Signifier".
+- Set every diagram label, leader-line call-out, annotation, and evidence footnote in "DieGrotesk".
+- Do NOT use any other typeface; no handwritten or decorative text anywhere.
+
+OVERALL LAYOUT (top to bottom, COMPACT — a wide short card, not a tall poster):
+
+1. TOP RESERVED STRIP (~14% of canvas):
+   - Leave this entire band blank #FAF9F3 with no text, icon, border, or art.
+   - The skill deterministically overlays the verified title in Signifier and
+     metadata in DieGrotesk after generation. Do not duplicate them.
+
+2. MAIN DIAGRAM (~66% of canvas) — HORIZONTAL 3-PANEL schematic arranged LEFT → CENTER → RIGHT (never stacked). Thin black connector arrows between panels showing flow A → B → C:
+
+   PANEL A (LEFT THIRD):
+   {{PANEL_A_DESCRIPTION}}
+   Tiny title under panel: "A. {{PANEL_A_TITLE}}"
+
+   PANEL B (CENTER THIRD) — THE KEY PANEL, what the evidence shows:
+   {{PANEL_B_DESCRIPTION}}
+   Draw {{SUBJECT}} in magenta, shaped as what it actually is — a secreted protein is a compact folded chain, a receptor spans the membrane, an enzyme is a labeled globular domain, a biomarker is the measured analyte in its compartment, a cell state is the cell. NEVER a generic hexagon standing in for an unexamined thing. Show two contrasting states — baseline/healthy versus changed/disease — with an ORANGE arrow marking the pathological or altered step and black/magenta arrows for the molecular cascade. Anchor every drawn element to a finding named in the description.
+   Tiny title under panel: "B. {{PANEL_B_TITLE}}"
+
+   PANEL C (RIGHT THIRD) — what follows:
+   {{PANEL_C_DESCRIPTION}}
+   Argue for: {{DIRECTION}}.
+   IF a modality is given ({{MODALITY}}), the intervention MUST be drawn in the shape matching that modality, engaging its target with a pink #FD9BED halo at the engagement site. Pick from this guide and draw ONLY that shape — NEVER default to a hexagon unless the modality truly is a small molecule:
+     - small molecule / oral inhibitor: a compact magenta hexagon or fused-ring motif in the binding pocket
+     - monoclonal antibody: ONE intact, fully-connected Y-shaped antibody — two Fab arms at the top joined through a central hinge to a single Fc stem at the bottom, all one continuous molecule. NEVER draw the Fab arms detached, split off, or floating separately from the Fc. Only the VARIABLE REGIONS at the extreme Fab arm-TIPS bind: one or both Fab tips may touch the target antigen, and the pink halo belongs exactly at that Fab-variable-region contact. The Fc constant-region stem stays attached through the hinge, points AWAY, and must contact neither antigen, target, nor membrane.
+     - bispecific antibody / T-cell engager: ONE intact connected antibody with two DIFFERENT Fab arm-tips; each tip touches one target, the single attached Fc stem points away into empty space
+     - antisense oligonucleotide (ASO) / siRNA: a short magenta nucleic-acid strand/duplex lowering the target's mRNA, with the mRNA drawn and a downward "expression down" arrow
+     - molecular glue / degrader (PROTAC): a small magenta molecule bridging the target and an E3 ligase, tagging it with ubiquitin
+     - gene therapy / isoform replacement: a magenta AAV capsid or a corrected protein replacing the pathogenic one
+     - peptide / fusion protein / ligand trap: the actual scaffold (e.g. a receptor ectodomain fused to an IgG Fc)
+     - enzyme-replacement / recombinant protein: the protein itself
+   IF no modality is given, panel C is NOT a drug picture. Draw the consequence the review argues for — a decision, a screening or staging step, a study design that would resolve the open question, or the population that would benefit — in the same clean schematic style.
+   Show two stacked mini-cartoons (one above the other):
+     TOP (orange #FF9400 thin border): the current / untreated / unresolved state. Orange arrow annotates what goes wrong or stays unknown.
+     BOTTOM (green #75A025 thin border): the intervened / resolved state. Green arrow annotates the improvement.
+   Make the difference between them VISUALLY OBVIOUS — exaggerate it, do not be subtle.
+   When the bottom cartoon is a hypothesis rather than a demonstrated result, label it "hypothesis" in small text inside its border. Do not draw an unproven outcome as though it were shown.
+   Tiny title under panel: "C. {{PANEL_C_TITLE}}"
+
+3. BOTTOM RESERVED STRIP (~20%):
+   - Leave this entire band blank #FAF9F3 with no text, icon, reference marker,
+     border, or art. The skill deterministically overlays these three verified
+     evidence bullets in DieGrotesk after generation: {{EVIDENCE_1}};
+     {{EVIDENCE_2}}; {{EVIDENCE_3}}.
+   - Do not draw citations or bracketed/numeric markers anywhere in the image.
+
+REQUIREMENTS:
+- ANTIBODY SHAPE — THE MOST COMMON ERROR IN THESE IMAGES. Draw an antibody as the capital letter Y: one single connected outline, drawn in one piece.
+      * The Y's two SHORT UPPER ARMS end in the two tips that grip the target. Those two tips, and only those, touch it. Put the binding halo exactly there.
+      * The Y's LONG LOWER STEM points away into open space and touches nothing at all.
+  ORIENTATION: stand the Y upright, two arms at the TOP, stem hanging DOWN. Put the target directly ABOVE the two arm-tips so they reach up and grip it, and the membrane BELOW the target. The stem hangs down into empty extracellular space.
+  SELF-CHECK before finishing, for every antibody in the image: (1) is it one connected Y drawn in a single piece? (2) do the two upper tips touch the target? (3) is the lower stem in empty space touching nothing? If the stem is the part touching the target, the molecule is upside down — rotate it 180 degrees so the two arms grip the target instead.
+  In immunology terms the antigen-binding variable domains sit at the extreme tips of the two Fab arms; the lower stem is the Fc constant region. Antigen binding is variable-region/Fab-mediated, never Fc-mediated, and the Fc stays free. A bispecific, T-cell engager or ADC is the same Y under the same rule, with its two variable-region arm-tips on their two targets.
+  Antibodies act OUTSIDE the cell. Draw them on the extracellular side of the membrane, on the same side as the target's ectodomain. If the target is purely intracellular, an antibody is the wrong modality and must not appear at all.
+- All text must be REAL, readable, correctly spelled English. No garbled words. No fabricated identifiers, statistics, trial names or citations.
+- Never add bracketed or numeric citations such as [1], [2], or superscript
+  reference numbers. The deterministic evidence strip supplies source names.
+- FONTS: Signifier for headings only; DieGrotesk for every other text element.
+- Thin clean black line-work. Annotations like a textbook figure.
+- Use leader lines and call-outs, NOT speech bubbles.
+- No 3D rendering, no photorealism, no gradients, no shadows. Flat schematic only.
+- Tight vertical spacing — a SHORT WIDE card, NOT a tall poster. Pack content horizontally.
+- The three panels A, B, C sit side-by-side at the same vertical level, occupying the full width.
+- Do NOT include any footer text, signature, watermark, logo, or "schematic — not to scale" disclaimer. The bottom edge ends with the evidence footnote strip.
+- Crisp anatomical and molecular accuracy.
+
+# =============================================================================
+# END OF PROMPT
+# =============================================================================

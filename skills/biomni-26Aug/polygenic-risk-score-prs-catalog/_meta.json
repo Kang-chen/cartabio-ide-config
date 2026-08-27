@@ -1,0 +1,12 @@
+{
+  "name": "polygenic-risk-score-prs-catalog",
+  "description": "Use to calculate polygenic risk scores from PGS Catalog weights for one or more traits, including allele harmonization and population-level score comparisons.",
+  "category": "genomics_genetics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Calculate polygenic risk scores for cardiometabolic traits using the PGS Catalog with 1000 Genomes example data.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:21.210000",
+  "visibility": "public",
+  "id": "skill_7ef1858e91dd4b7fbe5daddf31e5002a"
+}

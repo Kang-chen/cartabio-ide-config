@@ -1,0 +1,20 @@
+{
+  "_comment": "Byte-exact boilerplate that indicates a package was copied rather than authored. A blocklist, not a similarity metric: open-ended similarity detection fires on legitimate sibling skills that share domain prose, so it gets deleted by the first person who runs it. These strings are inert in a genuinely authored skill.",
+  "stanzas": [
+    {
+      "id": "ST001",
+      "text": "Write from Scratch (1%)",
+      "why": "Part of an invented percentage breakdown (90/5/4/1) from a deprecated authoring guide. The numbers were never measured. Its presence means the section was pasted, not written."
+    },
+    {
+      "id": "ST002",
+      "text": "NEVER skip directly to writing inline code",
+      "why": "Same deprecated source. In several packages it sits trapped inside a code fence, which is the markdown artifact that proves it was copied verbatim."
+    },
+    {
+      "id": "ST003",
+      "text": "Do NOT constrain the agent to a specific PDF library",
+      "why": "Contradicts report delegation. Came from guidance that predates the report-generation skills."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "variant-calling-from-sequencing",
+  "description": "Use to call and benchmark germline SNVs/indels from FASTQ, BAM/CRAM, or caller VCFs for WES/WGS and short- or long-read data. Covers GATK/DeepVariant, VCF normalization, caller concordance, GIAB/hap.py accuracy, coverage, Ti/Tv, and dbSNP QC.",
+  "category": "genomics_genetics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Call germline variants from my sequencing data with GATK and DeepVariant, compare the callers, and give me a PDF report.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:23.027000",
+  "visibility": "public",
+  "id": "skill_21c4aae0e24ee315b4095239a58ceb6c"
+}

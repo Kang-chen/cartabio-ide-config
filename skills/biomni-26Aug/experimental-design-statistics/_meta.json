@@ -1,0 +1,12 @@
+{
+  "name": "experimental-design-statistics",
+  "description": "Use to design genomics or omics experiments with power and sample-size calculations, batch and covariate planning, replication, and multiple-testing correction.",
+  "category": "experimental_design",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Help me design a bulk RNA-seq experiment with power analysis for sample size estimation and a batch-balanced layout. Generate a PDF report with an intro, methods, results, conclusions and figures from all of the analyses you perform.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:31.253000",
+  "visibility": "public",
+  "id": "skill_40063c54fad9439a9acd36c76a25983f"
+}

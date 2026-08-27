@@ -1,0 +1,8 @@
+sample_id,gate,channel_x,channel_y,method,proposed_cutoff,direction,pct_removed,valley_confidence,unimodal,status,final_cutoff,apply,notes
+PatientA,debris_2d,FSC-A,SSC-A,ellipse_mcd,,region2d,0.031,,,auto_ok,,Y,2D FSC-A x SSC-A robust ellipse (keep main pop)
+PatientA,singlet_low,FSC-A/FSC-H,,fixed,0.82,keep_above,0.006,,,fixed,0.82,Y,median-4*MAD ratio (permissive)
+PatientA,singlet_high,FSC-A/FSC-H,,fixed,1.18,keep_below,0.009,,,fixed,1.18,Y,median+4*MAD ratio (permissive)
+PatientA,live_dead,Live_Dead,,valley,2.41,keep_below,0.084,0.62,N,auto_ok,2.41,Y,density valley (arcsinh scale); trusted (depth>0.10)
+PatientB,live_dead,Live_Dead,,percentile,3.10,keep_below,0.050,0.04,Y,REVIEW_unimodal,3.10,Y,unimodal (dip p=0.31) -> conservative 95th pct; CONFIRM by eye
+PatientB,live_dead_2d,Live_Dead,FSC-A,ellipse_mcd,,region2d,0.061,,,auto_ok,,N,diagnostic only (apply=N by default)
+ALL,live_dead,Live_Dead,,user,,keep_below,,,,user_edit,2.55,Y,reviewer override broadcast to ALL samples (edit example)

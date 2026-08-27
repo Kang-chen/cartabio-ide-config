@@ -1,0 +1,17 @@
+{
+  "method_name": "",
+  "created_at": "",
+  "benchmark_version": "",
+  "baseline_command": "",
+  "final_command": "",
+  "expected_outputs": [],
+  "primary_metric": {
+    "name": "",
+    "direction": ""
+  },
+  "guardrails": [],
+  "random_seeds": [],
+  "dependencies": [],
+  "auxiliary_data": [],
+  "protected_hash_file": ""
+}

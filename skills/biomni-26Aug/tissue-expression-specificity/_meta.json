@@ -1,0 +1,12 @@
+{
+  "name": "tissue-expression-specificity",
+  "description": "Use to determine where a human target is expressed and assess expression-based on-target safety. Integrates GTEx and Human Protein Atlas tissue profiles, ranks high-baseline organs, computes tissue-specificity/tau and cross-atlas concordance, and flags vital-organ liabilities; accepts gene symbols, Ensembl IDs, or UniProt accessions.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Assess the tissue-expression specificity and on-target safety risk for GENE across GTEx and the Human Protein Atlas, and generate a PDF report.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:22.209000",
+  "visibility": "public",
+  "id": "skill_1770b7f9d13954ae16b07b3ec91515bf"
+}

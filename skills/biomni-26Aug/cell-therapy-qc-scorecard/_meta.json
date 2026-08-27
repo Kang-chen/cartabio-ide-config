@@ -1,0 +1,12 @@
+{
+  "name": "cell-therapy-qc-scorecard",
+  "description": "Use to QC, release-test, or compare scRNA-seq lots of cell-therapy products such as CAR-T, CAR-NK, iPSC-derived, or primary-cell products. Scores identity/purity, residual pluripotency, off-target lineages, maturity, and technical quality as GREEN/AMBER/RED.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Run a single-cell RNA-seq QC release scorecard on my cell-therapy product. Score identity/purity, residual pluripotency, off-target lineage, maturity, and technical QC per unit into a GREEN/AMBER/RED call, and generate a Phylo-branded PDF report with an infographic summary plus machine-readable tables.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:59:14.530000",
+  "visibility": "public",
+  "id": "skill_30aae8fada7b78e30f7275374cebbe68"
+}

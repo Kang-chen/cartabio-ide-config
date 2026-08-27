@@ -1,0 +1,12 @@
+{
+  "name": "scatac-multiome-analysis",
+  "description": "Use for end-to-end scATAC-seq, snATAC-seq, or 10x Multiome chromatin-accessibility analysis from fragments, peak matrices, or Cell Ranger ATAC/ARC outputs. Covers ATAC QC, TF-IDF/LSI, clustering, MACS3 peaks, gene activity, cell annotation, label transfer, and differential accessibility with Signac/Seurat.",
+  "category": "epigenomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Analyze my scATAC-seq data (fragments/peak matrix): QC, LSI clustering, peak calling, and cell-type annotation from open chromatin.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:12.994000",
+  "visibility": "public",
+  "id": "skill_206b4bf7080d00a289bb97143936de68"
+}

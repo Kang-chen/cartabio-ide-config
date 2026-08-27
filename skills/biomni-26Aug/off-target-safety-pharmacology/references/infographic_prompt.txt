@@ -1,0 +1,17 @@
+GenerateImage prompt for the workflow infographic (validated; edit compound-specific text as needed).
+Save output to <outdir>/figures/infographic.png, aspect_ratio 3:2, model gpt-image-2.
+
+---
+
+A clean, minimalist scientific workflow infographic titled "Off-Target Liability Profiling" for a small-molecule drug. Horizontal left-to-right pipeline with 5 connected stages shown as rounded rectangular boxes joined by right-pointing arrows. Neutral off-white background (#FAF9F3). Use a muted gold accent (#D4A04A) for box headers and dark charcoal (#2C2A26) for body text. Professional pharmaceutical-report aesthetic, generous white space, thin clean lines, no clutter, no photorealism.
+
+The 5 stages, each a labeled box with a short sub-caption:
+1. "INPUT" - sub: "Compound (name / SMILES / InChIKey / ChEMBL ID)"
+2. "PANEL" - sub: "Core safety panel (32 targets) + adaptive kNN expansion"
+3. "PREDICT" - sub: "Ligand similarity (ECFP4) + Deep learning DTI + ADMET"
+4. "BENCHMARK" - sub: "Leave-query-out vs measured ChEMBL data; Tier A/B/C"
+5. "REPORT" - sub: "Ranked off-targets, ADMET flags, PDF"
+
+Below the pipeline, a small horizontal legend strip with four colored dots and labels for target classes: orange dot "Ion channel", blue dot "GPCR", green dot "Transporter", pink dot "Enzyme".
+
+At the bottom, three small icon-like callouts in a row: a heart with a small warning symbol labeled "Cardiac (hERG)", a small pill labeled "ADMET", and a target/bullseye labeled "Selectivity". Keep all text crisp, correctly spelled, and legible.

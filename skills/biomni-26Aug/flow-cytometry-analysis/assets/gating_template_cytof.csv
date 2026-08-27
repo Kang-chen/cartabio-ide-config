@@ -1,0 +1,4 @@
+"alias","pop","parent","dims","gating_method","gating_args","collapseDataForGating","groupBy","preprocessing_method","preprocessing_args"
+"intact","+","root","Ir191Di,Ir193Di","flowClust","K=1,quantile=0.95",NA,NA,NA,NA
+"singlets","+","intact","Event_length","flowClust","K=1,quantile=0.95",NA,NA,NA,NA
+"live","-","singlets","Pt195Di","mindensity","",NA,NA,NA,NA

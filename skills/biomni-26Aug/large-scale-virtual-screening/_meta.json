@@ -1,0 +1,12 @@
+{
+  "name": "large-scale-virtual-screening",
+  "description": "Use for structure-based docking or virtual screening of compound libraries against a protein structure with AutoDock Vina. Covers receptor/library preparation, native-ligand redocking, hit ranking, scaffold clustering, prospective screens, and actives-vs-decoys benchmarks such as ROC-AUC, EF, and BEDROC.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Dock this compound library against my target and prioritize hits...",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:53.904000",
+  "visibility": "public",
+  "id": "skill_b1cf4aefacef741d340cf8a7d522ab0b"
+}

@@ -1,0 +1,27 @@
+{
+  "source": "SLC33A1-AT-1-as-a-Therapeutic-Target-in-Cancer delivered bundle",
+  "observed": {
+    "papers_selected": 33,
+    "papers_full_text": 26,
+    "transient_retry_remaining": 2,
+    "paywalled": 5,
+    "manifest_evidence_accepted": 62,
+    "canonical_evidence_accepted": 62,
+    "unique_figures_considered": 154,
+    "candidate_figure_pairs": 473,
+    "figures_selected": 9,
+    "figures_exported": 9,
+    "selected_images_missing": 0,
+    "figures_without_caption_or_ocr": 142,
+    "claims_with_figures": 6,
+    "figures_on_one_claim": 4,
+    "calendar_elapsed_seconds": 114363,
+    "managed_critical_path_seconds": 1021,
+    "bad_embedded_width": 617,
+    "bad_embedded_height": 338
+  },
+  "mixed_panel_captions": [
+    "Figure 4. Loss of Slc33a1 sensitizes to CAR T cell therapy in vivo. (A) Schematic of the experiment. (B-D) Tumor volume, survival, and quantification; mean +/- SEM, n = 8, P < 0.01.",
+    "Figure 3. SLC33A1 deletion impairs ATF6 processing. (A) Schema of the edited locus. (B) Western blot analysis and (C) densitometric quantification from three independent experiments."
+  ]
+}

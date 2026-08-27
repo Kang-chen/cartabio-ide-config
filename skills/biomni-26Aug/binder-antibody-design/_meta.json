@@ -1,0 +1,12 @@
+{
+  "name": "binder-antibody-design",
+  "description": "Use to design new protein or peptide binders, mini-binders, antibodies, nanobodies, scFv, or VHH against a target from a PDB structure or UniProt ID. Covers RFdiffusion/RFantibody backbone generation, ProteinMPNN sequence design, co-fold validation, interface scoring, on-target epitope recovery, and candidate ranking.",
+  "category": "molecular_design",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Design de novo minibinders against the PD-L1 IgV domain (UniProt Q9NZQ7, PDB 5O45), targeting the PD-1 binding face. Restrict the hotspot set to a single tight cluster on that interface, use 55-65 residue binders, and run a small focused campaign. Report the campaign scale against the recommended range and produce the final PDF report.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:52:18.706000",
+  "visibility": "public",
+  "id": "skill_af98a09aa8536dce4a7157f8f270a880"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "scrna-disease-drug-discovery",
+  "description": "Use for end-to-end disease-focused scRNA-seq analysis that integrates cell states, differential expression, and human genetic evidence to prioritize therapeutic targets.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Run an end-to-end scRNA-seq disease drug discovery analysis on GSE195452 systemic sclerosis skin biopsies with genetic evidence integration to identify and prioritize therapeutic targets. Perform differential expression, pathway analysis, ligand-receptor interactions, genetic target evidence from Open Targets and GeneBass, and multi-omics target prioritization. Generate a PDF report with intro, methods, results, conclusions and figures.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:10.688000",
+  "visibility": "public",
+  "id": "skill_d7c1ec9d98a54a4eb7ae69a23c8314fe"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "grn-pyscenic",
+  "description": "Use to infer transcription-factor gene-regulatory networks and cell-level regulon activity from scRNA-seq data with pySCENIC.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Infer gene regulatory networks and TF activity from my single-cell RNA-seq data.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:16.923000",
+  "visibility": "public",
+  "id": "skill_35e45ff33cb141a981a3fc5711c4760f"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "bulk-omics-clustering",
+  "description": "Use to cluster samples or features in bulk transcriptomics, proteomics, or metabolomics matrices and identify data-driven groups or patterns.",
+  "category": "multi_omics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Cluster my samples by gene expression to identify biological subtypes.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:41:37.136000",
+  "visibility": "public",
+  "id": "skill_51a601b71a454a00aa0d378fe8e3205c"
+}

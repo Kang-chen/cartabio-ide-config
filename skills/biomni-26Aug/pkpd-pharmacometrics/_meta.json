@@ -1,0 +1,12 @@
+{
+  "name": "pkpd-pharmacometrics",
+  "description": "Use to fit population PK or PK/PD models from NONMEM-style concentration-time data with nlmixr2/rxode2. Covers compartmental absorption/clearance models, Emax/effect-compartment/indirect response, covariates, VPCs, multi-dose simulation, exposure-response, and methodologic dose selection gated by a sourced target window.",
+  "category": "drug_discovery",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Fit a population PK/PD model to my concentration-time data and run an exposure-response dose analysis.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:58:23.063000",
+  "visibility": "public",
+  "id": "skill_1c6f8253c75e4fca5754cfe885207a35"
+}

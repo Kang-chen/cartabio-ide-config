@@ -1,0 +1,12 @@
+{
+  "name": "rnaseq-fastq-to-counts",
+  "description": "Use to turn raw bulk RNA-seq FASTQ or SRA/ENA/GEO accessions into a DE-ready gene-count matrix with STAR or Salmon/tximport. Covers read QC, reference indexing, strandedness, per-sample and merged counts, and local or HPC execution.",
+  "category": "transcriptomics",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Align this bulk RNA-seq FASTQ sample and give me a DE-ready gene count matrix with a PDF report.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:06.554000",
+  "visibility": "public",
+  "id": "skill_b6b5b3b7da495f7833229bedd699bc7a"
+}

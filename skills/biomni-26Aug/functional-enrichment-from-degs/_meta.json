@@ -1,0 +1,12 @@
+{
+  "name": "functional-enrichment-from-degs",
+  "description": "Use to run clusterProfiler functional enrichment on differential-expression results, including over-representation analysis and GSEA with exportable results and plots.",
+  "category": "functional_analysis",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Perform functional enrichment analysis on my differential expression results.",
+  "created_by_name": "Phylo",
+  "updated_at": "2026-08-26T08:57:19.307000",
+  "visibility": "public",
+  "id": "skill_eb2ad58c6e5a40fa9328874443eef99d"
+}

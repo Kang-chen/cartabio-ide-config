@@ -1,0 +1,12 @@
+{
+  "name": "microplate-layout-design",
+  "description": "Design optimized microplate layouts with randomization, edge effect mitigation, and covariate balancing.",
+  "category": "experimental_design",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "Design a randomized 96-well plate layout for a dose-response experiment. Generate a PDF report with an intro, methods, results, conclusions and figures from all of the analyses you perform.",
+  "created_by_name": "Gregory Minevich",
+  "updated_at": "2026-07-08T09:14:23.432000",
+  "visibility": "public",
+  "id": "skill_717f11d1af7c4ae2b8c2a7771c0a19d0"
+}

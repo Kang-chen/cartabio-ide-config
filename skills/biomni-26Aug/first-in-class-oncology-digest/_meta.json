@@ -1,0 +1,12 @@
+{
+  "name": "first-in-class-oncology-digest",
+  "description": "On-demand digest of novel first-in-class oncology targets and mechanisms disclosed across peer-reviewed literature, conference proceedings, company pipeline news, and SEC/regulatory filings. Now includes preclinical-stage novel target discoveries alongside clinical disclosures, and actively reviews cancer biology literature for new mechanistic insights that may reveal previously unrecognized therapeutic targets. Produces a structured Word report with summary table and full target briefs.",
+  "category": "general",
+  "icon": "flask",
+  "keywords": [],
+  "default_message": "",
+  "created_by_name": "jyotsana madan",
+  "updated_at": "2026-08-26T07:18:20.136000",
+  "visibility": "public",
+  "id": "skill_a368f04949fa455c88cf142586b63ebb"
+}
