@@ -1,0 +1,427 @@
+{
+  "authoring": {
+    "derived_files": [
+      "SKILL.md",
+      "eval.yaml",
+      "DATA_SOURCES.md"
+    ],
+    "generator": "phylo-create-skill",
+    "repair_policy": "regenerate derived files from skill_contract.json and rerun the full gate"
+  },
+  "capabilities": {
+    "trigger": "Use when writing or reviewing a scientific report for a biomedical or bioinformatics analysis.",
+    "catalog_claim_ids": [
+      "cap_provide_standards",
+      "cap_tier_language"
+    ],
+    "entries": [
+      {
+        "id": "cap_provide_standards",
+        "claim": "Provides report writing standards for biomedical analyses covering structure, discipline, data integrity, evidence tiers, figures, citations, and bioinformatics norms",
+        "status": "tested",
+        "implementation_refs": [
+          "SKILL.md"
+        ],
+        "eval_refs": [
+          "eval.yaml"
+        ]
+      },
+      {
+        "id": "cap_tier_language",
+        "claim": "Defines evidence tier language constraints bounding the strongest sentence a report may write",
+        "status": "tested",
+        "implementation_refs": [
+          "SKILL.md"
+        ],
+        "eval_refs": [
+          "eval.yaml"
+        ]
+      }
+    ]
+  },
+  "clarification_branches": [
+    {
+      "question_id": "q1_analysis",
+      "choice_id": "differential_expression",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_scientific_report_writing_standards.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q1_analysis",
+      "choice_id": "survival",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_scientific_report_writing_standards.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q1_analysis",
+      "choice_id": "variant_calling",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_scientific_report_writing_standards.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q1_analysis",
+      "choice_id": "pathway",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_scientific_report_writing_standards.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q1_analysis",
+      "choice_id": "other",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_scientific_report_writing_standards.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q2_audience",
+      "choice_id": "bench_scientist",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_scientific_report_writing_standards.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q2_audience",
+      "choice_id": "pi",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_scientific_report_writing_standards.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q2_audience",
+      "choice_id": "regulatory",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_scientific_report_writing_standards.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q2_audience",
+      "choice_id": "publication",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_scientific_report_writing_standards.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q3_tier",
+      "choice_id": "hypothesis_generating",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_scientific_report_writing_standards.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q3_tier",
+      "choice_id": "validated",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_scientific_report_writing_standards.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q3_tier",
+      "choice_id": "exploratory",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_scientific_report_writing_standards.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q3_tier",
+      "choice_id": "unsure",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_scientific_report_writing_standards.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    }
+  ],
+  "clarification_questions": [
+    {
+      "id": "q1_analysis",
+      "prompt": "What analysis results do you need to report?",
+      "selection_mode": "single",
+      "choices": [
+        {
+          "id": "differential_expression",
+          "label": "Differential expression (RNA-seq bulk or single-cell)"
+        },
+        {
+          "id": "survival",
+          "label": "Survival / time-to-event analysis"
+        },
+        {
+          "id": "variant_calling",
+          "label": "Variant calling / genomics"
+        },
+        {
+          "id": "pathway",
+          "label": "Pathway or functional enrichment"
+        },
+        {
+          "id": "other",
+          "label": "Other analysis type"
+        }
+      ]
+    },
+    {
+      "id": "q2_audience",
+      "prompt": "Who is the audience for this report?",
+      "selection_mode": "single",
+      "choices": [
+        {
+          "id": "bench_scientist",
+          "label": "Bench scientist (recommended default)"
+        },
+        {
+          "id": "pi",
+          "label": "Principal investigator"
+        },
+        {
+          "id": "regulatory",
+          "label": "Regulatory / clinical"
+        },
+        {
+          "id": "publication",
+          "label": "Publication-ready"
+        }
+      ]
+    },
+    {
+      "id": "q3_tier",
+      "prompt": "What evidence tier does your analysis support?",
+      "selection_mode": "single",
+      "choices": [
+        {
+          "id": "hypothesis_generating",
+          "label": "Single cohort, no independent replication (most common)"
+        },
+        {
+          "id": "validated",
+          "label": "Independent cohort replication at padj < 0.05"
+        },
+        {
+          "id": "exploratory",
+          "label": "No formal statistical testing"
+        },
+        {
+          "id": "unsure",
+          "label": "I am not sure, help me determine"
+        }
+      ]
+    }
+  ],
+  "deliverable_policy": {
+    "audience": "user_facing",
+    "infographic": {
+      "not_applicable_reason": "Guidance skill teaches writing standards; does not generate qualitative infographics",
+      "required": false
+    },
+    "report": {
+      "default_style_provider": "pdf-report-generation",
+      "explicit_style_override_allowed": true,
+      "required": true
+    }
+  },
+  "execution": {
+    "bundled_commands_applicable": false,
+    "not_applicable_reason": "Guidance skill has no scripts to execute; provides prose standards in SKILL.md"
+  },
+  "external_dependencies": {
+    "applicable": false,
+    "not_applicable_reason": "No external services or APIs are called; this is a guidance skill with no computation",
+    "services": []
+  },
+  "facts": {
+    "headline_definitions": [],
+    "known_answer_eval_refs": [],
+    "not_applicable_reason": "Guidance skill: teaches writing standards, does not generate evidence-bearing claims",
+    "partition_groups": [],
+    "partition_not_applicable_reason": "",
+    "requirement": "not_applicable",
+    "runtime_payload_artifact": "",
+    "schema": "report_facts.json"
+  },
+  "figures": {
+    "applicable": false,
+    "not_applicable_reason": "Guidance skill teaches figure standards but does not generate or declare its own result figures"
+  },
+  "inference_readiness": {
+    "applicable": false,
+    "not_applicable_reason": "Guidance skill: does not perform statistical inference or population-level comparison"
+  },
+  "installation": {
+    "offer_private_preview_after_generation": true,
+    "registration_managed_outside_package": true,
+    "registration_requires_explicit_user_confirmation": true
+  },
+  "maturity": "generated",
+  "pdf_review": {
+    "render_all_pages_required": true,
+    "text_extraction_required": true,
+    "visual_review_required": true
+  },
+  "resource_identity": {
+    "applicable": false,
+    "not_applicable_reason": "Guidance skill does not emit citations, accessions, or external identifiers; it teaches citation standards"
+  },
+  "runtime_instructions": {
+    "inputs": [
+      "A completed scientific analysis (typically biomedical/bioinformatics) with results requiring documentation",
+      "Analysis type: differential expression, survival, variant calling, pathway enrichment, or other",
+      "Audience: bench scientist, PI, regulatory, or publication-ready",
+      "Evidence tier: validated, hypothesis-generating, or exploratory"
+    ],
+    "workflow": [
+      {
+        "title": "Assess report need and determine evidence tier",
+        "instruction": "Determine whether a report is warranted based on analysis complexity and user request. Compute the evidence tier from the run: validated requires independent replication, single-cohort is hypothesis-generating, untested is exploratory."
+      },
+      {
+        "title": "Structure the report content",
+        "instruction": "Apply the five mandatory sections (Task Context, Methods and Sources, Results, Conclusions and Interpretation, Limitations) with run-specific content. Derive numbers from artifacts, not hand-typed."
+      },
+      {
+        "title": "Apply writing discipline and bioinformatics norms",
+        "instruction": "Follow derive-not-restate, no-filler, caption, caveat, and bioinformatics-specific rules. Ensure gene IDs, genome build, statistical reporting, normalization, and batch effects are documented."
+      },
+      {
+        "title": "Generate the PDF report",
+        "instruction": "Use phylo-pdf-report-generation or compatible provider to render the structured content into a branded PDF."
+      }
+    ],
+    "caveats": [
+      {
+        "statement": "Evidence tier must be computed from the run, not chosen: a single-cohort result labeled validated is always wrong",
+        "evidence_ref": "Evidence tier section in the report"
+      },
+      {
+        "statement": "Numbers in prose must derive from artifacts: prose count disagreeing with table count is a defect",
+        "evidence_ref": "Report text vs. exported table"
+      },
+      {
+        "statement": "Limitations must be run-specific: generic boilerplate that could apply to any experiment is not a limitation",
+        "evidence_ref": "Limitations section content"
+      }
+    ],
+    "data_sources": [],
+    "existing_materials": [
+      "SKILL.md: authored fresh — guidance content covering nine writing standard domains",
+      "No scripts: this is a guidance skill with prose standards, not executable code"
+    ]
+  },
+  "schema": "phylo-skill-evidence/1",
+  "skill": {
+    "archetype": "correctness-guidance",
+    "slug": "scientific-report-writing-standards"
+  },
+  "source_assertions": [],
+  "source_assertions_not_applicable_reason": "No external facts are used in computation; this is a guidance skill",
+  "starting_task": {
+    "decision_context": "A scientist has completed an analysis and needs to write a report that is rigorous enough to share externally, submit for review, or include in a publication. They need to know the required sections, writing style, evidence tier constraints, and domain-specific conventions.",
+    "deliverables": "report_scientific_report_writing_standards.pdf, report_content.json",
+    "objective": "Provide comprehensive guidance on report structure, writing discipline, data integrity, evidence tier language, figure and table standards, citation rules, and bioinformatics-specific reporting norms so the user can produce a rigorous, honest, reproducible report.",
+    "subject_input": "A completed biomedical or bioinformatics analysis (e.g., RNA-seq DE analysis with 412 tested genes, 3 significant at padj < 0.05, one volcano plot, one top-10 results table) that needs to be documented in a structured scientific report.",
+    "user_prompt": "What standards should I follow when writing a scientific report for my biomedical analysis?"
+  },
+  "validation_matrix": {
+    "auto": {
+      "status": "passed",
+      "evidence_refs": [
+        "SKILL.md"
+      ],
+      "evidence": "SKILL.md covers all nine content domains with concrete rules and examples; evidence tier language constraints are explicitly defined"
+    },
+    "guided": {
+      "status": "not_run",
+      "reason": "No separate child run with user clarification selection has been performed yet"
+    }
+  }
+}

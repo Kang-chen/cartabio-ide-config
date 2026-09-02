@@ -1,0 +1,144 @@
+{
+  "evidence": {
+    "execution_contract_satisfied": {
+      "reason": "Guidance skill has no scripts to execute; provides prose standards in SKILL.md",
+      "status": "not_applicable"
+    },
+    "facts_artifact_verified": {
+      "reason": "Guidance skill: teaches writing standards, does not generate evidence-bearing claims",
+      "status": "not_applicable"
+    },
+    "figure_contract_satisfied": {
+      "reason": "Guidance skill teaches figure standards but does not generate or declare its own result figures",
+      "status": "not_applicable"
+    },
+    "infographic_lineage_verified": {
+      "reason": "Guidance skill teaches writing standards; does not generate qualitative infographics",
+      "status": "not_applicable"
+    },
+    "outputs_appeared": {
+      "appeared": [
+        {
+          "bytes": 44969,
+          "path": "/mnt/results/report_scientific_report_writing_standards.pdf",
+          "provenance": "filesystem",
+          "sha256": "e3e2511906c28fadd2044524f93029742e7436021861c951732f861882d38e58"
+        },
+        {
+          "bytes": 10053,
+          "path": "/mnt/results/report_content_scientific_report_writing_standards.json",
+          "provenance": "filesystem",
+          "sha256": "bdf28573996f78dbb125f06576ca8ef74acf7210eea63b03ab6f17e92de1fb6a"
+        }
+      ],
+      "method": "filesystem with resolved results-root containment"
+    },
+    "pages_rendered": {
+      "pages": [
+        {
+          "bytes": 231342,
+          "path": "/mnt/results/execution_trace/skill_qc/scientific-report-writing-standards/page-1.png"
+        },
+        {
+          "bytes": 223567,
+          "path": "/mnt/results/execution_trace/skill_qc/scientific-report-writing-standards/page-2.png"
+        },
+        {
+          "bytes": 251926,
+          "path": "/mnt/results/execution_trace/skill_qc/scientific-report-writing-standards/page-3.png"
+        },
+        {
+          "bytes": 198890,
+          "path": "/mnt/results/execution_trace/skill_qc/scientific-report-writing-standards/page-4.png"
+        }
+      ]
+    },
+    "report_at_results_root": {
+      "bytes": 44969,
+      "path": "/mnt/results/report_scientific_report_writing_standards.pdf"
+    },
+    "report_sections_present": {
+      "line_positions": [
+        15,
+        27,
+        48,
+        69,
+        73
+      ],
+      "report": {
+        "bytes": 44969,
+        "path": "/mnt/results/report_scientific_report_writing_standards.pdf"
+      },
+      "sections": [
+        "Task Context",
+        "Methods & Sources",
+        "Results",
+        "Conclusions & Interpretation",
+        "Limitations"
+      ],
+      "text": {
+        "bytes": 9470,
+        "path": "/mnt/results/execution_trace/skill_qc/scientific-report-writing-standards/report.txt"
+      }
+    },
+    "report_style_verified": {
+      "activation": "default",
+      "contract_default_provider": "pdf-report-generation",
+      "method": "exact PDF vector-colour markers from the resolved installed provider source",
+      "minimum_distinct_markers": 2,
+      "provider": "pdf-report-generation",
+      "required_marker_hits": 1,
+      "selection": "contract_default",
+      "style_source": {
+        "bytes": 18960,
+        "derivation_schema": "biomni-report-style-derivation/1",
+        "kind": "installed_skill_markdown",
+        "marker_set_sha256": "060f2e1bb851a5d0e23d38ca3c82a81f8593e536ea47ae9052c82f74b2048572",
+        "path": "/mnt/skills/system/pdf-report-generation/SKILL.md",
+        "sha256": "871a6419a21934d20de416007a550822a8f431b5f1919d1dc430335f18571773"
+      },
+      "supporting_marker_hits": 6
+    },
+    "source_assertions_verified": {
+      "checked": [],
+      "not_applicable_reason": "No external facts are used in computation; this is a guidance skill"
+    },
+    "text_extracted": {
+      "report": {
+        "bytes": 44969,
+        "path": "/mnt/results/report_scientific_report_writing_standards.pdf"
+      },
+      "text": {
+        "bytes": 9470,
+        "path": "/mnt/results/execution_trace/skill_qc/scientific-report-writing-standards/report.txt"
+      }
+    },
+    "visual_review_attested": {
+      "attestation": "Reviewed all 4 rendered pages at 144 dpi against the current PDF bytes. Page 1: title block, Task Context and Methods & Sources sections with content; the previously orphaned Results heading no longer appears at the page bottom. Page 2: Results heading at top with Report anatomy table (gold header) and Evidence tier language constraints table, both well-formed. Page 3: rules-per-domain bar chart centered with bound italic caption; Conclusions & Interpretation heading immediately followed by numbered content. Page 4: Limitations heading at top with content (previously orphaned at page 3 bottom, now resolved), References, and Output Files table. No blank or clipped pages; gold house style applied throughout.",
+      "issues": [],
+      "limitation": "author/agent attestation; not independently machine-verifiable",
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "verdict": "pass"
+    }
+  },
+  "execution_contract_satisfied": true,
+  "facts_artifact_verified": "not_applicable",
+  "figure_contract_satisfied": true,
+  "figures_embedded": "not_applicable",
+  "generated_by": "report_qc.write_receipt",
+  "infographic_lineage_verified": "not_applicable",
+  "outputs_appeared": true,
+  "pages_rendered": true,
+  "report_at_results_root": true,
+  "report_sections_present": true,
+  "report_style_verified": true,
+  "schema": "phylo-run-receipt/3",
+  "source_assertions_verified": true,
+  "text_extracted": true,
+  "visual_review_attested": true
+}

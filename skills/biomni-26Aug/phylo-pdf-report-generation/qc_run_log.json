@@ -1,0 +1,61 @@
+{
+  "events": [
+    {
+      "artifact": "execution_trace/skill_qc/phylo-pdf-report-generation/report.txt",
+      "artifact_sha256": "ba0424215f200c818ac7fe7e8f39d484f52a71dcdef7f7eadfa583a217dc65ed",
+      "report": "report_phylo_pdf_report_generation.pdf",
+      "report_sha256": "67d73cd126989bf0ce7041079122415b50a69ec7cc04734d0a1e864384c87c85",
+      "type": "pdf_text_extraction"
+    },
+    {
+      "pages": [
+        {
+          "image": "execution_trace/skill_qc/phylo-pdf-report-generation/page-1.png",
+          "image_sha256": "f3514b49c2319ddd00d23c95c9d0b254a2e884b16fa47498fa40777b2e9a1a11",
+          "page": 1
+        },
+        {
+          "image": "execution_trace/skill_qc/phylo-pdf-report-generation/page-2.png",
+          "image_sha256": "d6c9627f77e7f8ad8caf458144c897724b5b5dc4474bfe38efe1712c6d5e342a",
+          "page": 2
+        },
+        {
+          "image": "execution_trace/skill_qc/phylo-pdf-report-generation/page-3.png",
+          "image_sha256": "689a3bbf292182c5c12e9e3c693448bfe5ae4317fc49cc45a037253b4f3126bc",
+          "page": 3
+        },
+        {
+          "image": "execution_trace/skill_qc/phylo-pdf-report-generation/page-4.png",
+          "image_sha256": "c8e4b4b1572917bc743fad114c35c4f129e50a5685b3f6e5c22aa6e9f11a9147",
+          "page": 4
+        },
+        {
+          "image": "execution_trace/skill_qc/phylo-pdf-report-generation/page-5.png",
+          "image_sha256": "760f5313a6a00722e32b7f97ca70b89c3e34b1e05b144fe01125e03fe196e545",
+          "page": 5
+        }
+      ],
+      "report": "report_phylo_pdf_report_generation.pdf",
+      "report_sha256": "67d73cd126989bf0ce7041079122415b50a69ec7cc04734d0a1e864384c87c85",
+      "type": "pdf_render"
+    },
+    {
+      "evidence_type": "author_or_agent_attestation",
+      "issues": [],
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "report": "report_phylo_pdf_report_generation.pdf",
+      "report_sha256": "67d73cd126989bf0ce7041079122415b50a69ec7cc04734d0a1e864384c87c85",
+      "review_evidence": "Reviewed all 5 rendered pages at 144 dpi against the current PDF bytes. Page 1: title block (26pt bold near-black title, gold subtitle, muted italic attribution), Task Context and Methods & Sources sections with gold-underlined headings. Page 2: Results section with volcano plot centered and bound italic caption. Page 3: MA plot with caption and Top-10 DE genes table with gold header row. Page 4: table continuation with repeated gold header across the page break; Conclusions & Interpretation and Limitations headings each immediately followed by content (no orphaned headings after the KeepTogether fix). Page 5: References with numbered hanging-indent entries and Output Files table. No blank or clipped pages; headers carry the muted title with gold underline; footers carry a warm-gray rule with centered page numbers.",
+      "type": "pdf_visual_review",
+      "verdict": "pass"
+    }
+  ],
+  "generated_by": "report_qc",
+  "schema": "phylo-qc-run-log/1"
+}

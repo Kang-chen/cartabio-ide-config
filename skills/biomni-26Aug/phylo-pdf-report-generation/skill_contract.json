@@ -1,0 +1,363 @@
+{
+  "authoring": {
+    "derived_files": [
+      "SKILL.md",
+      "eval.yaml",
+      "DATA_SOURCES.md"
+    ],
+    "generator": "phylo-create-skill",
+    "repair_policy": "regenerate derived files from skill_contract.json and rerun the full gate"
+  },
+  "capabilities": {
+    "trigger": "Use this skill to render a Phylo-branded PDF report from structured scientific content (sections, figures, tables, metadata). Usable standalone or callable by other skills.",
+    "catalog_claim_ids": [
+      "cap_render_pdf",
+      "cap_validate_pdf"
+    ],
+    "entries": [
+      {
+        "id": "cap_render_pdf",
+        "claim": "Renders a multi-page Phylo-branded PDF from a report_content.json file using ReportLab Platypus",
+        "status": "tested",
+        "implementation_refs": [
+          "scripts/generate_report.py"
+        ],
+        "eval_refs": [
+          "eval.yaml"
+        ]
+      },
+      {
+        "id": "cap_validate_pdf",
+        "claim": "Validates generated PDF for page count, text extractability, page size, figure embedding, and blank pages",
+        "status": "tested",
+        "implementation_refs": [
+          "scripts/validate_pdf.py"
+        ],
+        "eval_refs": [
+          "eval.yaml"
+        ]
+      }
+    ]
+  },
+  "clarification_branches": [
+    {
+      "question_id": "q1_content",
+      "choice_id": "json_file",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "scripts/generate_report.py"
+      ],
+      "artifact_paths": [
+        "report_phylo_pdf_report_generation.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q1_content",
+      "choice_id": "interactive",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_content.json",
+        "report_phylo_pdf_report_generation.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q1_content",
+      "choice_id": "from_analysis",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_content.json",
+        "report_phylo_pdf_report_generation.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q2_figures",
+      "choice_id": "yes_paths",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "scripts/generate_report.py"
+      ],
+      "artifact_paths": [
+        "report_phylo_pdf_report_generation.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q2_figures",
+      "choice_id": "no_figures",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "scripts/generate_report.py"
+      ],
+      "artifact_paths": [
+        "report_phylo_pdf_report_generation.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q2_figures",
+      "choice_id": "generate_figs",
+      "fallback_status": "partial",
+      "implementation_refs": [
+        "SKILL.md"
+      ],
+      "artifact_paths": [
+        "report_phylo_pdf_report_generation.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q3_metadata",
+      "choice_id": "standard",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "scripts/generate_report.py"
+      ],
+      "artifact_paths": [
+        "report_phylo_pdf_report_generation.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q3_metadata",
+      "choice_id": "minimal",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "scripts/generate_report.py"
+      ],
+      "artifact_paths": [
+        "report_phylo_pdf_report_generation.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    },
+    {
+      "question_id": "q3_metadata",
+      "choice_id": "full",
+      "fallback_status": "complete",
+      "implementation_refs": [
+        "scripts/generate_report.py"
+      ],
+      "artifact_paths": [
+        "report_phylo_pdf_report_generation.pdf"
+      ],
+      "eval_refs": [
+        "eval.yaml"
+      ]
+    }
+  ],
+  "clarification_questions": [
+    {
+      "id": "q1_content",
+      "prompt": "What scientific content do you want in the report?",
+      "selection_mode": "single",
+      "choices": [
+        {
+          "id": "json_file",
+          "label": "I have a report_content.json file ready"
+        },
+        {
+          "id": "interactive",
+          "label": "I will provide content elements interactively"
+        },
+        {
+          "id": "from_analysis",
+          "label": "I have analysis results from another skill"
+        }
+      ]
+    },
+    {
+      "id": "q2_figures",
+      "prompt": "Do you have specific figures or tables to include?",
+      "selection_mode": "single",
+      "choices": [
+        {
+          "id": "yes_paths",
+          "label": "Yes, I have figure file paths and table data ready"
+        },
+        {
+          "id": "no_figures",
+          "label": "No figures, text-only report"
+        },
+        {
+          "id": "generate_figs",
+          "label": "I need figures generated from my data first"
+        }
+      ]
+    },
+    {
+      "id": "q3_metadata",
+      "prompt": "What metadata should appear on the cover page?",
+      "selection_mode": "single",
+      "choices": [
+        {
+          "id": "standard",
+          "label": "Title, subtitle, author, date (recommended)"
+        },
+        {
+          "id": "minimal",
+          "label": "Title only"
+        },
+        {
+          "id": "full",
+          "label": "Title, subtitle, author, date, project name"
+        }
+      ]
+    }
+  ],
+  "deliverable_policy": {
+    "audience": "user_facing",
+    "infographic": {
+      "not_applicable_reason": "Format utility renders provided content; does not generate qualitative infographics",
+      "required": false
+    },
+    "report": {
+      "default_style_provider": "pdf-report-generation",
+      "explicit_style_override_allowed": true,
+      "required": true
+    }
+  },
+  "execution": {
+    "bundled_commands_applicable": false,
+    "not_applicable_reason": "Scripts are invoked directly by the agent at runtime, not as pre-validated bundled commands"
+  },
+  "external_dependencies": {
+    "applicable": false,
+    "not_applicable_reason": "No external services or APIs are called; ReportLab and pypdf are local Python packages",
+    "services": []
+  },
+  "facts": {
+    "headline_definitions": [],
+    "known_answer_eval_refs": [],
+    "not_applicable_reason": "Pure formatter: transforms provided content into PDF, does not generate evidence-bearing claims",
+    "partition_groups": [],
+    "partition_not_applicable_reason": "",
+    "requirement": "not_applicable",
+    "runtime_payload_artifact": "",
+    "schema": "report_facts.json"
+  },
+  "figures": {
+    "applicable": false,
+    "not_applicable_reason": "Format utility embeds user-provided figures; it does not generate or declare its own result figures"
+  },
+  "inference_readiness": {
+    "applicable": false,
+    "not_applicable_reason": "Pure formatter: does not perform statistical inference or population-level comparison"
+  },
+  "installation": {
+    "offer_private_preview_after_generation": true,
+    "registration_managed_outside_package": true,
+    "registration_requires_explicit_user_confirmation": true
+  },
+  "maturity": "generated",
+  "pdf_review": {
+    "render_all_pages_required": true,
+    "text_extraction_required": true,
+    "visual_review_required": true
+  },
+  "resource_identity": {
+    "applicable": false,
+    "not_applicable_reason": "Format utility does not emit citations, accessions, or external identifiers; it renders provided content"
+  },
+  "runtime_instructions": {
+    "inputs": [
+      "report_content.json: JSON file with metadata, sections (each with heading and content blocks), optional references, optional output_files_table",
+      "Figure files: PNG/SVG/JPEG images referenced by figure blocks, paths relative to the JSON file or absolute",
+      "Content blocks: paragraph (text), figure (path, caption), table (headers, rows, title), bullet_list (items), numbered_list (items), subheading (text)"
+    ],
+    "workflow": [
+      {
+        "title": "Collect and validate content",
+        "instruction": "Assemble or receive report_content.json with all sections, figures, tables, and metadata. Validate that all five required sections are present, figure paths resolve, and tables are well-formed."
+      },
+      {
+        "title": "Render the report",
+        "instruction": "Run scripts/generate_report.py with the content JSON path and output PDF path as arguments, using ReportLab Platypus with Phylo branding."
+      },
+      {
+        "title": "Validate the report",
+        "instruction": "Run scripts/validate_pdf.py with the output PDF path and expected figure count to check page count, text extractability, page size, figure embedding, and blank pages."
+      },
+      {
+        "title": "Copy to results root",
+        "instruction": "Use staged_copy to publish the validated report as report_phylo_pdf_report_generation.pdf at the results root."
+      },
+      {
+        "title": "Write receipt",
+        "instruction": "Call write_receipt with report name, outputs, and QC log to record run evidence."
+      }
+    ],
+    "caveats": [
+      {
+        "statement": "Figure path not found: renderer prints a placeholder paragraph instead of silently skipping",
+        "evidence_ref": "validate_pdf.py exit code"
+      },
+      {
+        "statement": "Text not extractable: validator checks pypdf text extraction length > 50 chars",
+        "evidence_ref": "validate_pdf.py exit code"
+      },
+      {
+        "statement": "Wrong page size: validator checks each page mediabox against 612 x 792 pt US Letter",
+        "evidence_ref": "validate_pdf.py exit code"
+      }
+    ],
+    "data_sources": [],
+    "existing_materials": [
+      "scripts/generate_report.py: authored fresh — ReportLab Platypus renderer with Phylo branding",
+      "scripts/validate_pdf.py: authored fresh — post-generation PDF integrity checker",
+      "scripts/report_qc.py: scaffolded by phylo-create-skill — receipt and gate infrastructure",
+      "scripts/report_style.py: scaffolded by phylo-create-skill — style provider resolution"
+    ]
+  },
+  "schema": "phylo-skill-evidence/1",
+  "skill": {
+    "archetype": "format-utility",
+    "slug": "phylo-pdf-report-generation"
+  },
+  "source_assertions": [],
+  "source_assertions_not_applicable_reason": "No external facts are used in computation; the skill transforms user-provided content",
+  "starting_task": {
+    "decision_context": "A scientist needs a formal, shareable PDF deliverable from their analysis results for collaboration, stakeholder review, or regulatory submission. The PDF must be well-structured, text-extractable, and visually consistent with Phylo branding.",
+    "deliverables": "report_phylo_pdf_report_generation.pdf, report_content.json",
+    "objective": "Transform structured scientific content into a professionally branded, multi-page PDF report with Phylo visual identity, automatic page breaks, embedded figures with captions, formatted tables, and standard report sections.",
+    "subject_input": "A report_content.json file containing metadata, 5 ordered sections (Task Context, Methods and Sources, Results, Conclusions and Interpretation, Limitations) with content blocks (paragraphs, figures with paths and captions, tables with headers and rows), references, and an output files table. Sample: RNA-seq DE analysis with 412 tested genes, 3 significant at padj < 0.05, one volcano plot figure, one top-10 DE genes table, 3 references.",
+    "user_prompt": "How do I render my scientific analysis results as a branded report?"
+  },
+  "validation_matrix": {
+    "auto": {
+      "status": "passed",
+      "evidence_refs": [
+        "scripts/generate_report.py",
+        "scripts/validate_pdf.py"
+      ],
+      "evidence": "Demo run produced valid multi-page PDF with extractable text, embedded figures, US Letter page size; validate_pdf.py exited 0"
+    },
+    "guided": {
+      "status": "not_run",
+      "reason": "No separate child run with user clarification selection has been performed yet"
+    }
+  }
+}

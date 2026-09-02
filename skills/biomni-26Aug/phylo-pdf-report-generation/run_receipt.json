@@ -1,0 +1,149 @@
+{
+  "evidence": {
+    "execution_contract_satisfied": {
+      "reason": "Scripts are invoked directly by the agent at runtime, not as pre-validated bundled commands",
+      "status": "not_applicable"
+    },
+    "facts_artifact_verified": {
+      "reason": "Pure formatter: transforms provided content into PDF, does not generate evidence-bearing claims",
+      "status": "not_applicable"
+    },
+    "figure_contract_satisfied": {
+      "reason": "Format utility renders provided content; does not generate or declare its own result figures",
+      "status": "not_applicable"
+    },
+    "infographic_lineage_verified": {
+      "reason": "Format utility renders provided content; does not generate qualitative infographics",
+      "status": "not_applicable"
+    },
+    "outputs_appeared": {
+      "appeared": [
+        {
+          "bytes": 171954,
+          "path": "/mnt/results/report_phylo_pdf_report_generation.pdf",
+          "provenance": "filesystem",
+          "sha256": "67d73cd126989bf0ce7041079122415b50a69ec7cc04734d0a1e864384c87c85"
+        },
+        {
+          "bytes": 8039,
+          "path": "/mnt/results/report_content.json",
+          "provenance": "filesystem",
+          "sha256": "cc1cd59d2bd704142c02269e0ebfa4c8b074d6a157a1351bae1971fe5061ae92"
+        }
+      ],
+      "method": "filesystem with resolved results-root containment"
+    },
+    "pages_rendered": {
+      "pages": [
+        {
+          "bytes": 234525,
+          "path": "/mnt/results/execution_trace/skill_qc/phylo-pdf-report-generation/page-1.png"
+        },
+        {
+          "bytes": 166676,
+          "path": "/mnt/results/execution_trace/skill_qc/phylo-pdf-report-generation/page-2.png"
+        },
+        {
+          "bytes": 139941,
+          "path": "/mnt/results/execution_trace/skill_qc/phylo-pdf-report-generation/page-3.png"
+        },
+        {
+          "bytes": 298666,
+          "path": "/mnt/results/execution_trace/skill_qc/phylo-pdf-report-generation/page-4.png"
+        },
+        {
+          "bytes": 151423,
+          "path": "/mnt/results/execution_trace/skill_qc/phylo-pdf-report-generation/page-5.png"
+        }
+      ]
+    },
+    "report_at_results_root": {
+      "bytes": 171954,
+      "path": "/mnt/results/report_phylo_pdf_report_generation.pdf"
+    },
+    "report_sections_present": {
+      "line_positions": [
+        14,
+        29,
+        64,
+        131,
+        152
+      ],
+      "report": {
+        "bytes": 171954,
+        "path": "/mnt/results/report_phylo_pdf_report_generation.pdf"
+      },
+      "sections": [
+        "Task Context",
+        "Methods & Sources",
+        "Results",
+        "Conclusions & Interpretation",
+        "Limitations"
+      ],
+      "text": {
+        "bytes": 8356,
+        "path": "/mnt/results/execution_trace/skill_qc/phylo-pdf-report-generation/report.txt"
+      }
+    },
+    "report_style_verified": {
+      "activation": "default",
+      "contract_default_provider": "pdf-report-generation",
+      "method": "exact PDF vector-colour markers from the resolved installed provider source",
+      "minimum_distinct_markers": 2,
+      "provider": "pdf-report-generation",
+      "required_marker_hits": 1,
+      "selection": "contract_default",
+      "style_source": {
+        "bytes": 18960,
+        "derivation_schema": "biomni-report-style-derivation/1",
+        "kind": "installed_skill_markdown",
+        "marker_set_sha256": "060f2e1bb851a5d0e23d38ca3c82a81f8593e536ea47ae9052c82f74b2048572",
+        "path": "/mnt/skills/system/pdf-report-generation/SKILL.md",
+        "sha256": "871a6419a21934d20de416007a550822a8f431b5f1919d1dc430335f18571773"
+      },
+      "supporting_marker_hits": 6
+    },
+    "source_assertions_verified": {
+      "checked": [],
+      "not_applicable_reason": "No external facts are used in computation; the skill transforms user-provided content"
+    },
+    "text_extracted": {
+      "report": {
+        "bytes": 171954,
+        "path": "/mnt/results/report_phylo_pdf_report_generation.pdf"
+      },
+      "text": {
+        "bytes": 8356,
+        "path": "/mnt/results/execution_trace/skill_qc/phylo-pdf-report-generation/report.txt"
+      }
+    },
+    "visual_review_attested": {
+      "attestation": "Reviewed all 5 rendered pages at 144 dpi against the current PDF bytes. Page 1: title block (26pt bold near-black title, gold subtitle, muted italic attribution), Task Context and Methods & Sources sections with gold-underlined headings. Page 2: Results section with volcano plot centered and bound italic caption. Page 3: MA plot with caption and Top-10 DE genes table with gold header row. Page 4: table continuation with repeated gold header across the page break; Conclusions & Interpretation and Limitations headings each immediately followed by content (no orphaned headings after the KeepTogether fix). Page 5: References with numbered hanging-indent entries and Output Files table. No blank or clipped pages; headers carry the muted title with gold underline; footers carry a warm-gray rule with centered page numbers.",
+      "issues": [],
+      "limitation": "author/agent attestation; not independently machine-verifiable",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "verdict": "pass"
+    }
+  },
+  "execution_contract_satisfied": true,
+  "facts_artifact_verified": "not_applicable",
+  "figure_contract_satisfied": true,
+  "figures_embedded": "not_applicable",
+  "generated_by": "report_qc.write_receipt",
+  "infographic_lineage_verified": "not_applicable",
+  "outputs_appeared": true,
+  "pages_rendered": true,
+  "report_at_results_root": true,
+  "report_sections_present": true,
+  "report_style_verified": true,
+  "schema": "phylo-run-receipt/3",
+  "source_assertions_verified": true,
+  "text_extracted": true,
+  "visual_review_attested": true
+}

@@ -1,0 +1,55 @@
+{
+  "events": [
+    {
+      "artifact": "execution_trace/skill_qc/scientific-report-writing-standards/report.txt",
+      "artifact_sha256": "5402bddee8a3be74637e7c4b5a70e4bc3f2933095800c7063b132ccc95cf5043",
+      "report": "report_scientific_report_writing_standards.pdf",
+      "report_sha256": "e3e2511906c28fadd2044524f93029742e7436021861c951732f861882d38e58",
+      "type": "pdf_text_extraction"
+    },
+    {
+      "pages": [
+        {
+          "image": "execution_trace/skill_qc/scientific-report-writing-standards/page-1.png",
+          "image_sha256": "0070c22c58d16a0eab46b74e87a92098ae9f3070318ada3bc5885c142e689ea4",
+          "page": 1
+        },
+        {
+          "image": "execution_trace/skill_qc/scientific-report-writing-standards/page-2.png",
+          "image_sha256": "98ce20af5df1e88ce39f1a13762bdf7d3e4da5f819e8dfca7dc054135e0b7971",
+          "page": 2
+        },
+        {
+          "image": "execution_trace/skill_qc/scientific-report-writing-standards/page-3.png",
+          "image_sha256": "f01b73c63ceb0fb1193a80670585fd9abbbf8512fd821fcab30f19124a37fe2e",
+          "page": 3
+        },
+        {
+          "image": "execution_trace/skill_qc/scientific-report-writing-standards/page-4.png",
+          "image_sha256": "8bf230d0c2b65efba3d6f337f7b186012e18f6c9111ab8dd2fe99c99e99ae834",
+          "page": 4
+        }
+      ],
+      "report": "report_scientific_report_writing_standards.pdf",
+      "report_sha256": "e3e2511906c28fadd2044524f93029742e7436021861c951732f861882d38e58",
+      "type": "pdf_render"
+    },
+    {
+      "evidence_type": "author_or_agent_attestation",
+      "issues": [],
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "report": "report_scientific_report_writing_standards.pdf",
+      "report_sha256": "e3e2511906c28fadd2044524f93029742e7436021861c951732f861882d38e58",
+      "review_evidence": "Reviewed all 4 rendered pages at 144 dpi against the current PDF bytes. Page 1: title block, Task Context and Methods & Sources sections with content; the previously orphaned Results heading no longer appears at the page bottom. Page 2: Results heading at top with Report anatomy table (gold header) and Evidence tier language constraints table, both well-formed. Page 3: rules-per-domain bar chart centered with bound italic caption; Conclusions & Interpretation heading immediately followed by numbered content. Page 4: Limitations heading at top with content (previously orphaned at page 3 bottom, now resolved), References, and Output Files table. No blank or clipped pages; gold house style applied throughout.",
+      "type": "pdf_visual_review",
+      "verdict": "pass"
+    }
+  ],
+  "generated_by": "report_qc",
+  "schema": "phylo-qc-run-log/1"
+}
